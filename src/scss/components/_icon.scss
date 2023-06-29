@@ -1,0 +1,101 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -999em;
+    overflow: hidden;
+    background-size: cover;
+
+    &.ico_email {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_mail.png");
+        width: 52px;
+        height: 54px;
+    }
+
+    &.ico_checkBox {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox.svg");
+        width: 20px;
+        height: 20px;
+        background-size: 20px 80px;
+    }
+
+    &.ico_radioBox {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_radiobox.svg");
+        width: 20px;
+        height: 20px;
+        background-size: 20px 60px;
+    }
+
+    &.ico_close_btn {
+        cursor: pointer;
+        background-image: url("https://image.payple.kr/onboard/icon/ico_closeBtn.png");
+        width: 30px;
+        height: 30px;
+    }
+
+    &.ico_account_btn {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_account_btn.png");
+        width: 32px;
+        height: 32px;
+    }
+
+    &.ico_logout {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_logout.png");
+        width: 20px;
+        height: 20px;
+    }
+
+    &.ico_setting {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_setting.png");
+        width: 20px;
+        height: 20px;
+    }
+
+    &.ico_alert_red {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_alert_red.png");
+        width: 20px;
+        height: 20px;
+    }
+
+    &.ico_alert_gray {
+        background-image: url("../img/icon/ico_alert_gray.png");
+        width: 15px;
+        height: 15px;
+    }
+
+    &.ico_global {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_global.png");
+        width: 30px;
+        height: 26px;
+    }
+
+    &.ico_home {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_home.png");
+        width: 30px;
+        height: 26px;
+    }
+
+    &.ico_card {
+        cursor: pointer;
+        background-image: url("../img/icon/ico_card.png");
+        width: 30px;
+        height: 26px;
+    }
+    &.ico_left_white {
+        background-image: url("../img/icon/ico_left_white.png");
+        width: 8px;
+        height: 15px;
+    }
+    &.ico_right_white {
+        background-image: url("../img/icon/ico_right_white.png");
+        width: 8px;
+        height: 15px;
+    }
+}

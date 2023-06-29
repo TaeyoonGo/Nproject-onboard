@@ -1,0 +1,130 @@
+.container.join{
+    padding-top: 0;
+}
+.join_wrap{
+    max-width: 800px;
+    margin: 0 auto;
+}
+ .step__list{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step__list .step{
+    font-size: 16px;
+    color: #BABAC2;
+}
+.step__list .step.active{
+    color: #1F1F1F;
+}
+
+.join__info_wrap{
+    padding-top: 90px;
+}
+.join__info_wrap .main_title{
+    font-size: 28px;
+    text-align: center;
+    line-height: 38px;
+}
+.join__info_wrap .label__design_box{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.join__area_complete{
+    padding-top: 179px;
+    text-align: center;
+}
+.join__area_complete .img{
+    width: 161px;
+    margin: 0 auto 20px;
+    height: auto;
+}
+.join__area_complete .desc{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.btn_complete_next{
+    padding: 20px 0;
+    border-radius: 12px;
+    font-size: 18px;
+    display: block;
+    max-width: 209px;
+    margin: 56px auto 0;
+}
+.btn_complete_next:last-child{
+    margin-top: 24px;
+}
+.btn_complete_next .icon{
+    margin-right: 7px;
+}
+
+.modal_body .confirm_list{
+    display: flex;
+    margin-bottom: 40px;
+}
+.modal_body .confirm_list:last-child{
+    margin-bottom: 0;
+}
+.modal_body .confirm_title{
+    flex: 1 1 20%;
+    font-size: 16px;
+    line-height: 28px;
+}
+.modal_body .confirm_desc_area{
+    flex: 1 1 80%;
+    font-size: 16px;
+    line-height: 24px;
+}
+.modal_body .confirm_desc{
+    display: flex;
+}
+.modal_body .confirm_desc .confirm_desc_title{
+    flex: 1 1 20%;
+}
+.modal_body .confirm_desc > span:last-child{
+    flex: 1 1 80%;
+}
+.confirm_desc_list > span{
+    margin-right: 12px;
+    position: relative;
+}
+.confirm_desc_list > span:after{
+    position: absolute;
+    content: '/';
+    top: -2px;
+    right: -10px;
+}
+.confirm_desc_list > span:last-child:after{
+    display: none;
+}
+.modify_text{
+    font-size: 13px;
+}
+.modify_text .icon{
+    margin-right: 5px;
+}
+.modify_text span{
+    vertical-align: middle;
+}
+.modal_footer.confirm{
+    padding: 30px 30px;
+    text-align: right;
+}
+.modal_footer.confirm .btn{
+    width: 114px;
+}
+.detail_area{
+    display: none;
+    margin-top: 110px;
+}
+.detail_area .detail__list{
+
+    width: 380px;
+    margin: 70px auto 0;
+}
+
