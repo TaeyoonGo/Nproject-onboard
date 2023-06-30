@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+@@include('../../html/include/common/header.html')
+<div class="container join">
+    <div class="progress_box">
+        <progress class="progress" value="90" min="0" max="100"></progress>
+    </div>
+    <div class="join_wrap">
+        <ul class="step__list">
+            <li class="step">사업자번호 확인</li>
+            <li class="step">서비스정보 입력</li>
+            <li class="step">담당자정보 입력</li>
+            <li class="step active">결제수단 선택</li>
+            <li class="step">신청완료</li>
+        </ul>
+        <div class="join__info_wrap">
+            <h3 class="main_title font_weight_bold">어떤 결제수단 도입을 원하세요?</h3>
+            <div class="label__design_box">
+                <input name="payment" type="radio">
+                <label class="label__design">
+                    <span>국내결제</span>
+                </label>
+                <input name="payment" type="radio">
+                <label class="label__design">
+                    <span>해외결제</span>
+                </label>
+            </div>
+            <div class="label_hover_list">
+                <div class="content_list">
+                    <div>
+                        <p class="font_weight_bold content_list_title">카드</p>
+                        <div>
+                            <p>앱카드</p>
+                            <p>빌링(정기결제)</p>
+                            <p>비밀번호 간편결제</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font_weight_bold content_list_title">카드</p>
+                        <div>
+                            <p>앱카드</p>
+                            <p>빌링(정기결제)</p>
+                            <p>비밀번호 간편결제</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font_weight_bold content_list_title">허브</p>
+                        <div>
+                            <p>플랫폼 자동 정산</p>
+                            <p>계좌인증</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font_weight_bold content_list_title">간편</p>
+                        <div>
+                            <p>네이버페이</p>
+                            <p>카카오페이</p>
+                            <p>애플페이</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font_weight_bold content_list_title">기타</p>
+                        <div>
+                            <p>가상계좌</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_list">
+                    <div>
+                        <p class="font_weight_bold content_list_title">카드</p>
+                        <div>
+                            <p>앱카드</p>
+                            <p>빌링(정기결제)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('../../html/include/common/prevNextBtnWrap.html')
+        </div>
+    </div>
+</div>
+<script>
+    let hoverBtn = $('.label__design')
+    let bgContent = $('.content_list')
+    hoverBtn.eq(0).hover(
+        function(){
+            bgContent.eq(0).css({'background-color' : '#E9E1FF'})
+    },
+        function(){
+            bgContent.eq(0).css({'background-color' : '#f0f0f0'})
+    })
+    hoverBtn.eq(1).hover(
+        function(){
+            bgContent.eq(1).css({'background-color' : '#E9E1FF'})
+    },
+        function(){bgContent.eq(1).css({'background-color' : '#f0f0f0'})}
+    )
+
+    hoverBtn.eq(0).on('click',function(){
+        console.log($('#domesticBtn').is(":checked"))
+        if($('#domesticBtn').is(":checked")){
+            bgContent.eq(0).css({'background-color' : '#E9E1FF'})
+        }else{
+            bgContent.eq(0).css({'background-color' : '#f0f0f0'})
+        }
+    })
+
+
+
+</script>
+</body>
+</html>

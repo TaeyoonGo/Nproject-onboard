@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+@@include('../../html/include/common/header.html')
+<div class="container join">
+    <div class="progress_box">
+        <progress class="progress" value="20" min="0" max="100"></progress>
+    </div>
+    <div class="join_wrap">
+        <ul class="step__list">
+            <li class="step active">사업자번호 확인</li>
+            <li class="step">서비스정보 입력</li>
+            <li class="step">담당자정보 입력</li>
+            <li class="step">결제수단 선택</li>
+            <li class="step">신청완료</li>
+        </ul>
+        <div class="join__info_wrap">
+            <h3 class="main_title font_weight_bold">반갑습니다. 전자결제 신청을 시작할게요.<br>
+                신청을 위해 사업자 번호를 확인해주세요.</h3>
+            <div class="business_number_area">
+                <div class="input__area mb-0">
+                    <div class="position_relative">
+                        <input class="form-control border_danger" type="tel">
+                        <div class="validation_area show">
+<!--                        <p class="validation color_primary">정상 사업자 입니다</p>-->
+                            <p class="validation color_danger">휴, 폐업 사업자 입니다.<br>
+                                현재 운영중인 사업자 번호를 입력해주세요.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="btn btn_primary">조회</button>
+            </div>
+            <div class="btn_next_prev_wrap">
+                <button class="btn btn_prev btn_primary" disabled><span>다음</span><i class="icon ico_right_white">다음</i></button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
