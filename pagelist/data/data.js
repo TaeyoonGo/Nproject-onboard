@@ -4,15 +4,15 @@ data.email = {
     list: [
         {
             stateClass: 'complete',
-            url: 'pass-가입완료',
+            url: '가입완료',
             category: 'email',
-            page: 'pass-가입완료'
+            page: '가입완료'
         },
         {
             stateClass: 'complete',
-            url: 'pass-임시비밀번호',
+            url: '임시비밀번호',
             category: 'email',
-            page: 'pass-임시비밀번호'
+            page: '임시비밀번호'
         },
     ]
 }
@@ -21,39 +21,39 @@ data.login = {
     list: [
         {
             stateClass: 'complete',
-            url: 'pass-가입완료_이메일 요청',
+            url: '가입완료_이메일 요청',
             category: 'login',
-            page: 'pass-가입완료_이메일 요청'
+            page: '가입완료_이메일 요청'
         },
         {
             stateClass: 'complete',
-            url: 'pass-로그인화면',
+            url: '로그인화면',
             category: 'login',
-            page: 'pass-로그인화면'
+            page: '로그인화면'
         },
         {
             stateClass: 'complete',
-            url: 'pass-비밀번호 재설정_비밀번호 변경',
+            url: '비밀번호 재설정_비밀번호 변경',
             category: 'login',
-            page: 'pass-비밀번호 재설정_비밀번호 변경'
+            page: '비밀번호 재설정_비밀번호 변경'
         },
         {
             stateClass: 'complete',
-            url: 'pass-비밀번호 재설정_이메일_발송',
+            url: '비밀번호 재설정_이메일_발송',
             category: 'login',
-            page: 'pass-비밀번호 재설정_이메일_발송'
+            page: '비밀번호 재설정_이메일_발송'
         },
         {
             stateClass: 'complete',
-            url: 'pass-비밀번호 재설정_이메일_주소',
+            url: '비밀번호 재설정_이메일_주소',
             category: 'login',
-            page: 'pass-비밀번호 재설정_이메일_주소'
+            page: '비밀번호 재설정_이메일_주소'
         },
         {
             stateClass: 'complete',
-            url: 'pass-회원가입',
+            url: '회원가입',
             category: 'login',
-            page: 'pass-회원가입'
+            page: '회원가입'
         },
         {
             stateClass: 'complete',
@@ -68,22 +68,54 @@ data.join = {
     list: [
         {
             stateClass: 'complete',
-            url: '최초신청-계약담당자정보_입력',
+            url: '사업자번호확인',
             category: 'join',
-            page: '최초신청-계약담당자정보_입력'
+            page: '사업자번호확인'
+        },
+        {
+            stateClass: 'working',
+            url: '서비스정보입력',
+            category: 'join',
+            page: '서비스정보입력'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단선택',
+            category: 'join',
+            page: '결제수단선택'
+        },
+        {
+            stateClass: 'working',
+            url: '국내결제서비스선택',
+            category: 'join',
+            page: '국내결제서비스선택'
+        },
+        {
+            stateClass: 'working',
+            url: '해외결제서비스선택',
+            category: 'join',
+            page: '해외결제서비스선택'
+        },
+
+        {
+            stateClass: 'complete',
+            url: '계약담당자정보_입력',
+            category: 'join',
+            page: '계약담당자정보_입력'
         },
         {
             stateClass: 'complete',
-            url: '최초신청-국내완료',
+            url: '국내완료',
             category: 'join',
-            page: '최초신청-국내완료'
+            page: '국내완료'
         },
         {
             stateClass: 'complete',
-            url: '최초신청-해외완료',
+            url: '해외완료',
             category: 'join',
-            page: '최초신청-해외완료'
+            page: '해외완료'
         },
+
     ]
 }
 

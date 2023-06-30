@@ -43,6 +43,7 @@
 }
 
 .btn_next_prev_wrap{
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     .btn{
@@ -50,7 +51,7 @@
         padding: 5px 10px;
         &:first-child{
             margin-right: 20px;
-            background-color: #BABAC2;
+
         }
 
         span{

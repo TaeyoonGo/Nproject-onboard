@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+@@include('../../html/include/common/header.html')
+<div class="container join">
+    <div class="progress_box">
+        <progress class="progress" value="90" min="0" max="100"></progress>
+    </div>
+    <div class="join_wrap">
+        <ul class="step__list">
+            <li class="step">사업자번호 확인</li>
+            <li class="step">서비스정보 입력</li>
+            <li class="step">담당자정보 입력</li>
+            <li class="step active">결제수단 선택</li>
+            <li class="step">신청완료</li>
+        </ul>
+        <div class="join__info_wrap">
+            <h3 class="main_title font_weight_bold">이제, 버튼을 눌러 선택만 하면<br>
+                국내결제 신청이 완료됩니다.</h3>
+            <div class="service__select_wrap">
+                <div class="account__select_list">
+                    <p class="title color_primary font_weight_bold">카드</p>
+                    <div class="label__design_box">
+                        <input name="payment" type="radio" id="type01">
+                        <label class="label__design" for="type01">
+                            <span>앱카드</span>
+                        </label>
+                    </div>
+                    <div class="label__design_box">
+                        <input name="payment" type="radio" id="type02">
+                        <label class="label__design" for="type02">
+                            <span>빌링(정기결제)</span>
+                        </label>
+                    </div>
+                    <div class="label__design_box">
+                        <input name="payment" type="radio" id="type03">
+                        <label class="label__design" for="type03">
+                            <span>비밀번호 간편결제</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="account__select_desc">
+                    <div class="empty_area"></div>
+                    <div>
+                        <p class="text_center">가장 일반적인 카드사<br>앱카드로 결제 </p>
+                    </div>
+                    <div><p class="text_center">원하는 때에 자동으로 결제,<br>반복결제 가능</p></div>
+                    <div><p class="text_center">최초 카드 등록 후<br>비밀번호만으로 반복결제</p></div>
+                </div>
+                <div class="account__select_table">
+                    <div class="table_row">
+                        <div class="select_table_title">일반</div>
+                        <div class="select_table_desc">
+                            <div>2.60%</div>
+                            <div>2.90%</div>
+                            <div>2.90%</div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="select_table_title">중소3</div>
+                        <div class="select_table_desc">
+                            <div>2.00%</div>
+                            <div>2.70%</div>
+                            <div>2.70%</div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="select_table_title">중소2</div>
+                        <div class="select_table_desc">
+                            <div>1.75%</div>
+                            <div>2.45%</div>
+                            <div>2.45%</div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="select_table_title">중소1</div>
+                        <div class="select_table_desc">
+                            <div>1.60%</div>
+                            <div>2.30%</div>
+                            <div>2.30%</div>
+                        </div>
+                    </div>
+                    <div class="table_row">
+                        <div class="select_table_title">영세</div>
+                        <div class="select_table_desc">
+                            <div>1.00%</div>
+                            <div>1.70%</div>
+                            <div>1.70%</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="service__select_table"></div>
+        </div>
+
+
+        @@include('../../html/include/common/prevNextBtnWrap.html')
+    </div>
+</div>
+</div>
+</body>
+</html>

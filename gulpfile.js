@@ -26,7 +26,7 @@ const distdSrc = 'dist'
 // js - common
 function copyJs() {
     return gulp.src(devPaths.js)
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(concat('common.js'))
         .pipe(gulp.dest(distdSrc + '/js'));
 }
