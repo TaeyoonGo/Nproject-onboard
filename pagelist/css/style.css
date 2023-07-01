@@ -133,6 +133,19 @@ caption.visually_hidden {
   content: "작업중";
 }
 
+.confirm::after {
+    content: "디자인대기";
+}
+
+.confirm {
+    background: #198754 !important;
+    color: #ffffff !important;
+}
+
+.confirm::after {
+    content: "QA대기";
+}
+
 .complete {
   background-color: #6170FF;
   color: #ffffff !important;

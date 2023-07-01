@@ -15,29 +15,31 @@
             <li class="step active">결제수단 선택</li>
             <li class="step">신청완료</li>
         </ul>
-        <div class="join_section">
+        <div class="join_content_section">
             <h3 class="main_title font_weight_bold">이제, 버튼을 눌러 선택만 하면<br>
                 국내결제 신청이 완료됩니다.</h3>
             <div class="service__select_wrap">
                 <div class="account__select_list">
                     <p class="title color_primary font_weight_bold">카드</p>
-                    <div class="label__design_box">
-                        <input name="payment" type="radio" id="type01">
-                        <label class="label__design" for="type01">
-                            <span>앱카드</span>
-                        </label>
-                    </div>
-                    <div class="label__design_box">
-                        <input name="payment" type="radio" id="type02">
-                        <label class="label__design" for="type02">
-                            <span>빌링(정기결제)</span>
-                        </label>
-                    </div>
-                    <div class="label__design_box">
-                        <input name="payment" type="radio" id="type03">
-                        <label class="label__design" for="type03">
-                            <span>비밀번호 간편결제</span>
-                        </label>
+                    <div>
+                        <div class="label__design">
+                            <input name="payment" type="radio" id="check1">
+                            <label class="checked__label" for="check1">
+                                <span>국내결제</span>
+                            </label>
+                        </div>
+                        <div class="label__design">
+                            <input name="payment" type="radio" id="check2">
+                            <label class="checked__label" for="check2">
+                                <span>국내결제</span>
+                            </label>
+                        </div>
+                        <div class="label__design">
+                            <input name="payment" type="radio" id="check3">
+                            <label class="checked__label" for="check3">
+                                <span>국내결제</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="account__select_desc">
@@ -95,12 +97,11 @@
 
             </div>
             <div class="service__select_table"></div>
+            @@include('../../html/include/common/prevNextBtnWrap.html')
         </div>
 
-
-        @@include('../../html/include/common/prevNextBtnWrap.html')
     </div>
 </div>
-</div>
+
 </body>
 </html>

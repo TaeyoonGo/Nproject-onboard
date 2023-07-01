@@ -49,6 +49,7 @@
             <span><strong class="percent">{{countCompletePercent}}%</strong></span>
             <span><em class="circle circle_waiting" title="디자인대기">{{countWaiting}}</em></span>
             <span><em class="circle circle_working" title="작업중">{{countWorking}}</em></span>
+            <span><em class="circle circle_confirm" title="QA진행">{{countConfirming}}</em></span>
             <span><em class="circle circle_complete" title="완료">{{countComplete}}</em></span>
         </div>
         <ul class="list_wrap close">
@@ -93,6 +94,7 @@
             var list = data[index].list;
             var countWaiting = 0;
             var countWorking = 0;
+            var countConfirming = 0;
             var countComplete = 0;
             for(var key in list) {
                 // console.log(list[key])
@@ -102,12 +104,16 @@
                 if (list[key].stateClass == "working") {
                     countWorking++;
                 }
+                if (list[key].stateClass == 'confirm') {
+                    countConfirming++;
+                }
                 if (list[key].stateClass == "complete") {
                     countComplete++;
                 }
             }
             data[index].countWaiting = countWaiting;
             data[index].countWorking = countWorking;
+            data[index].countConfirming = countConfirming;
             data[index].countComplete = countComplete;
 
             data[index].countCompletePercent =  Math.floor (countComplete/ (countWaiting+countWorking+countComplete) *100)

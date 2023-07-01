@@ -295,8 +295,11 @@ a {
         }
 
         .circle_waiting {
-          background-color: $waiting;
+            background-color: $waiting;
         }
+       .circle_confirm{
+           background-color: $confirming;
+       }
 
         .circle_working {
           background-color: $working;

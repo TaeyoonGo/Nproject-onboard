@@ -23,17 +23,17 @@
     color: #1F1F1F;
 }
 
-.join_section {
+.join_content_section {
     padding: 90px 0;
 }
 
-.join_section .main_title {
+.join_content_section .main_title {
     font-size: 28px;
     text-align: center;
     line-height: 38px;
 }
 
-.join_section .label__design_box {
+.join_content_section .label__design_box {
     text-align: center;
     margin-top: 64px;
 }
@@ -164,7 +164,12 @@
         padding: 28px 22px;
         vertical-align: top;
         display: inline-block;
-
+        &.hover_bg{
+            background-color: #E9E1FF;
+        }
+        &.check_bg{
+            background-color: #E9E1FF;
+        }
         .content_list_title {
             margin-right: 20px;
         }
