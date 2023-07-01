@@ -449,39 +449,7 @@ a {
 
 }
 
-/*label*/
-.label__design_box .label__design{
-    margin-right: 40px;
-}
-.label__design_box .label__design:last-child{
-    margin-right: 0;
-}
-.label__design{
-    background-color: #F0F0F0;
-    width: 210px;
-    text-align: center;
-    display: inline-block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 20px 0;
-    border-radius: 12px;
-    cursor: pointer;
-    border: 1px solid #F0F0F0;
-}
-.label__design:hover{
-    color: #7852E8;
-    background-color: #E9E1FF;
-    border: 1px solid #7852E8;
-}
-input:checked + .label__design{
-    color: #7852E8;
-    background-color: #E9E1FF;
-    border: 1px solid #7852E8;
-}
-.label__design + .label__design{
-    margin-left: 40px;
-}
+
 .join_wrap .detail_area{
     margin-top: 110px;
 }

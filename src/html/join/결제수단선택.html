@@ -3,27 +3,27 @@
 @@include('../../html/include/common/head.html')
 <body>
 @@include('../../html/include/common/header.html')
-<div class="container join">
+<div class="join_container">
     <div class="progress_box">
         <progress class="progress" value="90" min="0" max="100"></progress>
     </div>
     <div class="join_wrap">
-        <ul class="step__list">
+        <ul class="step_list">
             <li class="step">사업자번호 확인</li>
             <li class="step">서비스정보 입력</li>
             <li class="step">담당자정보 입력</li>
             <li class="step active">결제수단 선택</li>
             <li class="step">신청완료</li>
         </ul>
-        <div class="join__info_wrap">
+        <div class="join_section">
             <h3 class="main_title font_weight_bold">어떤 결제수단 도입을 원하세요?</h3>
             <div class="label__design_box">
-                <input name="payment" type="radio">
                 <label class="label__design">
+                    <input name="payment" type="radio">
                     <span>국내결제</span>
                 </label>
-                <input name="payment" type="radio">
                 <label class="label__design">
+                    <input name="payment" type="radio">
                     <span>해외결제</span>
                 </label>
             </div>

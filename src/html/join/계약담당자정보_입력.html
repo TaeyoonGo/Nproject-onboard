@@ -3,31 +3,35 @@
 @@include('../../html/include/common/head.html')
 <body>
 @@include('../../html/include/common/header.html')
-<div class="container join">
+<div class="join_container">
     <div class="progress_box">
         <progress class="progress" value="80" min="0" max="100"></progress>
     </div>
     <div class="join_wrap">
-        <ul class="step__list">
+        <ul class="step_list">
             <li class="step">사업자번호 확인</li>
             <li class="step">서비스정보 입력</li>
             <li class="step">담당자정보 입력</li>
             <li class="step">결제수단 선택</li>
             <li class="step active">신청완료</li>
         </ul>
-        <div class="join__info_wrap">
+        <div class="join_section">
             <h3 class="main_title font_weight_bold">dw.jung@naver.com님이<br>
                 계약을 진행할 담당자이신가요?
             </h3>
             <div class="label__design_box">
-                <input name="checkType" type="radio" id="check1">
-                <label class="label__design" for="check1">
-                    <span>담당자가 따로 있어요.</span>
-                </label>
-                <input name="checkType" type="radio" id="check2">
-                <label class="label__design _modal_btn" for="check2">
-                    <span>네 맞아요</span>
-                </label>
+                <div class="label__design">
+                    <input name="checkType" type="radio" id="check1">
+                    <label for="check1">
+                        <span>담당자가 따로 있어요.</span>
+                    </label>
+                </div>
+                <div class="label__design _modal_btn">
+                    <input name="checkType" type="radio" id="check2">
+                    <label  for="check2">
+                        <span>네 맞아요</span>
+                    </label>
+                </div>
             </div>
             <div class="detail_area _detail_area">
                 <h3 class="main_title font_weight_bold">담당자 정보를 입력해주세요.<br>
@@ -36,9 +40,9 @@
                 </h3>
                 <div class="detail__list">
                     <div class="input__area">
-                    <p class="input_title">이름</p>
-                    <label><input class="form-control"></label>
-                </div>
+                        <p class="input_title">이름</p>
+                        <label><input class="form-control"></label>
+                    </div>
                     <div class="input__area">
                         <p class="input_title">이메일 주소</p>
                         <div class="position_relative">
@@ -75,14 +79,16 @@
                         <div class="confirm_desc_area">
                             <p class="confirm_desc"><span class="confirm_desc_title">사업자번호</span><span>3318701049</span>
                             </p>
-                            <p class="confirm_desc"><span class="confirm_desc_title">회사명</span><span>(주)정다운 나라 </span>
+                            <p class="confirm_desc"><span
+                                    class="confirm_desc_title">회사명</span><span>(주)정다운 나라 </span>
                             </p>
                         </div>
                     </div>
                     <div class="confirm_list">
                         <p class="font_weight_bold confirm_title">서비스정보</p>
                         <div class="confirm_desc_area">
-                            <p class="confirm_desc"><span class="confirm_desc_title">서비스명</span><span>정다운세상</span></p>
+                            <p class="confirm_desc"><span
+                                    class="confirm_desc_title">서비스명</span><span>정다운세상</span></p>
                             <p class="confirm_desc"><span
                                     class="confirm_desc_title">홈페이지</span><span>www.dawoony.com</span></p>
                             <p class="confirm_desc"><span class="confirm_desc_title">판매상품</span><span
@@ -114,15 +120,16 @@
 </div>
 
 <script>
-    function showDetail(){
-        $('#check1').on('click',function() {
+    function showDetail() {
+        $('#check1').on('click', function () {
             $('.detail_area').show();
 
         });
-        $('#check2').on('click',function() {
+        $('#check2').on('click', function () {
             $('.detail_area').hide();
         });
     }
+
     showDetail();
 </script>
 </body>
