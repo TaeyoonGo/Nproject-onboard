@@ -6,11 +6,15 @@ function openModal(modalname) {
     }, 200);
 }
 // close Modal
-function closeModal(modalname) {
-    $("." + modalname).removeClass('fade')
-    setTimeout(function () {
-        $("." + modalname).removeClass('show')
-    }, 200);
+function closeModal() {
+    let modals = $('.modal')
+    let closeBtn = $('._modal_close_btn')
+    closeBtn.on('click',function(){
+        modals.removeClass('fade')
+        setTimeout(function () {
+            modals.removeClass('show')
+        }, 200);
+    })
 }
 // close dim
 function dimModal() {
@@ -47,6 +51,7 @@ function toggleAccountInfo() {
 $(document).ready(function () {
     formatPhoneNumber();
     toggleAccountInfo();
+    closeModal();
     dimModal();
 
 

@@ -297,6 +297,36 @@ a {
     width: 680px
 }
 
+.modal.modal_type3 .modal_dialog{
+    width: 620px;
+}
+.modal.modal_type3 .modal_dialog .modal_header {
+    text-align: right;
+    padding: 24px 26px 20px;
+}
+
+.modal.modal_type3 .modal_dialog .modal_body{
+    padding: 0 26px 45px;
+}
+.modal.modal_type3 .modal_dialog .modal_body .title{
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom:30px;
+
+}
+.modal.modal_type3 .modal_dialog .modal_body .desc{
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+}
+.modal.modal_type3 .modal_dialog .modal_footer{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.modal.modal_type3 .modal_dialog .modal_footer .btn{
+    width: 80px;
+}
 
 
 .modal_content.alert_modal_content {

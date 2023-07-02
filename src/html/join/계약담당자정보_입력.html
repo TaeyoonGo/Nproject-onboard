@@ -28,7 +28,7 @@
                 </div>
                 <div class="label__design _modal_btn">
                     <input name="checkType" type="radio" id="check2">
-                    <label  for="check2" class="checked__label">
+                    <label for="check2" class="checked__label" onclick="openModal('modal0')">
                         <span>네 맞아요</span>
                     </label>
                 </div>
@@ -60,12 +60,15 @@
                         <label><input class="form-control _input_phone" type="tel" maxlength="13"></label>
                     </div>
                 </div>
-                @@include('../../html/include/common/prevNextBtnWrap.html')
+                <div class="btn_next_prev_wrap">
+                    <button class="btn btn_next btn_secondary"><i class="icon ico_left_white">이전</i><span>이전</span></button>
+                    <button class="btn _next_btn btn_prev btn_primary _btn" onclick="openModal('modal0')"><span>다음</span><i class="icon ico_right_white">다음</i></button>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="modal modal_md">
+<div class="modal modal_md modal0">
     <div class="modal_dialog modal_md">
         <div class="modal_content">
             <div class="modal_header">
