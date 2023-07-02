@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
 <body>
+@@include('../../html/include/common/header.html')
+<div class="join_container">
+    <div class="progress_box">
+        <progress class="progress" value="80" min="0" max="100"></progress>
+    </div>
+    <div class="join_wrap">
+        <ul class="step_list">
+            <li class="step">사업자번호 확인</li>
+            <li class="step">서비스정보 입력</li>
+            <li class="step">담당자정보 입력</li>
+            <li class="step active">결제수단 선택</li>
+            <li class="step">신청완료</li>
+        </ul>
+        <div class="join_content_section">
+            <h3 class="main_title font_weight_bold">이제, 버튼을 눌러 선택만 하면<br>
+                해외결제 신청이 완료됩니다.</h3>
+            <div class="service__select_wrap">
+                <div class="service__select_section global_card">
+                    <div class="account__row">
+                        <div class="title color_primary font_weight_bold">카드</div>
+                        <div>
+                            <div class="label__design">
+                                <input name="account" type="radio" id="check4">
+                                <label class="checked__label" for="check4">
+                                    <span>비인증 키인결제</span>
+                                </label>
+                            </div>
+                            <div class="label__design">
+                                <input name="account" type="radio" id="check5">
+                                <label class="checked__label" for="check5">
+                                    <span>빌링(정기결제)</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="account__row">
+                        <div class="empty_area"></div>
+                        <div class="text_area">
+                            <div class="desc_list">
+                                <p class="text_center">원하는 때에 자동으로 결제,<br>
+                                    반복결제 가능</p>
+                            </div>
+                            <div class="desc_list">
+                                <p class="text_center">원하는 때에 자동으로 결제,<br>
+                                    반복결제 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account__select_table">
+                        <div class="table_row">
+                            <div class="select_table_title font_weight_bold">수수료</div>
+                            <div class="select_table_desc">
+                                <div>3.90%</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="caption">*업종에 따라 건당 수수료가 부과될 수 있습니다.</p>
+                    <p class="caption" style="padding-top: 5px">*VAT별도</p>
+                </div>
+                @@include('../../html/include/common/prevNextBtnWrap.html')
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>

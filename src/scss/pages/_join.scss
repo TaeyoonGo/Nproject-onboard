@@ -212,67 +212,230 @@
 .service__select_wrap {
     width: 680px;
     margin: 60px auto 0;
-
-    .account__select_list {
-        display: flex;
-        width: 640px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .label__design_box {
-        margin-top: 0;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-
-    .label__design {
-        padding: 11px 0;
-        width: 150px;
-        position: relative;
-    }
-    .account__select_table{
-        >.table_row{
+    .service__select_section{
+        margin-bottom: 110px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .account__row {
             display: flex;
-            padding: 14px 0;
-            border-top: 1px solid #d2d2d2;
-            &:nth-last-child(1){
-                border-bottom: 1px solid #d2d2d2;
+            width: 640px;
+            margin: 20px auto 0;
+            align-items: center;
+            >div{
+                flex: 1 1 15%;
+                &:last-child{
+                    flex: 1 1 85%;
+                }
             }
-            .select_table_title{
-                font-size: 15px;
-                flex: 0 0 46px;
-                font-weight: 700;
-            }
-            .select_table_desc{
-                display: flex;
-                align-items: center;
+            .text_area{
 
-                flex: auto;
+                display: flex;
+                justify-content: space-between;
+                .desc_list{
+                    line-height: 20px;
+                    width: 150px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .account__select_table{
+            width: 680px;
+            margin-top: 24px;
+            .table_row{
+                padding: 14px 0;
+                font-size: 15px;
+                border-top: 1px solid #D2D2D2;
+                display: flex;
+                &:last-child{
+                    border-bottom:1px solid #d2d2d2;
+                }
+                .select_table_title{
+                    flex: 1 1 15%;
+                    margin-left: 20px;
+                }
+                .select_table_desc{
+                    flex: 1 1 85%;
+                    display: flex;
+                    margin-right: 20px;
+                    justify-content: space-between;
+                    >div{
+                        width: 150px;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+        .label__design_box {
+            margin-top: 0;
+        }
+        .title {
+            font-size: 20px;
+        }
+        .label__design {
+
+            width: 150px;
+            position: relative;
+            >label{
+                padding: 12px 0px;
+            }
+        }
+        .caption{
+            padding-top: 14px;
+            margin-left: 20px;
+            color: #1F1F1F;
+            font-size: 15px;
+        }
+        &.account{
+            .account__row{
                 >div{
-                    text-align: center;
-                    flex: 1 1 33%;
+                    flex: 1 1 30%;
+                    &:last-child{
+                        flex: 1 1 70%;
+                    }
+                }
+                .label__design + .label__design{
+                    margin-left: 69px;
+                }
+                .text_area{
+                    justify-content: flex-start;
+                    .desc_list{
+                        margin-right: 76px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                    }
+                }
+
+            }
+            .table_row{
+                .select_table_desc{
+                    justify-content: center;
+                }
+            }
+        }
+        &.global_card{
+            .account__row{
+                >div{
+                    flex: 1 1 30%;
+                    &:last-child{
+                        flex: 1 1 70%;
+                    }
+                }
+                .label__design + .label__design{
+                    margin-left: 69px;
+                }
+                .text_area{
+                    justify-content: flex-start;
+                    .desc_list{
+                        margin-right: 76px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                    }
+                }
+
+            }
+            .table_row{
+                .select_table_desc{
+                    justify-content: center;
+                }
+            }
+        }
+        &.hub{
+            .account__row{
+                >div{
+                    flex: 1 1 30%;
+                    &:last-child{
+                        flex: 1 1 70%;
+                    }
+                }
+                .label__design + .label__design{
+                    margin-left: 69px;
+                }
+                .text_area{
+                    justify-content: flex-start;
+                    .desc_list{
+                        margin-right: 76px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                    }
+                }
+
+            }
+            .table_row{
+                .select_table_title{
+                    flex: 1 1 30%;
+                }
+                .select_table_desc{
+                    flex: 1 1 70%;
+                    justify-content: flex-start;
+                    >div{
+                        margin-right: 74px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &.simplepay{
+            .account__row{
+                >div{
+                    flex: 1 1 30%;
+                    &:last-child{
+                        flex: 1 1 70%;
+                    }
+                    .label__design{
+
+                        width: auto;
+                        >label{
+                            padding: 10px 22px;
+                            width: auto;
+
+                        }
+
+                    }
+
+
+                }
+            }
+            .table_row{
+                .select_table_title{
+                    flex: 1 1 20%;
+                }
+                .select_table_desc{
+                    flex: 1 1 80%;
+                    justify-content: center;
 
                 }
             }
         }
+        &.etc{
+            .account__row{
+                >div{
+                    &:last-child{
+                        text-align: center;
+                    }
+                }
+            }
+            .account__select_table{
+                .table_row{
+                    .select_table_desc{
+                        justify-content: center;
+                    }
+                }
+            }
 
-    }
-    .account__select_desc {
-        width: 640px;
-        display: flex;
-        justify-content: space-between;
-
-        line-height: 23px;
-        margin: 20px auto;
-        font-size: 15px;
-
-        .empty_area {
-            width: 46px;
         }
 
     }
+
+
+
+
 }
