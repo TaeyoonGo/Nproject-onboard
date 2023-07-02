@@ -1,35 +1,29 @@
-//모달 함수
-// function toggleModal(index) {
-//     let modals = $(`._modal_${index}`);
-//     let closeModalBtn = $('._modal_close_btn');
-//     let openModalBtn = $('._modal_btn');
-//
-//     openModalBtn.on('click', function () {
-//
-//         console.log(modals);
-//         modals.addClass('show')
-//
-//         setTimeout(function () {
-//             modals.addClass('fade')
-//         }, 200)
-//     })
-//     closeModalBtn.on('click', function () {
-//         modals.removeClass('fade')
-//         setTimeout(function () {
-//             modals.removeClass('show')
-//         }, 200)
-//     })
-//
-//     modals.on('click', function (e) {
-//         if (e.target == this) {
-//             modals.removeClass('fade')
-//             setTimeout(function () {
-//                 modals.removeClass('show')
-//             }, 200)
-//         }
-//     })
-// }
-
+//open Modal
+function openModal(modalname) {
+    $("." + modalname).addClass('show')
+    setTimeout(function () {
+        $("." + modalname).addClass('fade')
+    }, 200);
+}
+// close Modal
+function closeModal(modalname) {
+    $("." + modalname).removeClass('fade')
+    setTimeout(function () {
+        $("." + modalname).removeClass('show')
+    }, 200);
+}
+// close dim
+function dimModal() {
+    let modals = $('.modal')
+    modals.on('click', function (e) {
+        if (e.target == this) {
+            modals.removeClass('fade')
+            setTimeout(function () {
+                modals.removeClass('show')
+            }, 200)
+        }
+    })
+}
 
 
 //전화번호 hyphen
@@ -53,5 +47,7 @@ function toggleAccountInfo() {
 $(document).ready(function () {
     formatPhoneNumber();
     toggleAccountInfo();
+    dimModal();
+
 
 })

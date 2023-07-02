@@ -124,7 +124,7 @@
                                 <i class="icon ico_checkBox">체크박스</i>
                                 <span class="">[필수]</span>
                             </label>
-                            <a class="modal_btn _modal_btn" onclick="r">개인정보 수집 및 이용 동의</a>
+                            <a href="javascript:openModal('modal0');" class="modal_btn _modal_btn _modal_btn" >개인정보 수집 및 이용 동의</a>
                         </div>
 
                         <div class="checkbox_custom_btn">
@@ -133,7 +133,7 @@
                                 <i class="icon ico_checkBox">체크박스</i>
                                 <span class="">[선택]</span>
                             </label>
-                            <a class="modal_btn _modal_btn">뉴스레터, 혜택 안내에 동의(마케팅, 광고 수신 동의)</a>
+                            <a href="javascript:openModal('modal1');">뉴스레터, 혜택 안내에 동의(마케팅, 광고 수신 동의)</a>
                         </div>
                     </div>
                 </div>
@@ -146,12 +146,12 @@
             <p>이미 계정이 있으시다면?<a href="" target="_self">로그인</a></p>
         </div>
     </div>
-    <div class="modal modal_xl">
+    <div class="modal modal_xl modal0">
         <div class="modal_dialog modal_xl">
             <div class="modal_content">
                 <div class="modal_header">
                     <h2 class="modal_title font_weight_bold">개인정보 수집 및 이용약관</h2>
-                    <i class="icon ico_close_btn _modal_close_btn">종료버튼</i>
+                    <i class="icon ico_close_btn _modal_close_btn" onclick="closeModal('modal0')">종료버튼</i>
                 </div>
                 <div class="modal_body">
                     <div class="textarea__document">
@@ -439,7 +439,7 @@
             </div>
         </div>
     </div>
-    <div class="modal modal_xl">
+    <div class="modal modal_xl modal1">
         <div class="modal_dialog modal_md">
             <div class="modal_content">
                 <div class="modal_header">
