@@ -91,6 +91,39 @@ img {
 }
 
 /*input*/
+.form_label{
+    position: relative;
+    cursor: pointer;
+    &.file_custom{
+        .form_control{
+            &::file-selector-button{
+                display: none;
+            }
+        }
+        .icon_area{
+            top: 50%;
+            transform: translateY(-50%);
+            right: 6px;
+            position: absolute;
+            display: inline-block;
+            background-color:#F0F0F0;
+            border-radius: 7px;
+            width: 35px;
+            height: 33px;
+            &:hover{
+                background-color: #DDDDE3;
+            }
+            
+            .icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+    }
+}
 .form_control {
     display: block;
     width: 100%;
@@ -107,6 +140,18 @@ img {
     appearance: none;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     box-sizing: border-box;
+    &.select_box{
+        font-family: inherit;
+        background: url("../img/icon/ico_select_arrow_down.png") no-repeat 98% 50%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 16px;
+
+        &:focus{
+            background: url("../img/icon/ico_select_arrow_up.png") no-repeat 98% 50%;
+        }
+    }
 
 }
 
@@ -129,35 +174,7 @@ img {
     margin-bottom: 42px;
 }
 
-.file_input{
-    .upload-name{
-        display: inline-block;
-        height: 40px;
-        padding: 0 10px;
-        vertical-align: middle;
-        border: 1px solid #dddddd;
-        width: 78%;
-        color: #999999;
-    }
-    label{
-        display: inline-block;
-        padding: 10px 20px;
-        color: #fff;
-        vertical-align: middle;
-        background-color: #999999;
-        cursor: pointer;
-        height: 40px;
-        margin-left: 10px;
-    }
-    input{
-        position: absolute;
-        width: 0;
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-        border: 0;
-    }
-}
+
 
 /*a태그*/
 a {

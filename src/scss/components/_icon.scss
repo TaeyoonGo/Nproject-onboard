@@ -119,8 +119,13 @@
         height: 33px;
     }
     &.ico_select_arrow_up{
-        background-image: url("../img/icon/ico_select_arrow_down.png");
+        background-image: url("../img/icon/ico_select_arrow_up.png");
         width: 35px;
         height: 33px;
+    }
+    &.ico_download{
+        background-image: url("../img/icon/ico_download.png");
+        width: 18px;
+        height: 20px;
     }
 }
