@@ -93,6 +93,11 @@
         width: 8px;
         height: 15px;
     }
+    &.ico_right_white {
+        background-image: url("../img/icon/ico_right_white.png");
+        width: 8px;
+        height: 15px;
+    }
     &.ico_naverpay {
         background-image: url("../img/icon/ico_naverpay.png");
         width: 53px;
@@ -107,5 +112,15 @@
         background-image: url("../img/icon/ico_kakaopay.png");
         width: 94px;
         height: 22px;
+    }
+    &.ico_select_arrow_down{
+        background-image: url("../img/icon/ico_select_arrow_down.png");
+        width: 35px;
+        height: 33px;
+    }
+    &.ico_select_arrow_up{
+        background-image: url("../img/icon/ico_select_arrow_down.png");
+        width: 35px;
+        height: 33px;
     }
 }

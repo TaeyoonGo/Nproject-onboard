@@ -226,7 +226,55 @@
 }
 
 
+.service__info__section{
+    width: 380px;
+    margin: 50px auto 0;
+    .info_box{
+        margin-bottom: 78px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .caption{
+        padding-top: 10px;
+        font-size: 14px;
+        color: #85858F;
+    }
+    .info_main_title{
+        font-size: 20px;
+        color: #7852E8;
+        margin-bottom: 20px;
+    }
+    .info_sub_title{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .input_box{
+        margin-bottom: 40px;
+        .btn{
+            background-color: #F0F0F0;
+            color: #7852E8;
+            font-weight: 700;
+            &:hover{
+                background-color: #DDDDE3;
+            }
+            padding: 10px 20px;
+        }
+        .gray_box{
+            border: 1px solid #D2D2D2;
+            min-height: 99px;
+            border-radius: 7px;
+            margin-bottom: 12px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
 
+    }
+
+
+
+}
 
 
 
@@ -243,5 +291,7 @@
         margin-bottom: 18px;
     }
 }
+
+
 
 

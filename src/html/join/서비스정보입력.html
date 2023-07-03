@@ -1,10 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
 <body>
+@@include('../../html/include/common/header.html')
+<div class="join_container">
+    <div class="progress_box">
+        <progress class="progress" value="20" min="0" max="100"></progress>
+    </div>
+    <div class="join_wrap">
+        <ul class="step_list">
+            <li class="step">사업자번호 확인</li>
+            <li class="step active">서비스정보 입력</li>
+            <li class="step">담당자정보 입력</li>
+            <li class="step">결제수단 선택</li>
+            <li class="step">신청완료</li>
+        </ul>
+        <div class="join_content_section">
+            <h3 class="main_title font_weight_bold">회사와 운영중인 서비스의<br>정보를 알려주세요.</h3>
+            <div class="service__info__section">
+                <div class="info_box">
+                    <p class="info_main_title font_weight_bold">회사정보</p>
+                    <div class="input_box">
+                        <p class="info_sub_title">사업자 등록증에 기재된 상호명</p>
+                        <label class="form_label">
+                            <input class="form_control" type="text">
+                        </label>
+                    </div>
+                    <div class="input_box">
+                        <p class="info_sub_title">사업자등록증 업로드</p>
+                        <label class="form_label">
+                            <input type="file">
+                        </label>
+                        <p class="caption">jpg, jpeg, png 이미지 또는 pdf</p>
+                    </div>
+                </div>
+                <div class="info_box">
+                    <p class="info_main_title font_weight_bold">서비스정보</p>
+                    <div class="input_box">
+                        <p class="info_sub_title">서비스명</p>
+                        <label class="form_label">
+                            <input class="form_control" type="text">
+                        </label>
+                    </div>
+                    <div class="input_box">
+                        <p class="info_sub_title">결제를 도입할 홈페이지 주소</p>
+                        <label class="form_label">
+                            <input class="form_control" type="text">
+                        </label>
+                    </div>
+                    <div class="input_box">
+                        <p class="info_sub_title">판매상품</p>
+                        <div class="gray_box">
 
+                        </div>
+                        <div class="text_right">
+                            <div class="btn" onclick="openModal('modal1')">선택</div>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <p class="info_sub_title">월거래액</p>
+                        <select class="form_control">
+                            <option>신규 도입(현재 거래 없음)</option>
+                            <option>1억원 미만</option>
+                            <option>1억원 ~ 5억원</option>
+                            <option>5억원 이상</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            @@include('../../html/include/common/prevNextBtnWrap.html')
+        </div>
+    </div>
+</div>
+
+<div class="modal modal_type3 modal0">
+    <div class="modal_dialog modal_type3">
+        <div class="modal_content">
+            <div class="modal_header">
+                <i class="icon ico_close_btn _modal_close_btn"></i>
+            </div>
+            <div class="modal_body">
+                <p class="title">추가로 국내결제 신청을 원하신다면<br>
+                    이후 메인페이지에서 별도로 신청을 진행해 주세요.</p>
+                <p class="desc">*페이플의 국내결제와 해외결제는 모듈(?)이 다르기 때문에<br>
+                    별도로 신청을 받고 있습니다. </p>
+            </div>
+            <div class="modal_footer">
+                <button class="btn btn_primary text_center">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal_type3 modal1">
+    <div class="modal_dialog modal_type3">
+        <div class="modal_content">
+            <div class="modal_header">
+                <i class="icon ico_close_btn _modal_close_btn"></i>
+            </div>
+            <div class="modal_body">
+                <p class="title">추가로 국내결제 신청을 원하신다면<br>
+                    이후 메인페이지에서 별도로 신청을 진행해 주세요.</p>
+                <p class="desc">*페이플의 국내결제와 해외결제는 모듈(?)이 다르기 때문에<br>
+                    별도로 신청을 받고 있습니다. </p>
+            </div>
+            <div class="modal_footer">
+                <button class="btn btn_primary text_center">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let btn = $('.checked__label')
+    let bgContent = $('.content_list')
+    let nextBtn = $('._next_btn')
+
+    btn.eq(0).hover(
+        function () {
+            bgContent.eq(0).addClass('hover_bg')
+        },
+        function () {
+            bgContent.eq(0).removeClass('hover_bg')
+        })
+    btn.eq(1).hover(
+        function () {
+            bgContent.eq(1).addClass('hover_bg')
+        },
+        function () {
+            bgContent.eq(1).removeClass('hover_bg')
+        }
+    )
+
+    btn.eq(0).on('click', function (e) {
+        bgContent.eq(0).addClass('check_bg')
+        bgContent.eq(1).removeClass('check_bg')
+        nextBtn.attr("disabled", false);
+
+    })
+    btn.eq(1).on('click', function () {
+        bgContent.eq(0).removeClass('check_bg')
+        bgContent.eq(1).addClass('check_bg')
+        nextBtn.attr("disabled", false);
+
+
+    })
+
+
+</script>
 </body>
 </html>

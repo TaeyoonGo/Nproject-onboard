@@ -91,7 +91,7 @@ img {
 }
 
 /*input*/
-.form-control {
+.form_control {
     display: block;
     width: 100%;
     font-weight: 400;
@@ -110,24 +110,53 @@ img {
 
 }
 
-.form-control:focus {
+.form_control:focus {
     border: 1px solid #7852E8;
     outline: none;
 }
 
-.form-control::placeholder {
+.form_control::placeholder {
     font-size: 14px;
     color: #BABAC2;
 }
 
-.form-control:disabled {
+.form_control:disabled {
     border: 1px solid #d2d2d2;
     background-color: #ECECEC;
 }
 
 .input__area {
     margin-bottom: 42px;
+}
 
+.file_input{
+    .upload-name{
+        display: inline-block;
+        height: 40px;
+        padding: 0 10px;
+        vertical-align: middle;
+        border: 1px solid #dddddd;
+        width: 78%;
+        color: #999999;
+    }
+    label{
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        vertical-align: middle;
+        background-color: #999999;
+        cursor: pointer;
+        height: 40px;
+        margin-left: 10px;
+    }
+    input{
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+    }
 }
 
 /*a태그*/
