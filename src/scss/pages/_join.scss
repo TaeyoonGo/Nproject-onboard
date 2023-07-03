@@ -141,6 +141,14 @@
 .modal_footer.confirm .btn {
     width: 114px;
 }
+.modal_footer.check_btn_footer{
+    padding: 30px 52px 60px;
+    display: flex;
+    justify-content: flex-end;
+    .btn{
+        padding: 12px 26px;
+    }
+}
 
 .detail_area {
     display: none;
@@ -434,8 +442,48 @@
         }
 
     }
+}
 
+.radio_list_box{
+    .type_select_list{
+        margin-top: 25px;
+        &:first-child{
+            margin-top: 0;
+        }
+        .title{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .select_list{
+            li{
+                display: inline-block;
 
+                margin-right: 8px;
+                margin-bottom: 8px;
+                input{
+                    &:checked{
+                        +label{
+                            border-radius: 42px;
+                            color: #7852E8;
+                            border: 1px solid #7852E8;
+                        }
+                    }
 
+                }
+                label{
+                    border: 1px solid #d2d2d2;
+                    border-radius: 42px;
+                    cursor: pointer;
+                    padding: 8px 12px;
+                    width: auto;
+                    font-size:13px;
+                    height: 100%;
+                    display: inline-block;
 
+                }
+
+            }
+        }
+    }
 }

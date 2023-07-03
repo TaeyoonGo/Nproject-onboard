@@ -74,9 +74,21 @@ data.join = {
         },
         {
             stateClass: 'working',
+            url: '기존서비스선택',
+            category: 'join',
+            page: '기존서비스선택'
+        },
+        {
+            stateClass: 'working',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
+        },
+        {
+            stateClass: 'working',
+            url: '새로운서비스추가',
+            category: 'join',
+            page: '새로운서비스추가'
         },
         {
             stateClass: 'confirm',

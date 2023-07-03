@@ -140,18 +140,6 @@ img {
     appearance: none;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     box-sizing: border-box;
-    &.select_box{
-        font-family: inherit;
-        background: url("../img/icon/ico_select_arrow_down.png") no-repeat 98% 50%;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        font-size: 16px;
-
-        &:focus{
-            background: url("../img/icon/ico_select_arrow_up.png") no-repeat 98% 50%;
-        }
-    }
 
 }
 
@@ -533,7 +521,12 @@ a {
     margin-top: 110px;
 }
 
-
+.select_box{
+    li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 
 /*반응형*/
 @media all and (max-width: 899.98px) {
