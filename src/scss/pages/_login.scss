@@ -261,10 +261,25 @@
             padding: 10px 20px;
         }
         .gray_box{
+            padding: 12px;
             border: 1px solid #D2D2D2;
             min-height: 99px;
             border-radius: 7px;
             margin-bottom: 12px;
+            .is_check_box{
+                display: inline-block;
+                border: 1px solid #7852E8;
+                padding: 8px 12px;
+                border-radius: 12px;
+                font-size: 13px;
+                color: #7852e8;
+                margin: 0 8px 8px 0;
+
+                i{
+                    cursor: pointer;
+                    margin-left: 4px;
+                }
+            }
         }
         &:last-child{
             margin-bottom: 0;

@@ -46,6 +46,19 @@ function toggleAccountInfo() {
     })
 }
 
+//selectbox 공통
+function selectBox(){
+    let selectBox =  $('._select_box')
+    selectBox.on('click', function () {
+        $(this).toggleClass('active');
+    })
+    selectBox.find('.option').on('click', function() {
+        let text = $(this).text();
+        $('.select_value').text(text).css({'color':'#1F1F1F'});
+    });
+}
+
+
 
 // 실행
 $(document).ready(function () {
@@ -53,6 +66,7 @@ $(document).ready(function () {
     toggleAccountInfo();
     closeModal();
     dimModal();
+    selectBox();
 
 
 })

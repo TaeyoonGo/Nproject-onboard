@@ -74,12 +74,6 @@ data.join = {
         },
         {
             stateClass: 'working',
-            url: '기존서비스선택',
-            category: 'join',
-            page: '기존서비스선택'
-        },
-        {
-            stateClass: 'working',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
