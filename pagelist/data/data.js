@@ -73,16 +73,16 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
         },
         {
-            stateClass: 'working',
-            url: '새로운서비스추가',
+            stateClass: 'confirm',
+            url: '서비스정보입력-추가신청',
             category: 'join',
-            page: '새로운서비스추가'
+            page: '서비스정보입력-추가신청'
         },
         {
             stateClass: 'confirm',

@@ -5,17 +5,19 @@ function openModal(modalname) {
         $("." + modalname).addClass('fade')
     }, 200);
 }
+
 // close Modal
 function closeModal() {
     let modals = $('.modal')
     let closeBtn = $('._modal_close_btn')
-    closeBtn.on('click',function(){
+    closeBtn.on('click', function () {
         modals.removeClass('fade')
         setTimeout(function () {
             modals.removeClass('show')
         }, 200);
     })
 }
+
 // close dim
 function dimModal() {
     let modals = $('.modal')
@@ -47,17 +49,16 @@ function toggleAccountInfo() {
 }
 
 //selectbox 공통
-function selectBox(){
-    let selectBox =  $('._select_box')
+function selectBox() {
+    let selectBox = $('._select_box')
     selectBox.on('click', function () {
         $(this).toggleClass('active');
     })
-    selectBox.find('.option').on('click', function() {
+    selectBox.find('.option').on('click', function () {
         let text = $(this).text();
-        $('.select_value').text(text).css({'color':'#1F1F1F'});
+        $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'});
     });
 }
-
 
 
 // 실행

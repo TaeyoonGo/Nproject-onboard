@@ -487,3 +487,9 @@
         }
     }
 }
+.info_box_hidden{
+    display: none;
+    &.show{
+        display:block;
+    }
+}
