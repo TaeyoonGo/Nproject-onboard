@@ -19,7 +19,7 @@
     padding: 70px 0;
 }
 .login__box{
-    padding: 24px 35px 30px;
+    padding: 32px 35px;
     margin: 0 auto;
     border-radius: 14px;
     box-shadow: 0 0 7px rgba(0,0,0,0.15);
@@ -67,10 +67,12 @@
     right: -7px;
 }
 
-.btn_area{
-    padding-top: 42px;
-    margin-bottom: 24px;
+.login__box{
+    .btn_area{
+        padding-top: 42px;
+    }
 }
+
 
 .login__box__email_send{
     padding-top: 14px;
@@ -87,7 +89,7 @@
 .email__confirm_text{
     word-break: keep-all;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
 }
 .already__link_area{
     margin-top: 42px;
@@ -214,7 +216,7 @@
     margin-bottom: 60px;
 }
 .setting_wrap .btn_wrap{
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .setting_wrap .delete_btn{
     text-decoration: underline;
