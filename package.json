@@ -1,7 +1,7 @@
 {
   "name": "payple",
   "version": "1.0.0",
-  "description": "onBoard v.0.1",
+  "description": "onBoard v.0.2",
   "scripts": {
     "dev": "gulp dev"
   },

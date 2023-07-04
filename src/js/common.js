@@ -41,11 +41,21 @@ function formatPhoneNumber() {
     })
 }
 
+
 // header 버튼
 function toggleAccountInfo() {
-    $('._ico_account_btn').on('click', function () {
-        $('._header__account_info').toggle()
+    let accountInfo = $('._header__account_info')
+    let accountBtn = $('._ico_account_btn')
+
+    accountBtn.on('click', function () {
+        accountInfo.toggleClass('show')
     })
+
+    // $(document).mouseup(function (e){
+    //     if(accountInfo.has(e.target).length === 0){
+    //         accountInfo.removeClass("show");
+    //     }
+    // });
 }
 
 //selectbox 공통
