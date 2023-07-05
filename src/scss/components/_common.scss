@@ -13,7 +13,13 @@ html, body {
     font-weight: 400;
     font-style: normal;
     color: #28282E;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
+
+
 
 /*layout*/
 
@@ -433,14 +439,13 @@ a {
 }
 
 .header .header__container {
-    max-width: 760px;
+    max-width: 800px;
     padding: 0 20px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 54px;
-
 }
 
 .header .header__logo {
@@ -450,13 +455,15 @@ a {
 }
 
 .header .header__navi {
-
     display: flex;
     align-items: center;
 }
 
 .header .header__navi__link {
     display: flex;
+    @include mo-res{
+        display: none;
+    }
 }
 
 .header .header__navi__link li {
@@ -599,5 +606,21 @@ a {
 @media all and (max-width: 479px) {
     .validation {
         font-size: 12px;
+    }
+}
+
+
+
+.mo_show{
+    display: none;
+    @include mo-res{
+        display: block;
+    }
+}
+
+.pc_show{
+    display: block;
+    @include mo-res{
+        display: none;
     }
 }

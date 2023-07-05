@@ -6,9 +6,7 @@
 }
 .login__container{
     width: 100%;
-    @include res_md{
-        border: 1px solid blue;
-    }
+
 }
 .login__logo{
     font-size: 0;
@@ -27,9 +25,7 @@
     margin: 0 auto;
     border-radius: 14px;
     box-shadow: 0 0 7px rgba(0,0,0,0.15);
-    @include res_sm{
-        border: 1px solid blue;
-    }
+
 }
 .login__box__title{
     font-size: 20px;
@@ -239,6 +235,9 @@
 .service__info__section{
     width: 380px;
     margin: 50px auto 0;
+    @include mo-res{
+        width: 100%;
+    }
     .info_box{
         margin-bottom: 78px;
         &:last-child{
@@ -280,7 +279,7 @@
                 display: inline-block;
                 border: 1px solid #7852E8;
                 padding: 8px 12px;
-                border-radius: 12px;
+                border-radius: 42px;
                 font-size: 13px;
                 color: #7852e8;
                 margin: 0 8px 8px 0;

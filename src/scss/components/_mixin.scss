@@ -1,10 +1,10 @@
-@mixin res_md {
-    @media screen and (min-width: 0px) and (max-width: $res_md) {
+@mixin mo-res {
+    @media screen and (min-width: 0px) and (max-width: $res_sm) {
         @content;
     }
 }
-@mixin res_sm {
-    @media screen and (min-width: 0px) and (max-width: $res_sm) {
+@mixin tablet-res {
+    @media screen and (min-width: 0px) and (max-width:$res_md ) {
         @content;
     }
 }
