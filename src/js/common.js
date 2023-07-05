@@ -51,11 +51,6 @@ function toggleAccountInfo() {
         accountInfo.toggleClass('show')
     })
 
-    // $(document).mouseup(function (e){
-    //     if(accountInfo.has(e.target).length === 0){
-    //         accountInfo.removeClass("show");
-    //     }
-    // });
 }
 
 //selectbox 공통
