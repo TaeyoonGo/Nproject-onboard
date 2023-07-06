@@ -85,7 +85,7 @@ data.join = {
             page: '서비스정보입력-추가신청'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '결제수단선택',
             category: 'join',
             page: '결제수단선택'
@@ -104,7 +104,7 @@ data.join = {
         },
 
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '계약담당자정보_입력',
             category: 'join',
             page: '계약담당자정보_입력'
@@ -129,15 +129,46 @@ data.main = {
     list: [
         {
             stateClass: 'working',
+            url: '최초신청가이드',
+            category: 'main',
+            page: '최초신청가이드'
+        },
+        {
+            stateClass: 'confirm',
             url: '최초신청',
             category: 'main',
             page: '최초신청'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '최초신청_작성중',
             category: 'main',
             page: '최초신청_작성중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청_작성중_삭제',
+            category: 'main',
+            page: '최초신청_작성중_삭제'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청_심사중',
+            category: 'main',
+            page: '최초신청_심사중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청_심사중_계약중',
+            category: 'main',
+            page: '최초신청_심사중_계약중'
+        },
+
+        {
+            stateClass: 'working',
+            url: '최초신청후_입점불가',
+            category: 'main',
+            page: '최초신청후_입점불가'
         },
     ]
 }
