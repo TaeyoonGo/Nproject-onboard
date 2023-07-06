@@ -3,13 +3,13 @@ data.email = {
     title: '이메일',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가입완료',
             category: 'email',
             page: '가입완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '임시비밀번호',
             category: 'email',
             page: '임시비밀번호'
@@ -20,46 +20,43 @@ data.login = {
     title: '로그인',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '로그인',
             category: 'login',
             page: '로그인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가입하기',
             category: 'login',
             page: '가입하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일인증하기',
             category: 'login',
             page: '이메일인증하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '비밀번호_재설정_이메일_주소',
             category: 'login',
             page: '비밀번호_재설정_이메일_주소'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '비밀번호_재설정_이메일_발송',
             category: 'login',
             page: '비밀번호_재설정_이메일_발송'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '비밀번호_재설정_비밀번호_변경',
             category: 'login',
             page: '비밀번호_재설정_비밀번호_변경'
         },
-
-
-
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계정설정',
             category: 'login',
             page: '계정설정'
@@ -125,6 +122,23 @@ data.join = {
             page: '해외완료'
         },
 
+    ]
+}
+data.main = {
+    title: '메인페이지',
+    list: [
+        {
+            stateClass: 'working',
+            url: '최초신청',
+            category: 'main',
+            page: '최초신청'
+        },
+        {
+            stateClass: 'working',
+            url: '최초신청_작성중',
+            category: 'main',
+            page: '최초신청_작성중'
+        },
     ]
 }
 

@@ -133,4 +133,29 @@
         width: 15px;
         height: 15px;
     }
+    &.ico_document{
+        background-image: url("../img/icon/ico_document.png");
+        width: 20px;
+        height: 25px;
+    }
+    &.ico_setting_blue{
+        background-image: url("../img/icon/ico_setting_blue.png");
+        width: 22px;
+        height: 22px;
+    }
+    &.ico_checkbox_blue{
+        background-image: url("../img/icon/ico_checkbox_blue.png");
+        width: 22px;
+        height: 22px;
+    }
+    &.ico_home_gray{
+        background-image: url("../img/icon/ico_home_gray.png");
+        width: 20px;
+        height: 20px;
+    }
+    &.ico_alert_white{
+        background-image: url("../img/icon/ico_alert_white.png");
+        width: 19px;
+        height: 19px;
+    }
 }
