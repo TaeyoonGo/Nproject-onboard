@@ -79,50 +79,50 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '서비스정보입력-추가신청',
             category: 'join',
             page: '서비스정보입력-추가신청'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '결제수단선택',
             category: 'join',
             page: '결제수단선택'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '국내결제서비스선택',
             category: 'join',
             page: '국내결제서비스선택'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '해외결제서비스선택',
             category: 'join',
             page: '해외결제서비스선택'
         },
 
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '계약담당자정보_입력',
             category: 'join',
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '국내완료',
             category: 'join',
             page: '국내완료'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '해외완료',
             category: 'join',
             page: '해외완료'
