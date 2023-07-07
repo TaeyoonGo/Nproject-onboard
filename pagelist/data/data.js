@@ -38,6 +38,12 @@ data.login = {
             page: '이메일인증하기'
         },
         {
+            stateClass: 'waiting',
+            url: '이메일인증완료',
+            category: 'login',
+            page: '이메일인증완료'
+        },
+        {
             stateClass: 'complete',
             url: '비밀번호_재설정_이메일_주소',
             category: 'login',
