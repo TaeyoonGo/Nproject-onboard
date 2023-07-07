@@ -129,9 +129,9 @@ data.main = {
     list: [
         {
             stateClass: 'working',
-            url: '최초신청가이드',
+            url: '가이드페이지',
             category: 'main',
-            page: '최초신청가이드'
+            page: '가이드페이지'
         },
         {
             stateClass: 'confirm',
@@ -153,13 +153,13 @@ data.main = {
         },
         {
             stateClass: 'confirm',
-            url: '최초신청_심사중',
+            url: '최초신청후_심사중',
             category: 'main',
             page: '최초신청_심사중'
         },
         {
             stateClass: 'confirm',
-            url: '최초신청_심사중_계약중',
+            url: '최초신청후_심사중_계약중',
             category: 'main',
             page: '최초신청_심사중_계약중'
         },

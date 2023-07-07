@@ -66,6 +66,17 @@ function selectBox() {
 }
 
 
+//입점불가
+function HoverTextnotAllow(){
+    $('._badge_not_allow').on('mouseenter',function(){
+
+        this.parent('.text_area').siblings('._hover_text_not_allowed').css({'display':'block'})
+    })
+    $('._badge_not_allow').on('mouseleave',function(){
+        this.parent('.text_area').siblings('._hover_text_not_allowed').css({'display':'none'})
+    })
+}
+
 // 실행
 $(document).ready(function () {
     formatPhoneNumber();
@@ -73,6 +84,7 @@ $(document).ready(function () {
     closeModal();
     dimModal();
     selectBox();
+    HoverTextnotAllow();
 
 
 })
