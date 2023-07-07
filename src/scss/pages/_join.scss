@@ -29,24 +29,24 @@
 
 .join_content_section {
     padding: 90px 0;
-    @include mo-res{
+    @include mo-res {
         padding: 40px 0;
     }
-}
-
-.join_content_section .main_title {
-    font-size: 28px;
-    text-align: center;
-    line-height: 38px;
-    @include mo-res{
-        text-align: left;
-        font-size: 20px;
-        line-height: 30px;
+    .main_title {
+        font-size: 28px;
+        text-align: center;
+        line-height: 38px;
+        @include mo-res {
+            text-align: left;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .label__design_box{
+        text-align: center;
+        margin-top: 64px;
     }
 }
-
-
-
 
 .join_wrap_complete {
     padding: 180px 0 70px;
@@ -65,20 +65,27 @@
 }
 
 .btn_complete_next {
-    padding: 20px 0;
+    padding: 16px;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 17px;
     display: block;
-    max-width: 209px;
+    max-width: 260px;
     margin: 56px auto 0;
+    color: #0086F1 !important;
 }
+
 
 .btn_complete_next:last-child {
     margin-top: 24px;
+    color: #1f1f1f !important;
+    padding: 16px 16px 16px 0px;
+    .icon{
+        margin-right: 13px;
+    }
 }
 
 .btn_complete_next .icon {
-    margin-right: 7px;
+    margin-right: 13px;
 }
 
 .modal_body .confirm_list {
@@ -274,10 +281,6 @@
                     }
                 }
             }
-        }
-
-        .label__design_box {
-            margin-top: 0;
         }
 
         .title {
@@ -544,15 +547,6 @@
     .label__design_box {
         text-align: center;
         margin-top: 64px;
-        @include tablet-res{
-            .label__design{
-                width: 50%;
-                + .label__design{
-
-                }
-            }
-
-        }
     }
 
     .label_hover_list {
@@ -562,7 +556,7 @@
         .content_list {
             border-radius: 12px;
             background-color: #F0F0F0;
-            width: 168px;
+            width: 210px;
             padding: 28px 22px;
             vertical-align: top;
             display: inline-block;

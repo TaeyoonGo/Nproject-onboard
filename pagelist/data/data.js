@@ -79,13 +79,13 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '서비스정보입력-추가신청',
             category: 'join',
             page: '서비스정보입력-추가신청'
@@ -97,13 +97,13 @@ data.join = {
             page: '결제수단선택'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '국내결제서비스선택',
             category: 'join',
             page: '국내결제서비스선택'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '해외결제서비스선택',
             category: 'join',
             page: '해외결제서비스선택'
@@ -116,13 +116,13 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '국내완료',
             category: 'join',
             page: '국내완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '해외완료',
             category: 'join',
             page: '해외완료'
@@ -206,19 +206,19 @@ data.main = {
             page: '오픈후_일부서비스정지'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '오픈후_사업자전체정지',
             category: 'main',
             page: '오픈후_사업자전체정지'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '국내해외이용중_사업자1개',
             category: 'main',
             page: '국내해외이용중_사업자1개'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '국내해외이용중_사용자2개이상',
             category: 'main',
             page: '국내해외이용중_사용자2개이상'

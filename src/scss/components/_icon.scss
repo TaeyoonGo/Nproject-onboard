@@ -148,6 +148,11 @@
         width: 22px;
         height: 22px;
     }
+    &.ico_checkbox_blue_square{
+        background-image: url("../img/icon/ico_checkbox_blue_square.png");
+        width: 22px;
+        height: 22px;
+    }
     &.ico_store_gray{
         background-image: url("../img/icon/ico_store_gray.png");
         width: 20px;
@@ -173,4 +178,15 @@
         width: 20px;
         height: 20px;
     }
+    &.ico_card_service{
+        background-image: url("../img/icon/ico_card_service.png");
+        width: 30px;
+        height: 26px;
+    }
+    &.ico_airplane{
+        background-image: url("../img/icon/ico_airplane.png");
+        width: 30px;
+        height: 26px;
+    }
+
 }
