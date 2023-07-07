@@ -12,6 +12,10 @@
             border: 1px solid #FF3131;
             color: #FF3131;
         }
+        &.orange{
+            border: 1px solid #FF6948;
+            color: #FF6948;
+        }
     }
     .badge_area{
         .badge{
@@ -28,6 +32,7 @@
                 margin-left: 5px;
             }
             &.purple    {
+                color:#7852E8;
                 border: 1px solid #7852E8;
             }
             &.green{
@@ -54,6 +59,9 @@
                 span{
                     color: #FFC700;
                 }
+            }
+            &.gray{
+                color: gray;
             }
         }
         margin-left: 32px;
@@ -221,6 +229,22 @@
                 word-break: keep-all;
                 line-height: 1.3;
                 margin-left: 20px;
+                &.yellow{
+                    &:before{
+                        background-image: url(../img/icon/ico_alert_yellow.png);
+                    }
+                    .caption_title{
+                        color: #52525B;
+                    }
+                }
+                &.orange{
+                    &:before{
+                        background-image: url(../img/icon/ico_alert_orange.png);
+                    }
+                    .caption_title{
+                        color: #FF6433;
+                    }
+                }
                 &:before{
                     position: absolute;
                     top: 1px;
@@ -316,6 +340,7 @@
         }
         .desc {
             font-size: 15px;
+            line-height: 21px;
             margin-bottom: 20px;
             color: #52525B;
         }

@@ -134,7 +134,7 @@ data.main = {
     title: '메인페이지',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '가이드페이지',
             category: 'main',
             page: '가이드페이지'
@@ -169,13 +169,61 @@ data.main = {
             category: 'main',
             page: '최초신청_심사중_계약중'
         },
-
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '최초신청후_입점불가',
             category: 'main',
             page: '최초신청후_입점불가'
         },
+        {
+            stateClass: 'confirm',
+            url: '최초신청후_1건이라도_계약_완료',
+            category: 'main',
+            page: '최초신청후_1건이라도_계약_완료'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_추가신청',
+            category: 'main',
+            page: '오픈후_추가신청'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_서비스신청작성중',
+            category: 'main',
+            page: '오픈후_서비스신청작성중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_신청_작성중_삭제',
+            category: 'main',
+            page: '오픈후_신청_작성중_삭제'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_일부서비스정지',
+            category: 'main',
+            page: '오픈후_일부서비스정지'
+        },
+        {
+            stateClass: 'working',
+            url: '오픈후_사업자전체정지',
+            category: 'main',
+            page: '오픈후_사업자전체정지'
+        },
+        {
+            stateClass: 'working',
+            url: '국내해외이용중_사업자1개',
+            category: 'main',
+            page: '국내해외이용중_사업자1개'
+        },
+        {
+            stateClass: 'working',
+            url: '국내해외이용중_사용자2개이상',
+            category: 'main',
+            page: '국내해외이용중_사용자2개이상'
+        },
+
     ]
 }
 

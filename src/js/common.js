@@ -66,14 +66,33 @@ function selectBox() {
 }
 
 
-//입점불가
+//입점불가 텍스트
 function HoverTextnotAllow(){
-    $('._badge_not_allow').on('mouseenter',function(){
-
-        this.parent('.text_area').siblings('._hover_text_not_allowed').css({'display':'block'})
+    $('._result').on('mouseenter',function(){
+        $(this).parent().siblings('._hover_text_not_allowed').css({'display':'block'})
     })
-    $('._badge_not_allow').on('mouseleave',function(){
-        this.parent('.text_area').siblings('._hover_text_not_allowed').css({'display':'none'})
+    $('._result').on('mouseleave',function(){
+        $(this).parent().siblings('._hover_text_not_allowed').css({'display':'none'})
+    })
+}
+
+//서비스 작성중 텍스트
+function HoverTextService(){
+    $('._service').on('mouseenter',function(){
+        $(this).parent().siblings('._hover_text_service').css({'display':'block'})
+    })
+    $('._service').on('mouseleave',function(){
+        $(this).parent().siblings('._hover_text_service').css({'display':'none'})
+    })
+}
+
+//서비스 정지
+function HoverStopService(){
+    $('._stop').on('mouseenter',function(){
+        $(this).parent().siblings('._hover_stop_service').css({'display':'block'})
+    })
+    $('._stop').on('mouseleave',function(){
+        $(this).parent().siblings('._hover_stop_service').css({'display':'none'})
     })
 }
 
@@ -85,6 +104,8 @@ $(document).ready(function () {
     dimModal();
     selectBox();
     HoverTextnotAllow();
+    HoverTextService();
+    HoverStopService();
 
 
 })
