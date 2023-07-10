@@ -42,10 +42,7 @@
             line-height: 30px;
         }
     }
-    .label__design_box{
-        text-align: center;
-        margin-top: 64px;
-    }
+
 }
 
 .join_wrap_complete {
@@ -162,6 +159,10 @@
     padding: 30px 52px 60px;
     display: flex;
     justify-content: flex-end;
+    @include mo-res{
+        padding: 24px 12px;
+
+    }
 
     .btn {
         padding: 12px 26px;
@@ -544,15 +545,10 @@
 
 
 .account_select_section{
-    .label__design_box {
-        text-align: center;
-        margin-top: 64px;
-    }
 
     .label_hover_list {
         text-align: center;
         margin-top: 24px;
-
         .content_list {
             border-radius: 12px;
             background-color: #F0F0F0;
@@ -561,6 +557,8 @@
             vertical-align: top;
             display: inline-block;
             @include mo-res{
+
+                display: none;
                 background-color: #fff;
                 width: 100%;
                 padding: 0;
@@ -578,6 +576,11 @@
 
             &.check_bg {
                 background-color: #E9E1FF;
+                @include mo-res{
+                    min-height: 200px;
+                    display: block;
+                    background-color: #fff;
+                }
             }
 
             .content_list_title {
@@ -592,11 +595,39 @@
                 font-size: 16px;
                 line-height: 23px;
                 margin-bottom: 20px;
+                @include mo-res{
+                    font-size: 16px;
+                }
+                .list_mo{
+                    font-size: 15px;
+                    display: flex;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+}
+
+.label__design_box{
+    text-align: center;
+    margin-top: 64px;
+    @include mo-res{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+    }
+    .label__design{
+        @include mo-res{
+            width: calc(50% - 10px);
+        }
+        +.label__design{
+            @include mo-res{
+                margin-left: 0;
+            }
+
         }
     }
 }

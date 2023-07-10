@@ -268,6 +268,7 @@ a {
 }
 
 /*공통 모달*/
+
 .modal {
     position: fixed;
     top: 0;
@@ -277,20 +278,19 @@ a {
     height: 100%;
     overflow: hidden;
     outline: 0;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px) contrast(1);
     opacity: 0;
     display: none;
     transition: all 0.2s;
-}
 
-.modal.fade {
-    opacity: 1;
-}
+    &.fade {
+        opacity: 1;
+    }
 
-.modal.show {
-    display: block;
-
+    &.show {
+        display: block;
+    }
 }
 
 .modal_dialog {
@@ -298,24 +298,101 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.modal_dialog {
     background-color: #fff;
     overflow: hidden;
     border-radius: 15px;
-}
 
-.modal_dialog.modal_xl {
-    width: 900px;
-}
+    &.modal_xl {
+        width: 900px;
+        &.modal_checkbox {
+            .modal_header {
+                margin-bottom: 0;
+                @include mo-res{
+                    padding: 26px 12px;
+                }
+                .main_title{
+                    @include mo-res{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .ico_close_btn{
+                @include mo-res{
+                    top: 20px;
+                    right: 15px;
+                }
+            }
+            .modal_body{
+                @include mo-res{
+                    padding: 20px 12px;
+                }
+            }
+        }
+        .modal_header {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .ico_close_btn {
+            position: absolute;
+            top: 22px;
+            right: 20px;
+        }
+        .modal_title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .modal_body {
+            overflow-y: auto;
+            max-height: calc(80vh - 140px);
+            padding: 20px 30px 40px;
+            @include mo-res{
+                max-height: calc(80vh - 100px);
+            }
+        }
+    }
+    &.modal_confirm{
+        width: 530px;
+        @include mo-res{
+            width: 90%;
+        }
+        .modal_header {
+            text-align: right;
+            padding: 15px 20px;
+        }
+        .modal_body {
+            padding: 0;
 
-.modal_dialog.modal_md {
-    width: 630px;
-}
+            .title {
+                font-size: 24px;
+                text-align: center;
+                line-height: 32px;
+                font-weight: 900;
+                @include mo-res{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .modal_footer {
+            text-align: center;
+            padding: 40px 0px;
 
-.modal_dialog.modal_sm {
-    width: 410px;
+            .btn {
+                width: 80px;
+            }
+        }
+    }
+    &.modal_md {
+        width: 680px;
+        .modal_header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &.modal_sm {
+        width: 410px;
+    }
 }
 
 .modal_header {
@@ -326,105 +403,52 @@ a {
     padding: 40px 30px;
 }
 
-.modal.modal_xl .modal_header {
-    margin-bottom: 20px;
-    position: relative;
-}
-.modal.modal_xl .ico_close_btn{
-    position: absolute;
-    top: 22px;
-    right: 20px;
-}
-.modal.modal_xl .modal_title{
-    font-size: 20px;
-    font-weight: 700;
-}
-.modal.modal_xl .modal_body{
-    overflow-y: auto;
-    max-height:calc(80vh - 14rem);
-    padding: 20px 30px 40px;
-}
-
-.modal.modal_md .modal_header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.modal_dialog.modal_md {
-    width: 680px
-}
-
-.modal.modal_confirm .modal_dialog{
-    width: 530px;
-
-}
-.modal.modal_confirm .modal_dialog .modal_header {
-    text-align: right;
-    padding: 15px 20px;
-
-}
-
-.modal.modal_confirm .modal_dialog .modal_body{
-    padding: 0;
-}
-.modal.modal_confirm .modal_dialog .modal_body .title{
-    font-size: 24px;
-    text-align: center;
-    line-height: 32px;
-    font-weight: 900;
-}
-.modal.modal_confirm .modal_dialog .modal_footer{
-    text-align: center;
-    padding: 40px 0px;
-}
-.modal.modal_confirm .modal_dialog .modal_footer .btn{
-    width: 80px;
-}
-
-
 .modal_content.alert_modal_content {
-    box-shadow: 0 0 20px hsla(0, 0%, 74.9%, .2);
+    box-shadow: 0 0 20px hsla(0, 0%, 74.9%, 0.2);
+
+    .modal_body {
+        .icon {
+            margin-bottom: 9px;
+        }
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 12px;
+            line-height: 25px;
+        }
+
+        .desc {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    .modal_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            all: unset;
+            width: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 16px 0;
+            text-align: center;
+
+            &:first-child {
+                color: #fff;
+                background-color: #FF5B5B;
+            }
+
+            &:last-child {
+                color: #52525B;
+                background-color: #DDDDE3;
+            }
+        }
+    }
 }
 
-.modal_content.alert_modal_content .modal_body .icon {
-    margin-bottom: 9px;
-}
-
-.modal_content.alert_modal_content .modal_body .title {
-    font-size: 18px;
-    margin-bottom: 12px;
-    line-height: 25px;
-}
-
-.modal_content.alert_modal_content .modal_body .desc {
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.modal_content.alert_modal_content .modal_footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal_content.alert_modal_content .modal_footer button {
-    all: unset;
-    width: 50%;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 16px 0;
-    text-align: center;
-}
-
-.modal_content.alert_modal_content .modal_footer button:first-child {
-    color: #fff;
-    background-color: #FF5B5B;
-}
-
-.modal_content.alert_modal_content .modal_footer button:last-child {
-    color: #52525B;
-    background-color: #DDDDE3;
-}
 
 
 /*header*/
@@ -608,15 +632,22 @@ a {
 
 
 .mo_show{
-    display: none;
+    display: none !important;
     @include mo-res{
-        display: block;
+        display: block !important;
     }
 }
 
 .pc_show{
-    display: block;
+    display: block !important;
     @include mo-res{
-        display: none;
+        display: none !important;
+    }
+}
+
+.tablet_show{
+    display: block;
+    @include tablet-res{
+        display: none !important;
     }
 }
