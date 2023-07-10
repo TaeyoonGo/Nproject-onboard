@@ -354,34 +354,30 @@ a {
     width: 680px
 }
 
-.modal.modal_type3 .modal_dialog{
-    width: 620px;
+.modal.modal_confirm .modal_dialog{
+    width: 530px;
+
 }
-.modal.modal_type3 .modal_dialog .modal_header {
+.modal.modal_confirm .modal_dialog .modal_header {
     text-align: right;
-    padding: 24px 26px 20px;
+    padding: 15px 20px;
+
 }
 
-.modal.modal_type3 .modal_dialog .modal_body{
-    padding: 0 26px 45px;
+.modal.modal_confirm .modal_dialog .modal_body{
+    padding: 0;
 }
-.modal.modal_type3 .modal_dialog .modal_body .title{
+.modal.modal_confirm .modal_dialog .modal_body .title{
     font-size: 24px;
     text-align: center;
     line-height: 32px;
-    margin-bottom:30px;
-
+    font-weight: 900;
 }
-.modal.modal_type3 .modal_dialog .modal_body .desc{
-    font-size: 18px;
+.modal.modal_confirm .modal_dialog .modal_footer{
     text-align: center;
-    line-height: 24px;
+    padding: 40px 0px;
 }
-.modal.modal_type3 .modal_dialog .modal_footer{
-    padding-bottom: 50px;
-    text-align: center;
-}
-.modal.modal_type3 .modal_dialog .modal_footer .btn{
+.modal.modal_confirm .modal_dialog .modal_footer .btn{
     width: 80px;
 }
 

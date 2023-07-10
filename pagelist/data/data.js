@@ -86,6 +86,12 @@ data.join = {
         },
         {
             stateClass: 'confirm',
+            url: '서비스정보입력_모달',
+            category: 'join',
+            page: '서비스정보입력_모달'
+        },
+        {
+            stateClass: 'confirm',
             url: '서비스정보입력-추가신청',
             category: 'join',
             page: '서비스정보입력-추가신청'
@@ -95,6 +101,18 @@ data.join = {
             url: '결제수단선택',
             category: 'join',
             page: '결제수단선택'
+        },
+        {
+            stateClass: 'confirm',
+            url: '결제수단선택_국내선택',
+            category: 'join',
+            page: '결제수단선택_국내선택'
+        },
+        {
+            stateClass: 'confirm',
+            url: '결제수단선택_해외선택',
+            category: 'join',
+            page: '결제수단선택_해외선택'
         },
         {
             stateClass: 'confirm',
