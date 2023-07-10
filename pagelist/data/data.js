@@ -38,7 +38,7 @@ data.login = {
             page: '이메일인증하기'
         },
         {
-            stateClass: 'waiting',
+            stateClass: 'complete',
             url: '이메일인증완료',
             category: 'login',
             page: '이메일인증완료'
