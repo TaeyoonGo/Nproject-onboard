@@ -373,7 +373,7 @@ a {
         }
         .modal_footer {
             text-align: center;
-            padding: 40px 0px;
+            padding: 40px 0;
 
             .btn {
                 width: 80px;
@@ -385,6 +385,48 @@ a {
         .modal_header {
             display: flex;
             justify-content: space-between;
+        }
+    }
+    &.modal_confirmation {
+        width: 680px;
+        @include mo-res{
+            width: 90%;
+        }
+        .modal_header {
+            display: flex;
+            justify-content: space-between;
+            @include mo-res{
+                padding: 25px 25px 0 25px;
+                align-items: center;
+            }
+            .modal_title {
+                @include mo-res{
+                    font-size: 18px;
+                }
+            }
+        }
+        .confirm_title{
+            @include mo-res{
+                margin-bottom: 10px;
+            }
+        }
+        .confirm_list{
+            @include mo-res{
+                flex-direction: column;
+                margin-bottom: 32px;
+            }
+        }
+        .modal_body{
+            overflow-y: auto;
+            padding: 20px 20px 40px;
+            max-height: calc(80vh - 100px);
+            .confirm_desc{
+                .confirm_desc_title{
+                    @include mo-res{
+                        flex: 0 0 40%;
+                    }
+                }
+            }
         }
     }
     &.modal_sm {
@@ -410,6 +452,7 @@ a {
         .modal_desc{
             font-size: 14px;
             color: #85858F;
+            line-height: 1.3;
         }
         .modal_body {
             overflow-y: auto;
@@ -636,9 +679,7 @@ a {
 }
 
 
-.join_wrap .detail_area{
-    margin-top: 110px;
-}
+
 
 .select_box{
     position: relative;

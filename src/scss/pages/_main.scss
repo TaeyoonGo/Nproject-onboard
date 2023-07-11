@@ -1,7 +1,7 @@
 .main_section {
-    padding: 80px 0;
+    padding: 80px 30px;
     margin: 0 auto;
-    max-width: 670px;
+    max-width: 730px;
     .border_badge{
         display: inline-block;
         font-size: 12px;
@@ -198,10 +198,11 @@
                 padding: 22px;
             }
             &.is_btn{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 padding: 24px 20px;
                 .btn_area{
-                    display: inline-block;
-                    margin-left: 280px;
                     .btn{
                         padding: 8px 12px;
                         border-radius: 44px;
@@ -289,7 +290,11 @@
         margin-bottom: 90px;
     }
     .caption_area {
+        display: flex;
         margin-top: 15px;
+        @include tablet-res{
+            flex-direction: column;
+        }
 
         a {
             &:first-child {
