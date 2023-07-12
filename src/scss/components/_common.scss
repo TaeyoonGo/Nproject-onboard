@@ -591,6 +591,8 @@ a {
 .header .header__logo {
     width: 70px;
     height: auto;
+    font-size: 0;
+    line-height:0;
     margin-right: 70px;
 }
 
@@ -613,6 +615,10 @@ a {
 
 .header .header__navi__link a {
     color: #28282E;
+    &:hover{
+        color: #28282e;
+        text-decoration: none;
+    }
 }
 
 .header .header__navi__link li:last-child {
@@ -656,24 +662,27 @@ a {
     background-color: #F0F0F0;
     border-radius: 8px;
 }
-
+.header .header__account_info a{
+    text-decoration: none;
+}
 .header .header__account_info span {
     vertical-align: middle;
     margin-left: 6px;
+    color: #1f1f1f;
 }
 
 /*progressbar*/
-.progress{
+.progress_value{
     width: 100%;
     appearance: none;
 }
-.progress::-webkit-progress-bar {
+.progress_value::-webkit-progress-bar {
     background:#f0f0f0;
     border-radius:4px;
     height: 4px;
     /*box-shadow: inset 3px 3px 10px #ccc;*/
 }
-.progress::-webkit-progress-value {
+.progress_value::-webkit-progress-value {
     border-radius:4px;
     background: #1D976C;
     height: 4px;
