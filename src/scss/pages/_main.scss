@@ -2,6 +2,9 @@
     padding: 80px 30px;
     margin: 0 auto;
     max-width: 730px;
+    @include tablet-res{
+        padding: 40px 30px;
+    }
     .border_badge{
         display: inline-block;
         font-size: 12px;
@@ -27,10 +30,19 @@
             border-radius: 44px;
             margin-right: 10px;
             margin-bottom: 10px;
+            @include mo-res{
+                padding: 8px 10px;
+                font-size: 13px;
+                margin-right: 3px;
+            }
+
             span{
                 font-size: 14px;
                 font-weight: 700;
                 margin-left: 5px;
+                @include mo-res{
+                    font-size: 12px;
+                }
             }
             &.purple    {
                 color:#7852E8;
@@ -75,6 +87,10 @@
         font-weight: 700;
         color: #1f1f1f;
         margin-bottom: 30px;
+        word-break: break-all;
+        @include mo-res{
+            width: 280px;
+        }
     }
     .link__design {
         width: 100%;
@@ -134,6 +150,9 @@
                 margin-left: 33px;
                 + .badge_area{
                     margin-top: 25px;
+                    @include mo-res{
+                        margin-top: 10px;
+                    }
                 }
                 span{
                     margin-right: 20px;
@@ -153,11 +172,19 @@
                         content: '';
                     }
                     &:last-child{
+                        @include mo-res{
+                            margin-bottom: 0;
+                        }
                         &:before{
                             content: none;
                         }
                     }
+                    @include mo-res{
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
                 }
+
             }
         }
 
@@ -176,16 +203,25 @@
             background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_purple.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 30px) 50%;
+            @include mo-res{
+
+            }
         }
         &.arrow_gray{
             background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_gray.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 30px) 50%;
+            @include mo-res{
+
+            }
         }
         &.arrow_dark{
             background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_dark.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 30px) 50%;
+            @include mo-res{
+
+            }
         }
 
         .card {
@@ -194,6 +230,9 @@
             width: 100%;
             height: 100%;
             display: inline-block;
+            @include mo-res{
+                padding: 22px 14px;
+            }
             &.dummy{
                 padding: 22px;
             }
@@ -202,10 +241,23 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 24px 20px;
+                @include mo-res{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 20px;
+                }
                 .btn_area{
+                    @include mo-res{
+                        margin-top: 18px;
+                        margin-left: auto;
+                    }
                     .btn{
                         padding: 8px 12px;
                         border-radius: 44px;
+                        @include mo-res{
+                            font-size: 15px;
+                        }
+
                     }
                     .btn_white_red{
                         margin-right: 10px;
@@ -227,6 +279,10 @@
                 vertical-align: middle;
                 color: #7852E8;
                 margin-left: 10px;
+                @include mo-res{
+                    font-size: 16px;
+
+                }
             }
             .card_caption{
                 display: none;
@@ -237,6 +293,9 @@
                 word-break: keep-all;
                 line-height: 1.3;
                 margin-left: 20px;
+                @include mo-res{
+                    width: auto;
+                }
                 &.yellow{
                     &:before{
                         background-image: url(https://image.payple.kr/onboard/icon/ico_alert_yellow.png);
@@ -288,6 +347,9 @@
     }
     .account_area {
         margin-bottom: 90px;
+        @include mo-res{
+            margin-bottom: 60px;
+        }
     }
     .caption_area {
         display: flex;
@@ -295,10 +357,12 @@
         @include tablet-res{
             flex-direction: column;
         }
-
         a {
             &:first-child {
                 margin-right: 20px;
+                @include mo-res{
+                    margin-bottom: 18px;
+                }
             }
 
             span {
@@ -308,6 +372,10 @@
                 line-height: 22px;
                 display: inline-block;
                 color: #52525B;
+                @include mo-res{
+                    font-size: 13px;
+                    margin-left: 10px;
+                }
 
                 &:hover {
                     color: #0086F1;
@@ -324,6 +392,9 @@
         }
         &.mb-120{
             margin-bottom: 120px;
+            @include mo-res{
+                margin-bottom: 60px;
+            }
         }
 
         .text_area {
@@ -355,16 +426,27 @@
             line-height: 21px;
             margin-bottom: 20px;
             color: #52525B;
+            @include mo-res{
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
         }
         .flex_wrap_area{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: -30px;
+            @include mo-res{
+                flex-wrap: nowrap;
+                flex-direction: column;
+            }
             .link__design{
                 margin-bottom: 30px;
                 width: calc(50% - 15px);
                 background-position: calc(100% - 30px) 25px;
+                @include mo-res{
+                    width: 100%;
+                }
                 &.bg_purple {
                     background-color: #E8E3FF;
                 }
@@ -405,22 +487,27 @@
     }
     .service_list{
         margin-bottom: 120px;
+        @include mo-res{
+            margin-bottom: 60px;
+        }
         &:nth-last-child(1){
             margin-bottom: 0;
         }
         .link__design{
             background-color: #fff;
             border: none;
+            margin-bottom: 50px;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
             .card{
                 border-radius: 13px;
                 background-color: #f5f5f5;
-                margin-bottom: 50px;
+
                 &.red{
                     background-color: #FFDEDE;
                 }
-                &:last-child{
-                    margin-bottom: 0;
-                }
+
             }
         }
     }

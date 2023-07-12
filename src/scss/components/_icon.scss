@@ -137,16 +137,28 @@
         background-image: url("https://image.payple.kr/onboard/icon/ico_document.png");
         width: 20px;
         height: 25px;
+        @include mo-res{
+            width: 14px;
+            height: 16px;
+        }
     }
     &.ico_setting_blue{
         background-image: url("https://image.payple.kr/onboard/icon/ico_setting_blue.png");
         width: 22px;
         height: 22px;
+        @include mo-res{
+            width: 18px;
+            height: 18px;
+        }
     }
     &.ico_checkbox_blue{
         background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox_blue.png");
         width: 22px;
         height: 22px;
+        @include mo-res{
+            width: 18px;
+            height: 18px;
+        }
     }
     &.ico_checkbox_blue_square{
         background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox_blue_square.png");

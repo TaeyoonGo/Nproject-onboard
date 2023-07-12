@@ -431,6 +431,9 @@ a {
     }
     &.modal_sm {
         width: 410px;
+        @include mo-res{
+            width: 90%;
+        }
     }
     &.modal_table{
         width: 90%;
