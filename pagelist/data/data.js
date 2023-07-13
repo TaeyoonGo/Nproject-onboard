@@ -254,7 +254,7 @@ data.developercenter = {
             page: '가이드'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_api',
             category: 'developercenter',
             page: '설정_api'

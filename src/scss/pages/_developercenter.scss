@@ -1,10 +1,15 @@
 .developer_container{
+    height: calc(100vh - 54px);
     display: flex;
     .aside{
-        height: calc(100vh - 54px);
+        height: 100%;
         background-color:#F6F6F6;
-        padding: 60px 24px;
+        padding: 60px 20px;
+        position: fixed;
         width: 300px;
+        top: 56px;
+        left: 0;
+
         .sub_title{
             font-size: 20px;
             font-weight: 700;
@@ -64,7 +69,80 @@
             }
         }
     }
-    .developer_section{
-        padding: 80px 330px;
+    .developer_content{
+        height: 100%;
+        padding: 80px 0px;
+        flex: 1 1 auto;
+        .developer_section{
+            max-width: 780px;
+            margin: 0 auto;
+            .title_area{
+                margin-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .title{
+                    position: relative;
+                    font-size: 30px;
+                    font-weight: 700;
+                    &.test{
+                        &:before{
+                            position: absolute;
+                            content: 'TEST';
+                            font-size: 15px;
+                            font-weight: bold;
+                            right: -42px;
+                            top: 0;
+                            color: #62BB00;
+                        }
+                    }
+
+                }
+                .guide_link{
+                    color: #0086F1;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+            .input__area{
+                margin-bottom: 60px;
+                .input_title{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+                .input_copy_box{
+                    position: relative;
+                    display: flex;
+                    label{
+                        flex: 1 1 auto;
+                        input{
+                            font-size: 17px;
+                        }
+                    }
+                    .icon{
+                        cursor: pointer;
+                        margin-left: 20px;
+                        &:hover{
+                            background-image: url("../img/icon/ico_copy_active.png");
+                        }
+                    }
+
+                }
+            }
+            .caption_text{
+                margin-top: 12px;
+                color: #BABAC2;
+                font-size: 15px;
+                span{
+                    vertical-align: middle;
+                }
+                .icon{
+                    margin-right: 10px;
+                }
+            }
+        }
     }
+
 }

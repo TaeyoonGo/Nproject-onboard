@@ -2,38 +2,43 @@
 <html lang="ko">
 @@include('../../html/include/common/head.html')
 <body>
-@@include('../../html/include/common/header.html')
+@@include('../../html/include/common/header-developer.html')
 <main class="developer_container">
-    <aside class="aside">
-        <div class="layout">
-            <p class="sub_title">서비스센터</p>
-        </div>
-        <div class="layout">
-            <p class="sub_title">설정</p>
-            <ul class="link_lists">
-                <li class="link"><a href="#"><i class="icon ico_key"></i>API 키</a></li>
-                <li class="link"><a href="#"><i class="icon ico_paper_plane"></i>웹훅</a></li>
-                <li class="link"><a href="#"><i class="icon ico_shield_check"></i>White IP</a></li>
-                <li class="link"><a href="#"><i class="icon ico_document_sign"></i>테스트 결제내역</a></li>
-            </ul>
-        </div>
-        <div class="layout">
-            <p class="sub_title">가이드</p>
-            <ul class="link_lists">
-                <li class="link"><a href="#"><i class="icon ico_book_alt"></i>개발가이드</a></li>
-                <li class="link"><a href="#"><i class="icon ico_interrogation"></i>자주 묻는 질문</a></li>
-                <li class="link"><a href="#"><i class="icon ico_github"></i>Github</a></li>
-            </ul>
-        </div>
-    </aside>
-    <article>
+    @@include('../../html/include/common/aside.html')
+    <article class="developer_content">
         <section class="developer_section">
-            <h3 class="mb-10">타이틀</h3>
-            <div style="border: 1px solid #d9d9d9; border-radius: 12px;width: 100%; padding: 20px 30px">
-                <div class="">
-                    <p>웹훅</p>
-                    <a href=""><span>가이드 확인하기</span><i></i></a>
+            <h2 style="margin-bottom: 30px">타이틀종류</h2>
+            <div style="border: 1px solid #d9d9d9; padding:20px 30px; margin-bottom: 30px">
+                <div class="title_area">
+                    <p class="title test">API 키</p>
+                    <a href="#" target="_blank" class="guide_link"><span>가이드 확인하기</span>→</a>
                 </div>
+                <div style="margin-bottom: 30px"></div>
+                <div class="title_area">
+                    <p class="title">White IP</p>
+                </div>
+                <div style="margin-bottom: 30px"></div>
+                <div class="title_area">
+                    <p class="title test">웹훅</p>
+                </div>
+
+            </div>
+            <h2 style="margin-bottom: 30px">input</h2>
+            <div style="border: 1px solid #d9d9d9; padding: 20px 30px;">
+                <div class="input__area">
+                    <p class="input_title">client_key</p>
+                    <div class="input_copy_box">
+                        <label>
+                            <input class="form_control" disabled="" value="dw.jung@payple.kr">
+                        </label>
+                        <i class="icon ico_copy"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 30px">table</h2>
+            <div class="developer_card">
+
             </div>
         </section>
     </article>

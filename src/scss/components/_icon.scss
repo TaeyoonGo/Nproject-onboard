@@ -275,6 +275,21 @@
         width: 16px;
         height: 16px;
     }
+    &.ico_copy{
+        background-image: url("../img/icon/ico_copy.png");
+        width: 46px;
+        height: 46px;
+    }
+    &.ico_copy_active{
+        background-image: url("../img/icon/ico_copy_active.png");
+        width: 46px;
+        height: 46px;
+    }
+    &.ico_alert_whitegray{
+        background-image: url("../img/icon/ico_alert_whitegray.png");
+        width: 13px;
+        height: 13px;
+    }
 
 
 

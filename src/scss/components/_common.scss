@@ -569,6 +569,24 @@ a {
     }
 }
 
+.header{
+    &.developer_center{
+        .header__container{
+            padding: 0 20px;
+            max-width: none;
+        }
+        .header__navi{
+            .text{
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        .header__logo{
+            margin-right: 10px;
+        }
+
+    }
+}
 
 
 /*header*/
@@ -698,6 +716,7 @@ a {
     cursor: pointer;
     border-radius: 7px;
     padding: 15px 12px;
+    background-color: #fff;
     border:1px solid #ced4da;
     .icon{
         position: absolute;
@@ -780,9 +799,5 @@ a {
 }
 
 
-.aside{
-    height: 100%;
-    width: 300px;
-    padding: 20px 60px;
-}
+
 
