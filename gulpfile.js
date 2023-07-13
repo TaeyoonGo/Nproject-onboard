@@ -35,7 +35,7 @@ function copyJs() {
 function copyLibJs() {
     let sourceLib = [
         'src/js/lib/code.jquery.com_jquery-3.7.0.min.js',
-        'src/js/lib/bootstrap.min.js',
+        // 'src/js/lib/bootstrap.min.js',
     ];
 
     return gulp.src(sourceLib)

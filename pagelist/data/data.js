@@ -249,6 +249,12 @@ data.developercenter = {
     list: [
         {
             stateClass: 'working',
+            url: '가이드',
+            category: 'developercenter',
+            page: '가이드'
+        },
+        {
+            stateClass: 'working',
             url: '설정_api',
             category: 'developercenter',
             page: '설정_api'
