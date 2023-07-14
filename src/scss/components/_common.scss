@@ -797,5 +797,41 @@ a {
 }
 
 
+/*테이블*/
+.response_table_area{
+    margin: 0 -24px;
+    table{
+        width: 100%;
+        th{
+            padding: 11px 10px;
+            background-color: #F6F6F6;
+            text-align: left;
+            color: #52525B;
+            font-weight: 500;
+            &.check_table{
+                text-align: center;
+            }
+        }
+        td{
+            border-bottom: 1px solid #F0F0F0;
+            padding: 11px 10px;
+            &.check_table{
+                text-align: center;
+            }
+            &.empty_data{
+                text-align: center;
+                padding: 55px 0;
+                border-bottom: none;
+            }
+            &.name_data{
+                a{
+                    text-decoration: underline;
+                    color: #0086F1;
+                }
+            }
+        }
+    }
+}
+
 
 

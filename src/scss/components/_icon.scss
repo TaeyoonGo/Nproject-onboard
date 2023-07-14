@@ -290,6 +290,35 @@
         width: 13px;
         height: 13px;
     }
+    &.ico_trashcan{
+        background-image: url("../img/icon/ico_trashcan.png");
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        &:hover{
+            background-image: url("../img/icon/ico_trashcan_active.png");
+        }
+    }
+    &.ico_excel{
+        background-image: url("../img/icon/ico_excel.png");
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        &:hover{
+            background-image: url("../img/icon/ico_excel_active.png");
+        }
+    }
+    &.ico_yes{
+        background-image: url("../img/icon/ico_yes.png");
+        width: 18px;
+        height: 18px;
+    }
+    &.ico_no{
+        background-image: url("../img/icon/ico_no.png");
+        width: 18px;
+        height: 18px;
+    }
+
 
 
 

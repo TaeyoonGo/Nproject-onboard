@@ -1,5 +1,5 @@
 .developer_container{
-    height: calc(100vh - 54px);
+
     display: flex;
     .aside{
         height: 100%;
@@ -142,7 +142,78 @@
                     margin-right: 10px;
                 }
             }
+            .developer_card{
+                border: 1px solid #ced4da;
+                border-radius: 15px;
+                padding: 24px;
+                .title_area{
+                    margin-bottom: 20px;
+                    .title{
+                        font-size: 18px;
+                        &:before{
+                            font-size: 9px;
+                            right: -28px;
+                        }
+                    }
+                    .icon{
+                        &:hover{
+                            cursor: pointer;
+                            background-image: url("../img/icon/ico_trashcan_active.png");
+                        }
+                    }
+                }
+            }
+            .search_result_area{
+                border-radius: 15px;
+                overflow: hidden;
+                .title_area{
+                    margin-bottom: 20px;
+                    .title{
+                        font-size: 18px;
+                    }
+
+                }
+                .border_line{
+                    border-radius: 15px;
+                    overflow: hidden;
+                    border: 1px solid #ced4da;
+                }
+                table{
+                    width: 100%;
+                    th{
+                        padding: 11px 10px;
+                        background-color: #F6F6F6;
+                        text-align: center;
+                        color: #52525B;
+                        font-weight: 500;
+                        &.check_table{
+                            text-align: center;
+                        }
+                    }
+                    td{
+                        border-bottom: 1px solid #F0F0F0;
+                        padding: 11px 10px;
+                        text-align: center;
+                        &.check_table{
+                            text-align: center;
+                        }
+                        &.empty_data{
+                            text-align: center;
+                            padding: 55px 0;
+                            border-bottom: none;
+                        }
+                        &.name_data{
+                            a{
+                                text-decoration: underline;
+                                color: #0086F1;
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
+
 
 }
