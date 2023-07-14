@@ -162,6 +162,27 @@
                         }
                     }
                 }
+                .pagination_area{
+                    margin-top: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .pagination_list{
+                        display: flex;
+                        >li{
+                            font-size: 15px;
+                            cursor: pointer;
+                            color: #BABAC2;
+                            margin-left: 10px;
+                            &.active{
+                                font-weight: 700;
+                            }
+                            &:nth-last-child(1){
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
             }
             .search_result_area{
                 border-radius: 15px;
@@ -214,6 +235,8 @@
             }
         }
     }
+
+
 
 
 }

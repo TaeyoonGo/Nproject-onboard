@@ -318,6 +318,18 @@
         width: 18px;
         height: 18px;
     }
+    &.ico_pagination_left_arrow{
+        background-image: url("../img/icon/ico_pagination_left_arrow.png");
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+    &.ico_pagination_right_arrow{
+        background-image: url("../img/icon/ico_pagination_right_arrow.png");
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
 
 
 
