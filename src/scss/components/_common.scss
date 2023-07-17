@@ -839,3 +839,102 @@ a {
 
 
 
+//aside
+.aside{
+    height: 100%;
+    background-color:#F6F6F6;
+    padding: 60px 20px;
+    position: fixed;
+    width: 300px;
+    top: 56px;
+    left: 0;
+
+    .sub_title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .layout{
+        margin-bottom: 50px;
+        &:nth-last-child(1){
+            padding-top: 50px;
+            border-top:1px solid #DBDBDB;
+        }
+        .link_lists{
+            .active{
+                border-radius: 8px;
+                background-color: #F0F0F0;
+                .icon{
+                    &.ico_key{
+                        background-image: url("../img/icon/ico_key_active.png");
+                    }
+                    &.ico_paper_plane{
+                        background-image: url("../img/icon/ico_paper_plane_active.png");
+                    }
+                    &.ico_shield_check{
+                        background-image: url("../img/icon/ico_shield_check_active.png");
+                    }
+                    &.ico_document_sign{
+                        background-image: url("../img/icon/ico_document_sign_active.png");
+                    }
+
+                    &.ico_book_alt{
+                        background-image: url("../img/icon/ico_book_alt_active.png");
+                    }
+                    &.ico_interrogation{
+                        background-image: url("../img/icon/ico_interrogation_active.png");
+                    }
+                    &.ico_github{
+                        background-image: url("../img/icon/ico_github_active.png");
+                    }
+                }
+            }
+
+
+            .link{
+                .icon{
+                    margin-right: 10px;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                }
+                &:hover{
+                    border-radius: 8px;
+                    background-color: #F0F0F0;
+                    .icon{
+                        &.ico_key{
+                            background-image: url("../img/icon/ico_key_active.png");
+                        }
+                        &.ico_paper_plane{
+                            background-image: url("../img/icon/ico_paper_plane_active.png");
+                        }
+                        &.ico_shield_check{
+                            background-image: url("../img/icon/ico_shield_check_active.png");
+                        }
+                        &.ico_document_sign{
+                            background-image: url("../img/icon/ico_document_sign_active.png");
+                        }
+
+                        &.ico_book_alt{
+                            background-image: url("../img/icon/ico_book_alt_active.png");
+                        }
+                        &.ico_interrogation{
+                            background-image: url("../img/icon/ico_interrogation_active.png");
+                        }
+                        &.ico_github{
+                            background-image: url("../img/icon/ico_github_active.png");
+                        }
+                    }
+                }
+                a{
+                    padding: 16px 10px 16px 0px;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    color: #52525B;
+
+                }
+
+            }
+        }
+    }
+}

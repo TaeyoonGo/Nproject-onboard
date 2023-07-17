@@ -21,7 +21,10 @@
                 <div class="title_area">
                     <p class="title test">웹훅</p>
                 </div>
-
+                <div class="title_area detail">
+                    <p class="title test"><a href="#">웹훅</a></p>
+                    <span><i class="icon ico_right_arrow_gary"></i>상세정보</span>
+                </div>
             </div>
             <h2 style="margin-bottom: 30px">input</h2>
             <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
@@ -34,6 +37,60 @@
                         <i class="icon ico_copy"></i>
                     </div>
                 </div>
+            </div>
+            <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
+                <h6>달력테스트진행</h6>
+
+                <div class="label__design _modal_btn">
+                    <input name="checkType" type="radio" id="check2">
+                    <label for="check2" class="checked__label" onclick="openModal('modal0')">
+                        <span>네 맞아요</span>
+                    </label>
+                </div>
+                <input type="text" id="myDateRangePicker" />
+                <div class="modal modal0">
+                    <div class="modal_dialog modal_table">
+                        <div class="modal_content">
+
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function openModal(modalname) {
+                        $("#myDateRangePicker").datepicker('clearDates');
+                        $("." + modalname).addClass('show')
+                        setTimeout(function () {
+                            $("." + modalname).addClass('fade')
+                        }, 200);
+                    }
+
+                    // close Modal
+                    function closeModal() {
+                        let modals = $('.modal')
+                        let closeBtn = $('._modal_close_btn')
+                        closeBtn.on('click', function () {
+                            var selectedDates = $("#myDateRangePicker").datepicker('getDates');
+                            modals.removeClass('fade')
+                            setTimeout(function () {
+                                modals.removeClass('show')
+                            }, 200);
+                        })
+                    }
+
+                    // close dim
+                    function dimModal() {
+                        let modals = $('.modal')
+                        modals.on('click', function (e) {
+                            if (e.target == this) {
+                                modals.removeClass('fade')
+                                setTimeout(function () {
+                                    modals.removeClass('show')
+                                }, 200)
+                            }
+                        })
+                    }
+
+                </script>
             </div>
 
 
