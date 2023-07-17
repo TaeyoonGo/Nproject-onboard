@@ -73,6 +73,12 @@ data.login = {
             category: 'login',
             page: '이메일_인증_만료'
         },
+        {
+            stateClass: 'working',
+            url: '비밀번호 재설정_비밀번호 변경 완료',
+            category: 'login',
+            page: '비밀번호 재설정_비밀번호 변경 완료'
+        },
     ]
 }
 data.join = {
