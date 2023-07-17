@@ -260,13 +260,13 @@ data.developercenter = {
             page: '설정_api'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_웹훅_최초',
             category: 'developercenter',
             page: '설정_웹훅_최초'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_웹훅_등록완료',
             category: 'developercenter',
             page: '설정_웹훅_등록완료'
@@ -279,15 +279,15 @@ data.developercenter = {
         },
         {
             stateClass: 'working',
-            url: '설정_whiteip_최초',
+            url: '설정_white_ip_최초',
             category: 'developercenter',
-            page: '설정_api'
+            page: '설정_white_ip_최초'
         },
         {
             stateClass: 'working',
-            url: '설정_whiteip_등록',
+            url: '설정_white_ip_등록',
             category: 'developercenter',
-            page: '설정_whiteip_등록'
+            page: '설정_white_ip_등록'
         },
 
 

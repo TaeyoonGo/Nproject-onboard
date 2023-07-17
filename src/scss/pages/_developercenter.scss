@@ -130,6 +130,21 @@
                     }
 
                 }
+                &.input_one__button__area{
+                    flex: 1 1 auto;
+                }
+                .input_one__button{
+                    display: flex;
+                    justify-content: space-between;
+                    label{
+                        flex: 1 1 auto;
+                    }
+                    button{
+                        margin-left: 24px;
+                        min-width: 102px;
+                    }
+
+                }
             }
             .caption_text{
                 margin-top: 12px;
@@ -223,10 +238,33 @@
                             }
 
                         }
+                        .select_box{
+                            padding: 13px 12px;
+                        }
                     }
 
 
 
+                }
+                +.developer_card{
+                    margin-top: 60px;
+                }
+                .btn_area{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: flex-end;
+                    .btn_secondary{
+                        font-size: 15px;
+                        min-width: 102px;
+                        &:hover{
+                            border: 1px solid #7852E8;
+                            color: #7852E8;
+                            background-color: #E8E3FF;
+                        }
+                        &:first-child{
+                            margin-right: 10px;
+                        }
+                    }
                 }
             }
             .search_result_area{
