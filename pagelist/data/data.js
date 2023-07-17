@@ -284,7 +284,7 @@ data.developercenter = {
             page: '설정_white_ip_최초'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_white_ip_등록',
             category: 'developercenter',
             page: '설정_white_ip_등록'

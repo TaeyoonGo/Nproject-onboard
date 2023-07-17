@@ -266,6 +266,9 @@ a {
 [type="checkbox"]:checked + .ico_checkBox {
     background-position: center -20px;
 }
+[type="checkbox"]:disabled + .ico_checkBox {
+    background-position: center -40px;
+}
 
 /*공통 모달*/
 
