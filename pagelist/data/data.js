@@ -67,6 +67,12 @@ data.login = {
             category: 'login',
             page: '계정설정'
         },
+        {
+            stateClass: 'working',
+            url: '이메일_인증_만료',
+            category: 'login',
+            page: '이메일_인증_만료'
+        },
     ]
 }
 data.join = {
