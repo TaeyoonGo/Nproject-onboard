@@ -278,7 +278,7 @@ data.developercenter = {
             page: '설정_웹훅_상세정보'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_white_ip_최초',
             category: 'developercenter',
             page: '설정_white_ip_최초'
