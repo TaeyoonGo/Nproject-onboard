@@ -38,7 +38,14 @@
     margin-bottom: 25px;
 }
 
-
+.login__box{
+    .g-recaptcha{
+        padding-top:52px;transform: scale(1.2); display: flex; justify-content: center;
+        @include mo-res{
+            scale: 0.8;
+        }
+    }
+}
 
 .input_title{
     word-break: keep-all;

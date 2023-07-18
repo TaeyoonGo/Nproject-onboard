@@ -280,7 +280,7 @@
                 color: #7852E8;
                 margin-left: 10px;
                 @include mo-res{
-                    font-size: 16px;
+                    font-size: 18px;
 
                 }
             }
@@ -412,7 +412,7 @@
         }
         .title {
             font-size: 22px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             font-weight: 700;
         }
         .sub_title{
@@ -479,6 +479,9 @@
                         &.delete{
                             text-decoration: underline;
                             color: #FF5C5C;
+                            span{
+                                font-size: 15px;
+                            }
                         }
                     }
                 }
@@ -486,9 +489,9 @@
         }
     }
     .service_list{
-        margin-bottom: 120px;
+        margin-bottom: 90px;
         @include mo-res{
-            margin-bottom: 60px;
+            margin-bottom: 110px;
         }
         &:nth-last-child(1){
             margin-bottom: 0;
