@@ -40,56 +40,27 @@
             </div>
             <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
                 <h6>달력테스트진행</h6>
-
-                <div class="label__design _modal_btn">
-                    <input name="checkType" type="radio" id="check2">
-                    <label for="check2" class="checked__label" onclick="openModal('modal0')">
-                        <span>네 맞아요</span>
-                    </label>
-                </div>
-                <input type="text" id="myDateRangePicker" />
-                <div class="modal modal0">
-                    <div class="modal_dialog modal_table">
-                        <div class="modal_content">
-
-                        </div>
-                    </div>
-                </div>
+                <input type="text" id="demo" name="demo" value="" />
                 <script>
-                    function openModal(modalname) {
-                        $("#myDateRangePicker").datepicker('clearDates');
-                        $("." + modalname).addClass('show')
-                        setTimeout(function () {
-                            $("." + modalname).addClass('fade')
-                        }, 200);
-                    }
-
-                    // close Modal
-                    function closeModal() {
-                        let modals = $('.modal')
-                        let closeBtn = $('._modal_close_btn')
-                        closeBtn.on('click', function () {
-                            var selectedDates = $("#myDateRangePicker").datepicker('getDates');
-                            modals.removeClass('fade')
-                            setTimeout(function () {
-                                modals.removeClass('show')
-                            }, 200);
-                        })
-                    }
-
-                    // close dim
-                    function dimModal() {
-                        let modals = $('.modal')
-                        modals.on('click', function (e) {
-                            if (e.target == this) {
-                                modals.removeClass('fade')
-                                setTimeout(function () {
-                                    modals.removeClass('show')
-                                }, 200)
-                            }
-                        })
-                    }
-
+                    $('#demo').daterangepicker({
+                        "locale": {
+                            "format": "YYYY-MM-DD",
+                            "separator": " ~ ",
+                            "applyLabel": "확인",
+                            "cancelLabel": "취소",
+                            "fromLabel": "From",
+                            "toLabel": "To",
+                            "customRangeLabel": "Custom",
+                            "weekLabel": "W",
+                            "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+                            "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                        },
+                        "startDate": new Date(),
+                        "endDate": new Date(),
+                        "drops": "auto"
+                    }, function (start, end, label) {
+                        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                    });
                 </script>
             </div>
 
