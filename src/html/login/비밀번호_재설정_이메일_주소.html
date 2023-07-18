@@ -17,13 +17,17 @@
                         입력해 주세요.</p>
                     <div class="position_relative">
                         <label class="w-100"><input class="form_control border_danger" type="password"
-                                      placeholder="영문, 숫자, 특수기호 조합 8자리 이상"></label>
+                                                    placeholder="영문, 숫자, 특수기호 조합 8자리 이상"></label>
                         <div class="validation_area show">
                             <p class="validation color_danger">이메일 주소를 입력해 주세요.</p>
                         </div>
                         <div class="validation_area">
                             <p class="validation color_danger">이메일 주소에 ‘@’를 포함해 주세요.</p>
                         </div>
+                        <div class="g-recaptcha"
+                             style="padding-top:52px;transform: scale(1.2); display: flex; justify-content: center"
+                             data-sitekey="6LcP638eAAAAAGmNNjIzYdm6chAQiVFP87wNjy6K"></div>
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     </div>
                 </div>
                 <div class="btn_area">

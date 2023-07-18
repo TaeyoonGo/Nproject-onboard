@@ -57,8 +57,9 @@ button{
     display: flex;
     justify-content: center;
     .btn{
-        font-size: 20px;
-        padding: 6px 14px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 8px 14px;
         &:first-child{
             margin-right: 20px;
 

@@ -32,6 +32,10 @@
         background-image: url("https://image.payple.kr/onboard/icon/ico_closeBtn.png");
         width: 30px;
         height: 30px;
+        @include mo-res{
+            width: 24px;
+            height: 24px;
+        }
     }
 
     &.ico_account_btn {
