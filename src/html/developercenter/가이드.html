@@ -40,9 +40,23 @@
             </div>
             <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
                 <h6>달력테스트진행</h6>
-                <input type="text" id="demo" name="demo" value="" />
+                <label>
+                    <input type="text"  id="myDateRangePicker" name="demo" value=""/>
+                </label>
+                <i style="width: 10px; height: 10px; display: inline-block; border:1px solid blue" onclick="dataRangeModal('modal01')"></i>
+                </div>
+                <div class="modal modal01">
+                    <div class="modal_dialog modal_date_range">
+                        <div class="modal_content">
+                            <div class="modal_body" id="datepicker-parent">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <script>
-                    $('#demo').daterangepicker({
+                    const parentElement = document.querySelector('#datepicker-parent');
+                    $('#myDateRangePicker').daterangepicker({
                         "locale": {
                             "format": "YYYY-MM-DD",
                             "separator": " ~ ",
@@ -57,10 +71,27 @@
                         },
                         "startDate": new Date(),
                         "endDate": new Date(),
-                        "drops": "auto"
-                    }, function (start, end, label) {
-                        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-                    });
+                        "buttonClasses" : "data_range_btn",
+                        "applyButtonClasses" : "apply_range_btn",
+                        "cancelButtonClasses" : "cancel_range_btn",
+                        "parentEl" : parentElement,
+
+                    },
+                        function (start, end, label) {
+                            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                        });
+                        $('#demo').on('show.daterangepicker', function(ev, picker) {
+
+                        })
+
+                </script>
+                <script>
+                    function dataRangeModal(modalname) {
+                        $("." + modalname).addClass('show')
+                        setTimeout(function () {
+                            $("." + modalname).addClass('fade')
+                        }, 200);
+                    }
                 </script>
             </div>
 
@@ -111,7 +142,7 @@
                     <button class="btn btn_secondary">등록하기</button>
                 </div>
             </div>
-            <div class="developer_card"   style="margin-bottom: 30px">
+            <div class="developer_card" style="margin-bottom: 30px">
                 <div class="title_area">
                     <p class="title test">White IP 등록</p>
                 </div>
@@ -169,7 +200,8 @@
                             <col style="width: 30%">
                             <col style="width: 60%">
                         </colgroup>
-                        <tbody><tr>
+                        <tbody>
+                        <tr>
                             <th class="check_table">
                                 <label>
                                     <input type="checkbox">
@@ -221,7 +253,8 @@
                             <td>2023-06-29 17:23:59</td>
                         </tr>
 
-                        </tbody></table>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="developer_card" style="margin-bottom: 30px">

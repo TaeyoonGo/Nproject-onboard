@@ -521,6 +521,16 @@ a {
             }
         }
     }
+
+    &.modal_date_range{
+        .modal_body{
+            padding: 0;
+            .daterangepicker{
+                margin: 0;
+                position: static;
+            }
+        }
+    }
 }
 
 .modal_header {
