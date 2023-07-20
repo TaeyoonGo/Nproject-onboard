@@ -30,6 +30,12 @@
     margin: 0 auto;
     border-radius: 14px;
     box-shadow: 0 0 7px rgba(0,0,0,0.15);
+    .input__area{
+        margin-bottom: 30px;
+        .validation_area{
+            margin-top: 10px;
+        }
+    }
 
 }
 .login__box__title{
@@ -82,13 +88,6 @@
     top: 0;
     right: -7px;
 }
-
-.login__box{
-    .btn_area{
-        padding-top: 42px;
-    }
-}
-
 
 .login__box__email_send{
     padding-top: 14px;
