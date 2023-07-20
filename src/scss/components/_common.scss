@@ -79,11 +79,8 @@ html, body {
 
 /*validation 관련 */
 .validation_area {
-    position: absolute;
     margin-left: 14px;
-    top: 54px;
     visibility: hidden;
-
 }
 
 .validation_area.show {
@@ -94,6 +91,7 @@ html, body {
     font-size: 14px;
     line-height: 19px;
     word-break: break-all;
+    position: relative;
 }
 
 .validation:after {
