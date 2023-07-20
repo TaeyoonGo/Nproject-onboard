@@ -33,6 +33,7 @@
     .input__area{
         margin-bottom: 30px;
         .validation_area{
+
             margin-top: 10px;
         }
     }
@@ -46,7 +47,7 @@
 
 .login__box{
     .g-recaptcha{
-        padding-top:52px;transform: scale(1.2); display: flex; justify-content: center;
+        transform: scale(1.2); display: flex; justify-content: center;
         @include mo-res{
             scale: 0.8;
         }
@@ -226,6 +227,14 @@
     max-width: 410px;
     padding: 0 35px;
     margin: 0 auto;
+}
+.setting_wrap{
+    .input__area{
+        margin-bottom: 30px;
+        .validation_area{
+            margin-top: 10px;
+        }
+    }
 }
 .setting_wrap .main_title{
     font-size: 30px;

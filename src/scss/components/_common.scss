@@ -84,14 +84,17 @@ html, body {
 
 
 
+
 /*validation 관련 */
 .validation_area {
     margin-left: 14px;
     visibility: hidden;
+    display: none;
 }
 
 .validation_area.show {
     visibility: visible;
+    display: block !important;
 }
 
 .validation {
