@@ -259,19 +259,19 @@
         display: none;
         @include tablet-res{
             display: flex;
-            align-items: center;
+            flex-direction: column;
         }
 
         span{
             &.title_tablet{
-                font-size: 12px;
                 line-height: 1.3;
-                flex: 1 1 20%;
-                margin-right: 10px;
+                text-align: left;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 5px;
             }
             &.desc_tablet{
-                font-size: 11px;
-                flex: 1 1 80%;
+                font-size: 13px;
                 text-align: left;
                 line-height: 1.3;
             }
@@ -289,7 +289,35 @@
         &:last-child {
             margin-bottom: 0;
         }
-
+        input:checked{
+            +.options_select{
+                color: #7852e8;
+                background-color: #e9e1ff;
+                border: 1px solid #7852e8;
+            }
+        }
+        input:disabled{
+            +.options_select{
+                color: #BABAC2;
+            }
+        }
+        .options_select{
+            cursor: pointer;
+            padding: 9px 15px;
+            border: 1px solid #F0F0F0;
+            font-weight: 700;
+            border-radius: 40px;
+            background-color: #F0F0F0;
+            &.tablet_show{
+                display: none;
+                @include tablet-res{
+                    margin-top: 20px;
+                    text-align: center;
+                    display: block !important;
+                    width: 50%;
+                }
+            }
+        }
         .account__row {
             display: flex;
             width: 640px;
@@ -363,28 +391,7 @@
                     }
                 }
             }
-            input:checked{
-                +.options_select{
-                    color: #7852e8;
-                    background-color: #e9e1ff;
-                    border: 1px solid #7852e8;
-                }
-            }
-            input:disabled{
-                +.options_select{
-                    color: #BABAC2;
-                }
-            }
-            .options_select{
-                cursor: pointer;
-                padding: 9px 15px;
-                border: 1px solid #F0F0F0;
-                font-weight: 700;
-                border-radius: 40px;
-                background-color: #F0F0F0;
 
-
-            }
 
 
         }
@@ -392,8 +399,8 @@
         .title {
             font-size: 20px;
             @include tablet-res{
-                font-size: 15px;
-                margin-bottom: 20px;
+                font-size: 18px;
+                margin-bottom: 15px;
             }
         }
 
@@ -407,7 +414,7 @@
             .checked__label{
 
                 @include tablet-res{
-                    padding: 12px;
+                    padding: 12px 15px;
 
                 }
             }
