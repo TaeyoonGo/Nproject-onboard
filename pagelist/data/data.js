@@ -62,10 +62,16 @@ data.login = {
             page: '비밀번호_재설정_비밀번호_변경'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '계정설정',
             category: 'login',
             page: '계정설정'
+        },
+        {
+            stateClass: 'confirm',
+            url: '계정설정_비밀번호',
+            category: 'login',
+            page: '계정설정_비밀번호'
         },
         {
             stateClass: 'waiting',

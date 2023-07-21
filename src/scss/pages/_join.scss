@@ -222,14 +222,20 @@
 
 .business_number_area {
     margin: 60px auto 0;
-    justify-content: center;
     width: 412px;
-    display: flex;
+    .validation_area{
+        padding-top: 10px;
+    }
+    .business_number{
+        display: flex;
+        justify-content: space-between;
 
+    }
     @include mo-res{
         margin: 40px auto 330px;
         width: auto;
         justify-content: flex-start;
+
     }
     .input__area {
         flex: auto;
