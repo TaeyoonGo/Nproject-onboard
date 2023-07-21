@@ -88,6 +88,9 @@
         color: #1f1f1f;
         margin-bottom: 30px;
         word-break: break-all;
+        .email{
+            margin-right: 5px;
+        }
         @include mo-res{
             width: 280px;
         }

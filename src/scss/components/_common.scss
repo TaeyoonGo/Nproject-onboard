@@ -536,7 +536,33 @@ a {
             .daterangepicker{
                 margin: 0;
                 position: static;
+                font-size: 16px;
+                .drp-calendar{
+                    max-width: none;
+                    &.left{
+
+                    }
+                    &.right{
+
+                    }
+                }
+                .calendar-table{
+
+                    td,th{
+                        width: 50px;
+                        height: 43px;
+                        font-size: 16px;
+                        &.month{
+                            font-size: 20px;
+                        }
+                    }
+
+                }
+                .drp-buttons{
+                    display: none;
+                }
             }
+
         }
     }
 }
@@ -964,5 +990,7 @@ a {
         }
     }
 }
+
+
 
 

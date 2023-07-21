@@ -324,15 +324,27 @@
     }
     &.ico_pagination_left_arrow{
         background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_left_arrow.png");
-        width: 15px;
-        height: 15px;
+        width: 24px;
+        height: 24px;
         cursor: pointer;
     }
     &.ico_pagination_right_arrow{
         background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_right_arrow.png");
-        width: 15px;
-        height: 15px;
+        width: 24px;
+        height: 24px;
         cursor: pointer;
+    }
+    &.ico_pagination_left_arrow_first{
+        //background-image: url("https://image.payple.kr/onboard/icon/ico_home_white.png");
+        background-image: url("../img/icon/ico_pagination_left_arrow_first.png");
+        width: 24px;
+        height: 24px;
+    }
+    &.ico_pagination_right_arrow_last{
+        //background-image: url("https://image.payple.kr/onboard/icon/ico_home_white.png");
+        background-image: url("../img/icon/ico_pagination_right_arrow_last.png");
+        width: 24px;
+        height: 24px;
     }
     &.ico_right_arrow_gary{
         background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_gary.png");

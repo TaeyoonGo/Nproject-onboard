@@ -150,13 +150,23 @@
                             font-size: 15px;
                             cursor: pointer;
                             color: #BABAC2;
-                            margin-left: 24px;
+                            margin-left: 20px;
                             &.active{
                                 font-weight: 700;
                             }
                             &:nth-last-child(1){
-                                margin-right: 24px;
+                                margin-right: 20px;
                             }
+                        }
+
+                    }
+                    .pagination_arrow {
+                        cursor: pointer;
+                        &.first_button{
+                            margin-right: 10px;
+                        }
+                        &.last_button{
+                            margin-left: 10px;
                         }
                     }
                 }

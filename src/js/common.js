@@ -29,6 +29,22 @@ function dimModal() {
             }, 200)
         }
     })
+    modals.on("contextmenu",function(e){
+        if (e.target == this) {
+            modals.removeClass('fade')
+            setTimeout(function () {
+                modals.removeClass('show')
+            }, 200)
+        }
+    });
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            modals.removeClass('fade')
+            setTimeout(function () {
+                modals.removeClass('show')
+            }, 200)
+        }
+    });
 }
 
 
