@@ -5,7 +5,6 @@ function openModal(modalname) {
         $("." + modalname).addClass('fade')
     }, 200);
 }
-
 // close Modal
 function closeModal() {
     let modals = $('.modal')
@@ -17,7 +16,6 @@ function closeModal() {
         }, 200);
     })
 }
-
 // close dim
 function dimModal() {
     let modals = $('.modal')

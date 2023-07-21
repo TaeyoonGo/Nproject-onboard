@@ -290,10 +290,13 @@ a {
     overflow: hidden;
     outline: 0;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(4px) contrast(1);
+
     opacity: 0;
     display: none;
     transition: all 0.2s;
+    &.date_range{
+        backdrop-filter: none;
+    }
     &.fade {
         opacity: 1;
     }
@@ -535,26 +538,59 @@ a {
             padding: 0;
             .daterangepicker{
                 margin: 0;
+                border: transparent;
                 position: static;
                 font-size: 16px;
+
                 .drp-calendar{
                     max-width: none;
                     &.left{
+                        padding: 46px 0 46px 42px;
 
                     }
                     &.right{
-
+                        padding: 46px 42px 46px 36px;
                     }
                 }
                 .calendar-table{
-
+                    padding: 0;
+                    thead{
+                        tr{
+                            &:nth-last-child(1){
+                               th{
+                                   &:first-child{
+                                       color: #FF3131;
+                                   }
+                               }
+                            }
+                        }
+                    }
+                    td{
+                        color: #C7C7C7;
+                    }
                     td,th{
                         width: 50px;
                         height: 43px;
                         font-size: 16px;
+
                         &.month{
                             font-size: 20px;
                         }
+                        &.start-date{
+                            border-radius: 6px 0 0 6px;
+                            color: #fff;
+                            background-color: #7852E8;
+                        }
+
+                        &.in-range{
+                            background-color: #F0EBFF;
+                        }
+                        &.end-date{
+                            border-radius: 0 6px 6px 0;
+                            background-color: #7852E8;
+                            color: #fff;
+                        }
+
                     }
 
                 }
@@ -994,3 +1030,16 @@ a {
 
 
 
+
+.input__date{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    i{
+        cursor: pointer;
+    }
+
+}
