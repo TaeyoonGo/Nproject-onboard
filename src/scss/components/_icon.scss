@@ -289,8 +289,8 @@
         width: 46px;
         height: 46px;
     }
-    &.ico_alert_whitegray{
-        background-image: url("https://image.payple.kr/onboard/icon/ico_alert_whitegray.png");
+    &.ico_alert_white_gray{
+        background-image: url("https://image.payple.kr/onboard/icon/ico_alert_white_gray.png");
         width: 13px;
         height: 13px;
     }
@@ -335,14 +335,12 @@
         cursor: pointer;
     }
     &.ico_pagination_left_arrow_first{
-        //background-image: url("https://image.payple.kr/onboard/icon/ico_home_white.png");
-        background-image: url("../img/icon/ico_pagination_left_arrow_first.png");
+        background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_left_arrow_first.png");
         width: 24px;
         height: 24px;
     }
     &.ico_pagination_right_arrow_last{
-        //background-image: url("https://image.payple.kr/onboard/icon/ico_home_white.png");
-        background-image: url("../img/icon/ico_pagination_right_arrow_last.png");
+        background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_right_arrow_last.png");
         width: 24px;
         height: 24px;
     }
@@ -353,18 +351,14 @@
     }
     &.ico_home_white{
         background-image: url("https://image.payple.kr/onboard/icon/ico_home_white.png");
-        //background-image: url("../img/icon/ico_home_white.png");
         width: 18px;
         height: 17px;
     }
     &.ico_calender{
-        //background-image: url("https://image.payple.kr/onboard/icon/ico_home_white.png");
+        //background-image: url("https://image.payple.kr/onboard/icon/ico_calender.png");
         background-image: url("../img/icon/ico_calender.png");
         width: 30px;
         height: 30px;
     }
-
-
-
 
 }

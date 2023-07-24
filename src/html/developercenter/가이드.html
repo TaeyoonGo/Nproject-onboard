@@ -44,7 +44,7 @@
                     <div class="position_relative">
                         <input type="text" class="form_control" id="myDateRangePicker" name="demo"/>
                         <label for="myDateRangePicker" class="input__date" onclick="openModal('modal01')">
-                            <i class="ico_calender icon"></i>
+                            <i class="icon ico_calender"></i>
                         </label>
                     </div>
                 </div>
@@ -79,11 +79,16 @@
                         "cancelButtonClasses": "cancel_range_btn",
                         "showCustomRangeLabelranges" : false,
                         "parentEl": parentElement,
-
-
-
                     }, function (start, end, label) {
                         console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                    });
+
+                    $('#myDateRangePicker').on('hide.daterangepicker', function(ev, picker) {
+                        let modals = $('.modal')
+                        modals.removeClass('fade')
+                        setTimeout(function () {
+                            modals.removeClass('show')
+                        }, 200)
                     });
 
                 </script>
