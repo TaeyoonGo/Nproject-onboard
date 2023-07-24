@@ -16,7 +16,9 @@
                 align-items: center;
                 &.detail{
                     justify-content: flex-start;
+                    margin-bottom: 62px;
                     .title{
+
                         color: #1F1F1F;
                         font-weight: 500;
                         &:hover{
@@ -140,7 +142,7 @@
                     }
                 }
                 .pagination_area{
-                    margin-top: 40px;
+                    padding: 40px 0 20px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -172,6 +174,16 @@
                 }
                 .input__area__list{
                     display: flex;
+                    &.one_line{
+                        .btn_area{
+                            margin-top: 43px;
+                            flex: 1 1 10%;
+                            .btn{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
                     .input__area{
                         margin-bottom: 0;
                         &.name{
@@ -187,6 +199,13 @@
                         &.data{
 
                             flex: 1 1 40%;
+                        }
+                        &.default{
+                            flex: 0 0 20%;
+                            margin-right: 24px;
+                        }
+                        &.update_date{
+                            flex: 0 0 35%;
                         }
                         .input_title{
                             font-size: 15px;
@@ -253,6 +272,38 @@
                     border-radius: 15px;
                     overflow: hidden;
                     border: 1px solid #ced4da;
+                    .pagination_area{
+                        padding: 40px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .pagination_list{
+                            display: flex;
+                            >li{
+                                font-size: 15px;
+                                cursor: pointer;
+                                color: #BABAC2;
+                                margin-left: 20px;
+                                &.active{
+                                    font-weight: 700;
+                                }
+                                &:nth-last-child(1){
+                                    margin-right: 20px;
+                                }
+                            }
+
+                        }
+                        .pagination_arrow {
+                            cursor: pointer;
+                            &.first_button{
+                                margin-right: 10px;
+                            }
+                            &.last_button{
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
                 }
                 table{
                     width: 100%;
@@ -277,6 +328,10 @@
                             text-align: center;
                             padding: 55px 0;
                             border-bottom: none;
+                            &.no_search{
+                                padding: 90px 0;
+                                color: #52525B;
+                            }
                         }
                         &.name_data{
                             a{
@@ -285,8 +340,45 @@
                             }
                         }
                     }
+
                 }
 
+            }
+            .detail__area{
+                margin-bottom: 40px;
+                .title{
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                ul{
+                    color: #52525B;
+                    font-size: 15px;
+                    li{
+                        margin-bottom: 10px;
+                        &:nth-last-child(1){
+                            margin-bottom: 0;
+                        }
+                    }
+                    .list_title{
+                        display: inline-block;
+                        width: 72px;
+                        margin-right: 20px;
+
+
+                    }
+                    .list_desc{
+
+                    }
+                }
+            }
+            .transmission_history_area{
+                margin-bottom: 30px;
+                .title{
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }

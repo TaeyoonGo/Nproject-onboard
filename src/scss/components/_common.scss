@@ -839,11 +839,15 @@ a {
         margin: 0;
         background-color: #fff;
         border: 1px solid #ccc;
-
+        z-index: 1000;
         border-radius: 7px;
+        overflow: hidden;
         .option{
             padding: 12px 10px;
             font-size: 16px;
+
+
+            background-color: #fff;
             &:hover{
                 background-color: #f0f0f0;
             }

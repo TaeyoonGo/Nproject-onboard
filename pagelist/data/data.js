@@ -278,39 +278,51 @@ data.developercenter = {
         },
         {
             stateClass: 'confirm',
-            url: '설정_api',
+            url: '메인',
             category: 'developercenter',
-            page: '설정_api'
+            page: '메인'
         },
         {
             stateClass: 'confirm',
-            url: '설정_웹훅_최초',
+            url: '웹훅_검색결과없음',
             category: 'developercenter',
-            page: '설정_웹훅_최초'
+            page: '웹훅_검색결과없음'
         },
         {
             stateClass: 'confirm',
-            url: '설정_웹훅_등록완료',
+            url: '웹훅_검색결과있음',
             category: 'developercenter',
-            page: '설정_웹훅_등록완료'
-        },
-        {
-            stateClass: 'working',
-            url: '설정_웹훅_상세정보',
-            category: 'developercenter',
-            page: '설정_웹훅_상세정보'
+            page: '웹훅_검색결과있음'
         },
         {
             stateClass: 'confirm',
-            url: '설정_white_ip_최초',
+            url: '웹훅_상세정보_검색결과없음',
             category: 'developercenter',
-            page: '설정_white_ip_최초'
+            page: '웹훅_상세정보_검색결과없음'
         },
         {
             stateClass: 'confirm',
-            url: '설정_white_ip_등록',
+            url: '웹훅_상세정보_검색결과있음',
             category: 'developercenter',
-            page: '설정_white_ip_등록'
+            page: '웹훅_상세정보_검색결과있음'
+        },
+        {
+            stateClass: 'confirm',
+            url: 'white_ip_검색결과없음',
+            category: 'developercenter',
+            page: 'white_ip_검색결과없음'
+        },
+        {
+            stateClass: 'confirm',
+            url: 'white_ip_검색결과있음',
+            category: 'developercenter',
+            page: 'white_ip_검색결과있음'
+        },
+        {
+            stateClass: 'confirm',
+            url: 'white_ip_10개이상등록',
+            category: 'developercenter',
+            page: 'white_ip_10개이상등록'
         },
 
 

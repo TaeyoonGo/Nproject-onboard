@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../../html/include/common/head.html')
+<body>
+@@include('../../html/include/common/header-developer.html')
+<main class="developer_container">
+    @@include('../../html/include/common/aside.html')
+    <article class="developer_content">
+        <section class="developer_section">
+            <div class="title_area detail">
+                <p class="title test"><a href="#">웹훅</a></p>
+                <span><i class="icon ico_right_arrow_gary"></i>상세정보</span>
+            </div>
+            <div class="detail__area">
+                <p class="title">상세정보</p>
+                <ul>
+                    <li><span class="list_title">이름</span><span class="list_data">M_카드일반</span></li>
+                    <li><span class="list_title">URL</span><span class="list_data">wwww.aaaaa.aaaa</span></li>
+                    <li><span class="list_title">수신 데이터</span><span class="list_data">결제 - 카드일반(국내, 해외)</span></li>
+                </ul>
+            </div>
+            <div class="transmission_history_area">
+                <p class="title">전송 이력 조회</p>
+                <div class="developer_card">
+                    <div class="input__area__list one_line">
+                        <div class="input__area default">
+                            <p class="input_title">실행여부</p>
+                            <div class="select_box _select_box">
+                                <div class="select_value">
+                                    전체
+                                </div>
+                                <i class="icon ico_select_arrow_down">아래화살표</i>
+                                <ul class="options">
+                                    <li class="option" value="1">성공</li>
+                                    <li class="option" value="2">실패</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input__area default">
+                            <p class="input_title">성공여부</p>
+                            <div class="select_box _select_box">
+                                <div class="select_value">
+                                    전체
+                                </div>
+                                <i class="icon ico_select_arrow_down">아래화살표</i>
+                                <ul class="options">
+                                    <li class="option" value="1">성공</li>
+                                    <li class="option" value="2">실패</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input__area update_date">
+                            <p class="input_title">업데이트 일시</p>
+                            <div class="position_relative">
+                                <input type="text" class="form_control" id="myDateRangePicker" name="demo">
+                                <label for="myDateRangePicker" class="input__date" onclick="openModal('modal01')">
+                                    <i class="icon ico_calender"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn_area">
+                            <button class="btn btn_secondary">호출 테스트</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="search_result_area">
+                <div class="title_area">
+                    <p class="title">조회 결과</p>
+                    <i class="icon ico_excel"></i>
+                </div>
+                <div class="border_line">
+                    <table>
+                        <colgroup>
+                            <col style="width: 10%">
+                            <col style="width: 30%">
+                            <col style="width: 60%">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th class="check_table">
+                                <label>
+                                    <input type="checkbox" class="_check_all">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                </label>
+                            </th>
+                            <th>IP</th>
+                            <th>등록일시</th>
+
+                        </tr>
+                        <tr>
+                            <td class="check_table">
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                </label>
+                            </td>
+                            <td>131.12.101.22</td>
+                            <td>2023-06-29 17:23:59</td>
+                        </tr>
+                        <tr>
+                            <td class="check_table">
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                </label>
+                            </td>
+                            <td>131.12.101.22</td>
+                            <td>2023-06-29 17:23:59</td>
+                        </tr>
+                        <tr>
+                            <td class="check_table">
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                </label>
+                            </td>
+                            <td>131.12.101.22</td>
+                            <td>2023-06-29 17:23:59</td>
+                        </tr>
+                        <tr>
+                            <td class="check_table">
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                </label>
+                            </td>
+                            <td>131.12.101.22</td>
+                            <td>2023-06-29 17:23:59</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination_area">
+                        <span class="pagination_arrow first_button"><i class="icon ico_pagination_left_arrow_first"></i></span>
+                        <span class="pagination_arrow"><i class="icon ico_pagination_left_arrow"></i></span>
+                        <ul class="pagination_list">
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <span class="pagination_arrow"><i class="icon ico_pagination_right_arrow"></i></span>
+                        <span class="pagination_arrow last_button"><i class="icon ico_pagination_right_arrow_last"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+
+<div class="modal date_range modal01">
+    <div class="modal_dialog modal_date_range">
+        <div class="modal_content">
+            <div class="modal_body" id="datepicker-parent">
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    const parentElement = document.querySelector('#datepicker-parent');
+    $('#myDateRangePicker').daterangepicker({
+        "locale": {
+            "format": "YYYY-MM-DD",
+            "separator": " ~ ",
+            "applyLabel": "확인",
+            "cancelLabel": "취소",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "W",
+            "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+            "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        },
+        "startDate": new Date(),
+        "endDate": new Date(),
+        "buttonClasses": "data_range_btn",
+        "applyButtonClasses": "apply_range_btn",
+        "cancelButtonClasses": "cancel_range_btn",
+        "showCustomRangeLabelranges" : false,
+        "parentEl": parentElement,
+    }, function (start, end, label) {
+        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+    });
+
+    $('#myDateRangePicker').on('hide.daterangepicker', function(ev, picker) {
+        let modals = $('.modal')
+        modals.removeClass('fade')
+        setTimeout(function () {
+            modals.removeClass('show')
+        }, 200)
+    });
+
+</script>
+</body>
+</html>
