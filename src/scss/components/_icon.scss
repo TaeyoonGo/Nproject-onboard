@@ -360,5 +360,12 @@
         width: 30px;
         height: 30px;
     }
+    &.ico_restart{
+        //background-image: url("https://image.payple.kr/onboard/icon/ico_calender.png");
+        background-image: url("../img/icon/ico_restart.png");
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
 
 }

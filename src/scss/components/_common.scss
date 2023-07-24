@@ -62,15 +62,15 @@ html, body {
 
 /*text_align*/
 .text_center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .text_left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .text_right {
-    text-align: right;
+    text-align: right !important;
 }
 
 /*width*/
@@ -213,7 +213,7 @@ a {
 
 /*font-weight*/
 .font_weight_regular {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .font_weight_bold {
@@ -920,6 +920,7 @@ a {
                 text-align: center;
                 padding: 55px 0;
                 border-bottom: none;
+
             }
             &.name_data{
                 a{
@@ -927,6 +928,15 @@ a {
                     color: #0086F1;
                 }
             }
+        }
+    }
+}
+.scroll_table{
+    overflow-x: scroll;
+    table{
+        font-size: 15px;
+        th,td{
+            word-break: break-all;
         }
     }
 }

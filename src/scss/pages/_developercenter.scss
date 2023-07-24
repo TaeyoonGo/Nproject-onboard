@@ -134,12 +134,7 @@
                             right: -28px;
                         }
                     }
-                    .icon{
-                        &:hover{
-                            cursor: pointer;
-                            background-image: url("https://image.payple.kr/onboard/icon/ico_trashcan_active.png");
-                        }
-                    }
+
                 }
                 .pagination_area{
                     padding: 40px 0 20px;
@@ -380,6 +375,7 @@
                     margin-bottom: 20px;
                 }
             }
+
         }
     }
 

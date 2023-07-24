@@ -324,6 +324,24 @@ data.developercenter = {
             category: 'developercenter',
             page: 'white_ip_10개이상등록'
         },
+        {
+            stateClass: 'confirm',
+            url: '테스트결제내역_검색결과없음',
+            category: 'developercenter',
+            page: '테스트결제내역_검색결과없음'
+        },
+        {
+            stateClass: 'working',
+            url: '테스트결제내역_조회결과_국내',
+            category: 'developercenter',
+            page: '테스트결제내역_조회결과_국내'
+        },
+        {
+            stateClass: 'working',
+            url: '테스트결제내역_조회결과_해외',
+            category: 'developercenter',
+            page: '테스트결제내역_조회결과_해외'
+        },
 
 
 
