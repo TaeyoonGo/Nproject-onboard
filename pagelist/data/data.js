@@ -14,6 +14,12 @@ data.email = {
             category: 'email',
             page: '임시비밀번호'
         },
+        {
+            stateClass: 'confirm',
+            url: '초대이메일',
+            category: 'email',
+            page: '초대이메일'
+        },
     ]
 }
 data.login = {
