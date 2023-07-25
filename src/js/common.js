@@ -116,6 +116,12 @@ function checkAll() {
     });
 }
 
+//테이블 데이터가 없을경우
+function emptyTableData(){
+    $('.empty_data').parents('._scroll_table').css('tableLayout' , 'auto');
+}
+
+
 // 실행
 $(document).ready(function () {
     formatPhoneNumber();
@@ -127,6 +133,7 @@ $(document).ready(function () {
     HoverTextService();
     HoverStopService();
     checkAll();
+    emptyTableData();
 
 
 })

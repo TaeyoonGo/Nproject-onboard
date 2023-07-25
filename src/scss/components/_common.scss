@@ -931,14 +931,15 @@ a {
         }
     }
 }
-.scroll_table{
-    overflow-x: scroll;
-    table{
-        font-size: 15px;
-        th,td{
-            word-break: break-all;
-        }
-    }
+.scroll_table_container{
+    overflow-x: scroll ;
+   table{
+       table-layout: fixed;
+
+       th,td{
+          word-break: break-all;
+       }
+   }
 }
 
 //aside
