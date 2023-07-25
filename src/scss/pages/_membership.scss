@@ -1,0 +1,113 @@
+.membership_section{
+    padding: 80px 30px;
+    margin: 0 auto;
+    max-width: 800px;
+    .main_title{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+    }
+    .membership_area{
+        margin-bottom: 90px;
+        &:nth-last-child(1){
+            margin-bottom: 0;
+        }
+        .title_area{
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title{
+                font-size: 22px;
+                font-weight: 700;
+
+            }
+
+        }
+        .border_line{
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #ced4da;
+            .pagination_area{
+                padding: 40px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .pagination_list{
+                    display: flex;
+                    >li{
+                        font-size: 15px;
+                        cursor: pointer;
+                        color: #BABAC2;
+                        margin-left: 20px;
+                        &.active{
+                            font-weight: 700;
+                        }
+                        &:nth-last-child(1){
+                            margin-right: 20px;
+                        }
+                    }
+
+                }
+                .pagination_arrow {
+                    cursor: pointer;
+                    &.first_button{
+                        margin-right: 10px;
+                    }
+                    &.last_button{
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+        }
+        table{
+            width: 100%;
+            th{
+                padding: 11px 10px;
+                background-color: #F6F6F6;
+                text-align: center;
+                color: #52525B;
+                font-weight: 500;
+                &.check_table{
+                    text-align: center;
+                }
+            }
+            td{
+                border-bottom: 1px solid #F0F0F0;
+                padding: 11px 10px;
+                text-align: center;
+                &.check_table{
+                    text-align: center;
+                }
+                &.empty_data{
+                    text-align: center;
+                    padding: 55px 0;
+                    border-bottom: none;
+                    &.no_search{
+                        padding: 90px 0;
+                        color: #52525B;
+                    }
+                }
+            }
+
+        }
+        .search_card{
+            padding: 24px;
+            border-radius: 15px;
+            border: 1px solid #ced4da;
+            box-shadow: 0 0 7px rgba(0,0,0,0.15);
+            .input__area__list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .input__area{
+                    flex: 0 0 calc(50% - 10px);
+                }
+            }
+        }
+
+    }
+
+}

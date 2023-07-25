@@ -1,10 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+@@include('../../html/include/common/head.html')
 <body>
+@@include('../../html/include/common/header.html')
+<section class="membership_section">
+    <p class="main_title">관리자 초대</p>
+    <div class="membership_area">
+        <div class="title_area">
+            <p class="title">초대된 관리자 목록</p>
+            <i class="icon ico_trashcan"></i>
+        </div>
+        <div class="border_line">
+            <table>
+                <colgroup>
+                    <col style="width: 20px">
+                    <col style="width: 150px">
+                    <col style="width: 200px">
+                    <col style="width: 200px">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th class="check_table">
+                        <label>
+                            <input type="checkbox" class="_check_all" disabled>
+                            <i class="icon ico_checkBox">체크박스</i>
+                        </label>
+                    </th>
+                    <th class="text_left">이메일</th>
+                    <th class="text_left">권한</th>
+                    <th class="text_left">메모</th>
+                </tr>
+                <tr>
+                    <td colspan="4" class="empty_data no_search">
+                        초대된 관리자가 없습니다.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="membership_area">
+        <div class="title_area">
+            <p class="title">관리자 초대</p>
+        </div>
+        <div class="search_card">
+            <div class="input__area__list">
+                <div class="input__area">
+                    <p class="input_title">이메일</p>
+                    <div class="position_relative">
+                        <label class="w-100">
+                            <input class="form_control">
+                        </label>
+                    </div>
+                </div>
+                <div class="input__area">
+                    <p class="input_title">메모</p>
+                    <div class="position_relative">
+                        <label class="w-100">
+                            <input class="form_control">
+                        </label>
+                    </div>
+                </div>
+                <div class="input__area">
+                    <p class="input_title">사업자</p>
+                    <div class="select_box _select_box">
+                        <div class="select_value">
+                            전체
+                        </div>
+                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                        <ul class="options">
+                            <li class="option" value="1">네이버(주)</li>
+                            <li class="option" value="2">크림(주)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="input__area">
+                    <p class="input_title">서비스</p>
+                    <div class="select_box _select_box">
+                        <div class="select_value">
+                            전체
+                        </div>
+                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                        <ul class="options">
+                            <li class="option" value="1">웹툰-국내</li>
+                            <li class="option" value="2">웹툰-해외</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="input__area">
+                    <p class="input_title">접근 권한</p>
+                    <div class="select_box _select_box">
+                        <div class="select_value">
+                            전체
+                        </div>
+                        <i class="icon ico_select_arrow_down">아래화살표</i>
+                        <ul class="options">
+                            <li class="option" value="1">조회/실행</li>
+                            <li class="option" value="2">조회/실행/관리자 초대</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
 
 </body>
 </html>
