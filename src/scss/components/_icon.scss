@@ -367,5 +367,11 @@
         height: 26px;
         cursor: pointer;
     }
+    &.ico_member_join{
+        //background-image: url("https://image.payple.kr/onboard/icon/ico_calender.png");
+        background-image: url("../img/icon/ico_member_join.png");
+        width: 20px;
+        height: 20px;
+    }
 
 }
