@@ -354,7 +354,7 @@ data.membership = {
     title: '관리자 초대',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '관리자초대_초대관리자없음',
             category: 'membership',
             page: '관리자초대_초대관리자없음'

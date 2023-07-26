@@ -22,7 +22,7 @@
                 <tr>
                     <th class="check_table">
                         <label>
-                            <input type="checkbox" class="_check_all" disabled>
+                            <input type="checkbox" disabled>
                             <i class="icon ico_checkBox">체크박스</i>
                         </label>
                     </th>
@@ -88,8 +88,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="input__area">
-                    <p class="input_title">접근 권한</p>
+                <div class="input__area mb-0">
+                    <p class="input_title ">접근 권한</p>
                     <div class="select_box _select_box">
                         <div class="select_value">
                             전체
@@ -100,11 +100,90 @@
                             <li class="option" value="2">조회/실행/관리자 초대</li>
                         </ul>
                     </div>
+                    <div class="caption_area">
+                        <p><span>실행 권한 기능</span>취소/환불, 현금영수증 발행, 허브-계좌인증, 허브-이체, 상점정보 수정, 엑셀 다운로드</p>
+                    </div>
                 </div>
+
+            </div>
+            <div class="check__area__list">
+                <p class="check__list_title">메뉴</p>
+                <ul class="check__list">
+                    <li class="check__all">
+                        <label>
+                            <input type="checkbox" name="chk" class="_check_all">
+                            <i class="icon ico_checkBox">체크박스</i>
+                            <span>전체</span>
+                        </label>
+                    </li>
+                    <li>
+                        <ul class="check_list_select" style="display: flex; flex-wrap: wrap">
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>정산내역</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>결제내역</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>등록 카드, 계좌정보</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>통계</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>부가세신고자료</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>링크결제</span>
+                                </label>
+                            </li>
+                            <li class="hub">
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>허브</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk">
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                    <span>상점정보</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="btn_area">
+                <button class="btn btn_primary">메일 보내기</button>
             </div>
         </div>
-
-
     </div>
 
 </section>

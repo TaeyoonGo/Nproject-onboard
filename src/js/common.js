@@ -97,9 +97,9 @@ function HoverStopService(){
 
 function checkAll() {
     $('._check_all').on('click',function(){
+        console.log('hello')
         // if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
         // else $("input[name=chk]").prop("checked", false);
-
         if($("._check_all").is(":checked")){
             $("input[name=chk]").prop("checked", true);
         }else{

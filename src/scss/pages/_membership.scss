@@ -98,14 +98,87 @@
             border-radius: 15px;
             border: 1px solid #ced4da;
             box-shadow: 0 0 7px rgba(0,0,0,0.15);
+            .btn_area{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 5px;
+            }
             .input__area__list{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                margin-bottom:30px ;
                 .input__area{
                     flex: 0 0 calc(50% - 10px);
+                    .caption_area{
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        p{
+                            word-break: keep-all;
+                            color: #52525B;
+                            font-size: 13px;
+                            line-height: 1.3;
+                            span{
+                                font-weight: 700;
+                                margin-right: 6px;
+                                position: relative;
+                                &:before{
+                                    content: '';
+                                    display: inline-block;
+                                    position: absolute;
+                                    left: -15px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background-image: url("https://image.payple.kr/onboard/icon/ico_alert_whitegray.png");
+                                    width: 13px;
+                                    height: 13px;
+                                    vertical-align: middle;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    background-size: cover;
+
+                                }
+                                &:after{
+                                    content: '|';
+                                    display: inline-block;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: -5px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+            .check__area__list{
+                margin-bottom: 60px;
+                .check__list_title{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #28282e;
+                    margin-bottom: 15px;
+                }
+                .check__list{
+                    li{
+                        margin-bottom: 15px;
+                    }
+                    .check_list_select{
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                         margin-right: 20px;
+                            &.hub{
+                                margin-right: 42px;
+                            }
+                            span{
+                                margin-right:8px;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
 
     }
