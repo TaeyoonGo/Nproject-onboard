@@ -2,16 +2,78 @@
     padding: 80px 30px;
     margin: 0 auto;
     max-width: 800px;
+
     .main_title{
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 30px;
+    }
+    .title_area{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &.detail{
+            justify-content: flex-start;
+            margin-bottom: 62px;
+            .title{
+                color: #1F1F1F;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                }
+                a{
+                    color: inherit;
+                }
+            }
+            span{
+                margin-left: 22px;
+                font-size: 30px;
+                font-weight: 700;
+                i{
+                    margin-right: 22px;
+                }
+                a{
+                    color: #1F1F1F;
+                }
+            }
+        }
 
     }
     .membership_area{
         margin-bottom: 90px;
         &:nth-last-child(1){
             margin-bottom: 0;
+        }
+        .title_area{
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                position: relative;
+                font-size: 30px;
+                font-weight: 700;
+                &.test{
+                    &:before{
+                        position: absolute;
+                        content: 'TEST';
+                        font-size: 15px;
+                        font-weight: bold;
+                        right: -42px;
+                        top: 0;
+                        color: #62BB00;
+                    }
+                }
+
+            }
+
+
         }
         .title_area{
             margin-bottom: 30px;
@@ -21,7 +83,32 @@
             .title{
                 font-size: 22px;
                 font-weight: 700;
+            }
+            &.detail{
+                justify-content: flex-start;
+                margin-bottom: 62px;
+                .title{
 
+                    color: #1F1F1F;
+                    font-weight: 500;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    a{
+                        color: inherit;
+                    }
+                }
+                span{
+                    margin-left: 53px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    i{
+                        margin-right: 22px;
+                    }
+                    a{
+                        color: #1F1F1F;
+                    }
+                }
             }
 
         }
@@ -98,10 +185,46 @@
             border-radius: 15px;
             border: 1px solid #ced4da;
             box-shadow: 0 0 7px rgba(0,0,0,0.15);
+            .authority_list{
+                li{
+                    display: flex;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    &:nth-last-child(1){
+                        margin-bottom: 0;
+                    }
+                    .authority_title{
+                        font-weight: 700;
+                        margin-right: 28px;
+                        flex: 0 0 80px;
+                    }
+                    .menu{
+                        position: relative;
+                        margin-right: 10px;
+                        &:after{
+                            position: absolute;
+                            display: inline-block;
+                            content: '/';
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: -8px;
+                        }
+                        &:last-child{
+                            &:after{
+                                display: none;
+                            }
+
+                        }
+                    }
+                }
+            }
             .btn_area{
                 display: flex;
                 justify-content: flex-end;
                 margin-bottom: 5px;
+                .btn{
+                    min-width: 122px;
+                }
             }
             .input__area__list{
                 display: flex;
