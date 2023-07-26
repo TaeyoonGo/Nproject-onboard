@@ -1,7 +1,15 @@
 .developer_container{
     display: flex;
 
-
+    .live_account{
+        font-size: 15px;
+        color: #7852E8;
+        background-color: #E8E3FF;
+        padding: 6px 15px;
+        border-radius: 15px;
+        vertical-align: middle;
+        margin-left: 12px;
+    }
     .developer_content{
         height: 100%;
         padding: 136px 0 80px;

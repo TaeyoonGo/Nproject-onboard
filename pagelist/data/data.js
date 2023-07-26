@@ -103,7 +103,7 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
@@ -290,15 +290,33 @@ data.developercenter = {
         },
         {
             stateClass: 'confirm',
+            url: '메인_라이브',
+            category: 'developercenter',
+            page: '메인_라이브'
+        },
+        {
+            stateClass: 'confirm',
             url: '웹훅_검색결과없음',
             category: 'developercenter',
             page: '웹훅_검색결과없음'
         },
         {
             stateClass: 'confirm',
+            url: '웹훅_검색결과없음_라이브',
+            category: 'developercenter',
+            page: '웹훅_검색결과없음_라이브'
+        },
+        {
+            stateClass: 'confirm',
             url: '웹훅_검색결과있음',
             category: 'developercenter',
             page: '웹훅_검색결과있음'
+        },
+        {
+            stateClass: 'confirm',
+            url: '웹훅_검색결과있음_라이브',
+            category: 'developercenter',
+            page: '웹훅_검색결과있음_라이브'
         },
         {
             stateClass: 'confirm',
@@ -320,9 +338,21 @@ data.developercenter = {
         },
         {
             stateClass: 'confirm',
+            url: 'white_ip_검색결과없음_라이브',
+            category: 'developercenter',
+            page: 'white_ip_검색결과없음_라이브'
+        },
+        {
+            stateClass: 'confirm',
             url: 'white_ip_검색결과있음',
             category: 'developercenter',
             page: 'white_ip_검색결과있음'
+        },
+        {
+            stateClass: 'confirm',
+            url: 'white_ip_검색결과있음_라이브',
+            category: 'developercenter',
+            page: 'white_ip_검색결과있음_라이브'
         },
         {
             stateClass: 'confirm',
@@ -360,7 +390,7 @@ data.membership = {
             page: '관리자초대_초대관리자없음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '관리자초대_초대관리자있음',
             category: 'membership',
             page: '관리자초대_초대관리자있음'
