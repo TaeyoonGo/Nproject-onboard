@@ -11,32 +11,38 @@
             <i class="icon ico_trashcan"></i>
         </div>
         <div class="border_line">
-            <table>
-                <colgroup>
-                    <col style="width: 20px">
-                    <col style="width: 150px">
-                    <col style="width: 200px">
-                    <col style="width: 200px">
-                </colgroup>
-                <tbody>
-                <tr>
-                    <th class="check_table">
-                        <label>
-                            <input type="checkbox" disabled>
-                            <i class="icon ico_checkBox">체크박스</i>
-                        </label>
-                    </th>
-                    <th class="text_left">이메일</th>
-                    <th class="text_left">권한</th>
-                    <th class="text_left">메모</th>
-                </tr>
-                <tr>
-                    <td colspan="4" class="empty_data no_search">
-                        초대된 관리자가 없습니다.
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="response_table_area" style="margin: 0">
+                <div class="scroll_table_container">
+                    <table class="scroll_table _scroll_table">
+                        <colgroup>
+                            <col style="width: 20px">
+                            <col style="width: 150px">
+                            <col style="width: 200px">
+                            <col style="width: 200px">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th class="check_table">
+                                <label>
+                                    <input type="checkbox" disabled>
+                                    <i class="icon ico_checkBox">체크박스</i>
+                                </label>
+                            </th>
+                            <th class="text_left">이메일</th>
+                            <th class="text_left authority">권한</th>
+                            <th class="text_left">메모</th>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="empty_data no_search">
+                                초대된 관리자가 없습니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -117,7 +123,7 @@
                         </label>
                     </li>
                     <li>
-                        <ul class="check_list_select" style="display: flex; flex-wrap: wrap">
+                        <ul class="check_list_select" >
                             <li>
                                 <label>
                                     <input type="checkbox" name="chk">

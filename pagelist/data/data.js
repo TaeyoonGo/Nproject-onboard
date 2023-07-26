@@ -366,7 +366,7 @@ data.membership = {
             page: '관리자초대_초대관리자있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '관리자초대_수정',
             category: 'membership',
             page: '관리자초대_수정'

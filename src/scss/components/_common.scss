@@ -13,10 +13,10 @@ html, body {
     font-weight: 400;
     font-style: normal;
     color: #1f1f1f;
-    -ms-overflow-style: none;
-    ::-webkit-scrollbar {
-        display: none;
-    }
+    //-ms-overflow-style: none;
+    //::-webkit-scrollbar {
+    //    display: none;
+    //}
 }
 
 
@@ -935,15 +935,18 @@ a {
     }
 }
 .scroll_table_container{
-    overflow-x: scroll ;
-    ::-webkit-scrollbar {
-        display: block;
+    overflow-x: auto;
 
-    }
    table{
        table-layout: fixed;
        th,td{
           word-break: break-all;
+           .link{
+               color: #52525B;
+               &:hover{
+                   text-decoration: underline;
+               }
+           }
        }
    }
 }
