@@ -433,6 +433,7 @@ a {
             }
         }
         .confirm_list{
+            margin-bottom: 26px;
             @include mo-res{
                 flex-direction: column;
                 margin-bottom: 32px;

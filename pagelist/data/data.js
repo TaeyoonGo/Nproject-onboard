@@ -157,7 +157,7 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'waiting',
+            stateClass: 'confirm',
             url: '최종확인',
             category: 'join',
             page: '최종확인'
