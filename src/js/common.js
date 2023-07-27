@@ -59,7 +59,8 @@ function selectBox() {
     })
     selectBox.find('.option').on('click', function () {
         let text = $(this).text();
-        $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'});
+        let value = $(this).val();
+        $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
     });
 }
 
@@ -122,6 +123,17 @@ function emptyTableData(){
 }
 
 
+// 파일명 커스텀
+function inputFile(){
+    $("._file_input").on('change',function(){
+        var fileName = $(this).val().split('/').pop().split('\\').pop();
+        console.log(fileName);
+        $("._file_name").text(fileName);
+    });
+}
+
+
+
 // 실행
 $(document).ready(function () {
     formatPhoneNumber();
@@ -134,6 +146,5 @@ $(document).ready(function () {
     HoverStopService();
     checkAll();
     emptyTableData();
-
-
+    inputFile();
 })

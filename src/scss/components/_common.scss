@@ -1052,10 +1052,6 @@ a {
     }
 }
 
-
-
-
-
 .input__date{
     width: 30px;
     height: 30px;
@@ -1068,3 +1064,28 @@ a {
     }
 
 }
+
+//file custom
+.file_custom{
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 7px;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    .icon_area{
+        position: absolute;
+        right:10px;
+    }
+}
+
