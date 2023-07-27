@@ -1,6 +1,6 @@
 .developer_container{
     display: flex;
-
+    height: 100%;
     .live_account{
         font-size: 15px;
         color: #7852E8;
@@ -12,8 +12,8 @@
     }
     .developer_content{
         height: 100%;
-        padding: 136px 0 80px;
-        flex: 1 1 auto;
+        padding: 136px 24px 80px;
+        flex: 1 1 calc(100% - 300px);
         .developer_section{
             max-width: 780px;
             margin: 0 auto;
@@ -262,8 +262,6 @@
                 }
             }
             .search_result_area{
-                border-radius: 15px;
-                overflow: hidden;
                 .title_area{
                     margin-bottom: 20px;
                     .title{

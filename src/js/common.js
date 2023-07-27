@@ -133,6 +133,15 @@ function inputFile(){
 }
 
 
+function getValidateIp(){
+    $('._input_ip').on('keypress', function(event) {
+        var inputValue = event.which;
+        if (inputValue != 46 && (inputValue < 48 || inputValue > 57)) {
+            event.preventDefault();
+        }
+    });
+}
+
 
 // 실행
 $(document).ready(function () {
@@ -147,4 +156,5 @@ $(document).ready(function () {
     checkAll();
     emptyTableData();
     inputFile();
+    getValidateIp();
 })

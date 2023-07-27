@@ -13,6 +13,7 @@ html, body {
     font-weight: 400;
     font-style: normal;
     color: #1f1f1f;
+    height: 100%;
     //-ms-overflow-style: none;
     //::-webkit-scrollbar {
     //    display: none;
@@ -393,7 +394,7 @@ a {
         }
         .modal_footer {
             text-align: center;
-            padding: 26px 0 40px;
+            padding: 40px 0 40px;
             .btn {
                 font-size: 18px;
                 font-weight: 400;
@@ -910,11 +911,13 @@ a {
             text-align: left;
             color: #52525B;
             font-weight: 500;
+            font-size: 15px;
             &.check_table{
                 text-align: center;
             }
         }
         td{
+            font-size: 15px;
             border-bottom: 1px solid #F0F0F0;
             padding: 11px 10px;
             &.check_table{
@@ -954,14 +957,11 @@ a {
 
 //aside
 .aside{
-    height: 100%;
     background-color:#F6F6F6;
-    padding: 60px 20px;
-    position: fixed;
-    width: 300px;
-    top: 56px;
-    left: 0;
-
+    padding: 130px 20px 60px;
+    flex: 1 1 300px;
+    height: 100%;
+    z-index: 900;
     .sub_title{
         font-size: 20px;
         font-weight: 700;
@@ -1050,6 +1050,7 @@ a {
             }
         }
     }
+
 }
 
 .input__date{
