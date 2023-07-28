@@ -48,7 +48,7 @@
 .login__box{
     .g-recaptcha{
         transform: scale(1.2); display: flex; justify-content: center;
-        @include mo-res{
+        @include res-sm{
             scale: 0.8;
         }
     }
@@ -260,7 +260,7 @@
 .service__info__section{
     width: 380px;
     margin: 50px auto 0;
-    @include mo-res{
+    @include res-sm{
         width: 100%;
     }
     .info_box{

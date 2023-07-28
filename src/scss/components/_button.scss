@@ -109,7 +109,7 @@ input:checked + .checked__label{
     background-color: #E9E1FF;
     border: 1px solid #7852E8;
     .desc_tablet{
-        @include tablet-res{
+        @include res-md{
             color: #1f1f1f;
         }
     }

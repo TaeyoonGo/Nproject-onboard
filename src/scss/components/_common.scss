@@ -323,23 +323,23 @@ a {
         &.modal_checkbox {
             .modal_header {
                 margin-bottom: 0;
-                @include mo-res{
+                @include res-sm{
                     padding: 26px 12px;
                 }
                 .main_title{
-                    @include mo-res{
+                    @include res-sm{
                         font-size: 18px;
                     }
                 }
             }
             .ico_close_btn{
-                @include mo-res{
+                @include res-sm{
                     top: 20px;
                     right: 15px;
                 }
             }
             .modal_body{
-                @include mo-res{
+                @include res-sm{
                     padding: 20px 12px;
                 }
             }
@@ -356,7 +356,7 @@ a {
         .modal_title {
             font-size: 20px;
             font-weight: 700;
-            @include mo-res{
+            @include res-sm{
                 font-size: 18px;
             }
         }
@@ -364,14 +364,14 @@ a {
             overflow-y: auto;
             max-height: calc(80vh - 140px);
             padding: 20px 30px 40px;
-            @include mo-res{
+            @include res-sm{
                 max-height: calc(80vh - 100px);
             }
         }
     }
     &.modal_confirm{
         width: 480px;
-        @include mo-res{
+        @include res-sm{
             width: 90%;
         }
         .modal_header {
@@ -386,7 +386,7 @@ a {
                 text-align: center;
                 line-height: 28px;
                 font-weight: 900;
-                @include mo-res{
+                @include res-sm{
                     font-size: 18px;
                     line-height: 24px;
                 }
@@ -412,30 +412,30 @@ a {
     }
     &.modal_confirmation {
         width: 680px;
-        @include mo-res{
+        @include res-sm{
             width: 90%;
         }
         .modal_header {
             display: flex;
             justify-content: space-between;
-            @include mo-res{
+            @include res-sm{
                 padding: 25px 25px 0 25px;
                 align-items: center;
             }
             .modal_title {
-                @include mo-res{
+                @include res-sm{
                     font-size: 18px;
                 }
             }
         }
         .confirm_title{
-            @include mo-res{
+            @include res-sm{
                 margin-bottom: 10px;
             }
         }
         .confirm_list{
             margin-bottom: 26px;
-            @include mo-res{
+            @include res-sm{
                 flex-direction: column;
                 margin-bottom: 32px;
             }
@@ -446,7 +446,7 @@ a {
             max-height: calc(80vh - 100px);
             .confirm_desc{
                 .confirm_desc_title{
-                    @include mo-res{
+                    @include res-sm{
                         flex: 0 0 40%;
                     }
                 }
@@ -455,7 +455,7 @@ a {
     }
     &.modal_sm {
         width: 410px;
-        @include mo-res{
+        @include res-sm{
             width: 90%;
         }
     }
@@ -485,7 +485,7 @@ a {
             overflow-y: auto;
             max-height: calc(80vh - 140px);
             padding: 20px 20px 40px;
-            @include mo-res{
+            @include res-sm{
                 max-height: calc(80vh - 100px);
             }
         }
@@ -719,7 +719,7 @@ a {
 
 .header .header__navi__link {
     display: flex;
-    @include mo-res{
+    @include res-sm{
         display: none;
     }
 }
@@ -879,21 +879,21 @@ a {
 
 .mo_show{
     display: none !important;
-    @include mo-res{
+    @include res-sm{
         display: block !important;
     }
 }
 
 .pc_show{
     display: block !important;
-    @include mo-res{
+    @include res-sm{
         display: none !important;
     }
 }
 
 .tablet_show{
     display: block;
-    @include tablet-res{
+    @include res-md{
         display: none !important;
     }
 }

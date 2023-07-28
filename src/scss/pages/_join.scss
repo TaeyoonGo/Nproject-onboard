@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include tablet-res {
+    @include res-md {
         display: none;
     }
 }
@@ -29,17 +29,17 @@
 
 .join_content_section {
     padding: 90px 0;
-    @include mo-res {
+    @include res-sm {
         padding: 40px 0;
     }
     .main_title {
         font-size: 28px;
         text-align: center;
         line-height: 38px;
-        @include tablet-res{
+        @include res-md{
             margin-bottom: 20px;
         }
-        @include mo-res {
+        @include res-sm {
             text-align: left;
             font-size: 20px;
             line-height: 30px;
@@ -52,7 +52,7 @@
 .join_wrap_complete {
     padding: 180px 0 70px;
     text-align: center;
-    @include mo-res{
+    @include res-sm{
         padding: 50px 0;
     }
 }
@@ -61,7 +61,7 @@
     width: 161px;
     margin: 0 auto 20px;
     height: auto;
-    @include mo-res{
+    @include res-sm{
         width: 40%;
     }
 }
@@ -69,7 +69,7 @@
 .join_wrap_complete .desc {
     font-size: 24px;
     line-height: 34px;
-    @include mo-res{
+    @include res-sm{
         font-size: 18px;
     }
 }
@@ -167,7 +167,7 @@
     padding: 30px 52px 60px;
     display: flex;
     justify-content: flex-end;
-    @include mo-res{
+    @include res-sm{
         padding: 24px 12px;
 
     }
@@ -182,7 +182,7 @@
 .detail_area {
     display: none;
     margin-top: 110px;
-    @include mo-res{
+    @include res-sm{
         margin-top: 40px;
     }
 }
@@ -190,7 +190,7 @@
 .detail_area .detail__list {
     width: 380px;
     margin: 70px auto 0;
-    @include mo-res{
+    @include res-sm{
         width: 100%;
         margin: 42px auto 0;
     }
@@ -209,7 +209,7 @@
         justify-content: space-between;
 
     }
-    @include mo-res{
+    @include res-sm{
         margin: 40px auto 330px;
         width: auto;
         justify-content: flex-start;
@@ -218,7 +218,7 @@
     .input__area {
         flex: auto;
         margin-right: 18px;
-        @include mo-res{
+        @include res-sm{
             margin-right: 10px;
         }
     }
@@ -227,7 +227,7 @@
         font-size: 18px;
         padding: 10px 20px;
         font-weight: 400;
-        @include mo-res{
+        @include res-sm{
             padding: 0;
             width: 60px;
             font-size: 16px;
@@ -241,7 +241,7 @@
     margin: 60px auto 0;
     .label_text_tablet{
         display: none;
-        @include tablet-res{
+        @include res-md{
             display: flex;
             flex-direction: column;
         }
@@ -261,13 +261,13 @@
             }
         }
     }
-    @include tablet-res{
+    @include res-md{
         width: 100%;
         margin: 40px auto 0;
     }
     .service__select_section {
         margin-bottom: 110px;
-        @include tablet-res{
+        @include res-md{
             margin-bottom: 20px;
         }
         &:last-child {
@@ -294,7 +294,7 @@
             background-color: #F0F0F0;
             &.tablet_show{
                 display: none;
-                @include tablet-res{
+                @include res-md{
                     margin-top: 20px;
                     text-align: center;
                     display: block !important;
@@ -307,7 +307,7 @@
             width: 640px;
             margin: 20px auto 0;
             align-items: center;
-            @include tablet-res{
+            @include res-md{
                 flex-direction: column;
                 width: 100%;
             }
@@ -317,7 +317,7 @@
                 &:last-child {
                     flex: 1 1 85%;
                 }
-                @include tablet-res{
+                @include res-md{
                     flex: none;
                     width: 100%;
                     &:last-child{
@@ -382,7 +382,7 @@
 
         .title {
             font-size: 20px;
-            @include tablet-res{
+            @include res-md{
                 font-size: 18px;
                 margin-bottom: 15px;
             }
@@ -391,19 +391,19 @@
         .label__design {
             width: 150px;
             position: relative;
-            @include tablet-res{
+            @include res-md{
                 width: 100%;
                 margin-bottom: 20px;
             }
             .checked__label{
 
-                @include tablet-res{
+                @include res-md{
                     padding: 12px 15px;
 
                 }
             }
             + .label__design{
-                @include tablet-res{
+                @include res-md{
                     margin-left: 0;
                 }
 
@@ -437,7 +437,7 @@
 
                 .label__design + .label__design {
                     margin-left: 69px;
-                    @include tablet-res{
+                    @include res-md{
                         margin-left: 0;
                         margin-bottom: 0;
                     }
@@ -477,7 +477,7 @@
 
                 .label__design + .label__design {
                     margin-left: 69px;
-                    @include tablet-res{
+                    @include res-md{
                         margin-left: 0;
                     }
                 }
@@ -516,7 +516,7 @@
 
                 .label__design + .label__design {
                     margin-left: 69px;
-                    @include tablet-res{
+                    @include res-md{
                         margin-left: 0;
                     }
                 }
@@ -562,7 +562,7 @@
                     flex: 1 1 30%;
                     &:last-child {
                         flex: 1 1 70%;
-                        @include tablet-res{
+                        @include res-md{
                             display: flex;
                             width: 100%;
                             justify-content: space-between;
@@ -639,7 +639,7 @@
                 margin-right: 8px;
                 margin-bottom: 8px;
 
-                @include mo-res{
+                @include res-sm{
                     margin-right: 1px;
                 }
 
@@ -692,7 +692,7 @@
             padding: 28px 22px;
             vertical-align: top;
             display: inline-block;
-            @include mo-res{
+            @include res-sm{
 
                 display: none;
                 background-color: #fff;
@@ -702,7 +702,7 @@
             &:first-child {
                 margin-right: 40px;
 
-                @include mo-res{
+                @include res-sm{
                     margin-right: 0;
                 }
             }
@@ -712,7 +712,7 @@
 
             &.check_bg {
                 background-color: #E9E1FF;
-                @include mo-res{
+                @include res-sm{
                     min-height: 200px;
                     display: block;
                     background-color: #fff;
@@ -731,7 +731,7 @@
                 font-size: 16px;
                 line-height: 23px;
                 margin-bottom: 20px;
-                @include mo-res{
+                @include res-sm{
                     font-size: 16px;
                 }
                 .list_mo{
@@ -751,11 +751,11 @@
     text-align: center;
     margin-top: 64px;
     &.contract{
-        @include mo-res{
+        @include res-sm{
             flex-direction: column;
         }
         .label__design{
-            @include mo-res{
+            @include res-sm{
                 width: 100%;
                 margin-bottom: 18px;
                 &:last-child{
@@ -765,17 +765,17 @@
         }
 
     }
-    @include mo-res{
+    @include res-sm{
         display: flex;
         justify-content: space-between;
         margin-top: 42px;
     }
     .label__design{
-        @include mo-res{
+        @include res-sm{
             width: calc(50% - 10px);
         }
         +.label__design{
-            @include mo-res{
+            @include res-sm{
                 margin-left: 0;
             }
 
@@ -785,7 +785,7 @@
 
 .tablet_modal_btn{
     display: none;
-    @include tablet-res{
+    @include res-md{
         display: block;
         a{
             border-radius: 44px;

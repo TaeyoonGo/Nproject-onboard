@@ -32,7 +32,7 @@
         background-image: url("https://image.payple.kr/onboard/icon/ico_closeBtn.png");
         width: 30px;
         height: 30px;
-        @include mo-res{
+        @include res-sm{
             width: 24px;
             height: 24px;
         }
@@ -142,7 +142,7 @@
         background-image: url("https://image.payple.kr/onboard/icon/ico_document.png");
         width: 20px;
         height: 25px;
-        @include mo-res{
+        @include res-sm{
             width: 14px;
             height: 16px;
         }
@@ -151,7 +151,7 @@
         background-image: url("https://image.payple.kr/onboard/icon/ico_setting_blue.png");
         width: 22px;
         height: 22px;
-        @include mo-res{
+        @include res-sm{
             width: 18px;
             height: 18px;
         }
@@ -160,7 +160,7 @@
         background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox_blue.png");
         width: 22px;
         height: 22px;
-        @include mo-res{
+        @include res-sm{
             width: 18px;
             height: 18px;
         }
