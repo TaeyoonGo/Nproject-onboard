@@ -133,6 +133,7 @@ function inputFile(){
 }
 
 
+// ip 입력시 클릭안됨
 function getValidateIp(){
     $('._input_ip').on('keypress', function(event) {
         var inputValue = event.which;
@@ -140,6 +141,16 @@ function getValidateIp(){
             event.preventDefault();
         }
     });
+}
+
+
+// header 테블릿 버튼
+
+function asideButton(){
+    $('._aside_button').on('click',function(){
+        $('.aside').toggleClass('show')
+        $(this).toggleClass('active')
+    })
 }
 
 
@@ -157,4 +168,5 @@ $(document).ready(function () {
     emptyTableData();
     inputFile();
     getValidateIp();
+    asideButton();
 })

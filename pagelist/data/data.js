@@ -15,7 +15,7 @@ data.email = {
             page: '임시비밀번호'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '초대이메일',
             category: 'email',
             page: '초대이메일'
@@ -103,7 +103,7 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
@@ -157,7 +157,7 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최종확인',
             category: 'join',
             page: '최종확인'
@@ -180,12 +180,6 @@ data.join = {
 data.main = {
     title: '메인페이지',
     list: [
-        {
-            stateClass: 'complete',
-            url: '가이드페이지',
-            category: 'main',
-            page: '가이드페이지'
-        },
         {
             stateClass: 'complete',
             url: '최초신청',
@@ -277,12 +271,6 @@ data.developercenter = {
     title: '개발자센터',
     list: [
         {
-            stateClass: 'working',
-            url: '가이드',
-            category: 'developercenter',
-            page: '가이드'
-        },
-        {
             stateClass: 'confirm',
             url: '메인',
             category: 'developercenter',
@@ -307,73 +295,73 @@ data.developercenter = {
             page: '웹훅_검색결과없음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '웹훅_검색결과있음',
             category: 'developercenter',
             page: '웹훅_검색결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '웹훅_검색결과있음_라이브',
             category: 'developercenter',
             page: '웹훅_검색결과있음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '웹훅_상세정보_검색결과없음',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '웹훅_상세정보_검색결과있음',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: 'white_ip_검색결과없음',
             category: 'developercenter',
             page: 'white_ip_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: 'white_ip_검색결과없음_라이브',
             category: 'developercenter',
             page: 'white_ip_검색결과없음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: 'white_ip_검색결과있음',
             category: 'developercenter',
             page: 'white_ip_검색결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: 'white_ip_검색결과있음_라이브',
             category: 'developercenter',
             page: 'white_ip_검색결과있음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: 'white_ip_10개이상등록',
             category: 'developercenter',
             page: 'white_ip_10개이상등록'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '테스트결제내역_검색결과없음',
             category: 'developercenter',
             page: '테스트결제내역_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '테스트결제내역_조회결과_국내',
             category: 'developercenter',
             page: '테스트결제내역_조회결과_국내'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'working',
             url: '테스트결제내역_조회결과_해외',
             category: 'developercenter',
             page: '테스트결제내역_조회결과_해외'

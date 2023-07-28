@@ -173,6 +173,15 @@ img {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     box-sizing: border-box;
 
+    &.mo_ellipsis{
+        @include res-sm{
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
 }
 
 .form_control:focus {
@@ -672,6 +681,39 @@ a {
         .header__container{
             padding: 0 20px;
             max-width: none;
+            .aside_button{
+                cursor: pointer;
+                display: none;
+                &.active{
+                    div{
+                        &:first-child{
+                            transform: rotate(-45deg) translate(-6px, 5px);
+                        }
+                        &:nth-child(2){
+                            opacity: 0;
+                        }
+                        &:last-child{
+                            transform: rotate(45deg) translate(-8px, -7px);
+                        }
+                    }
+
+                }
+                div{
+                    border: 1px solid #BABAC2;
+                    width: 22px;
+                    height: 2px;
+                    transition: all 0.3s;
+                    &:nth-child(2){
+                        margin-top: 7px;
+                        margin-bottom: 7px;
+                    }
+
+                }
+                @include res-md{
+                    display: block;
+                }
+            }
+
         }
         .header__navi{
             .text{
@@ -825,6 +867,8 @@ a {
     &.active{
         .options{
             display: block;
+            overflow-y: auto;
+            height: 160px;
         }
         .icon{
             background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_up.png");
@@ -960,8 +1004,21 @@ a {
     background-color:#F6F6F6;
     padding: 130px 20px 60px;
     flex: 1 1 300px;
+    transition: all 0.3s;
+    @include res-xl{
+        flex: 1 1 220px;
+    }
+    @include res-md{
+        position: fixed;
+        width: 220px;
+        transform: translateX(-220px);
+        &.show{
+            transform: translateX(0px);
+        }
+    }
     height: 100%;
     z-index: 900;
+
     .sub_title{
         font-size: 20px;
         font-weight: 700;
