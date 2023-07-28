@@ -943,23 +943,45 @@ a {
 }
 
 
+/*테이블*/
 .scroll_table_container{
-    width: 100%;
-    border: 1px solid blue;
-    .table{
-        overflow-x: auto;
-    }
-    .scroll_thead , .scroll_tbody{
-        .scroll_tr{
-            display: flex;
+    margin: 0 -24px;
+    color: #52525b;
+    table{
+        width: 100%;
+        th{
+            padding: 11px 10px;
+            background-color: #F6F6F6;
+            text-align: left;
+            color: #52525B;
+            font-weight: 500;
+            font-size: 15px;
+            &.check_table{
+                text-align: center;
+            }
+        }
+        td{
+            font-size: 15px;
+            border-bottom: 1px solid #F0F0F0;
+            padding: 11px 10px;
+            &.check_table{
+                text-align: center;
+            }
+            &.empty_data{
+                text-align: center;
+                padding: 55px 0;
+                border-bottom: none;
+
+            }
+            &.name_data{
+                a{
+                    text-decoration: underline;
+                    color: #0086F1;
+                }
+            }
         }
     }
-
 }
-
-
-/*테이블*/
-
 
 //aside
 .aside{
