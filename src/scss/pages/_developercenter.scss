@@ -23,6 +23,7 @@
         }
         .developer_section{
             max-width: 780px;
+            //max-width: 1000px;
             margin: 0 auto;
 
             .title_area{
@@ -239,7 +240,6 @@
                     .input__area{
                         margin-bottom: 0;
                         &.name{
-
                             margin-right: 24px;
                             flex: 1 1 15%;
                         }
@@ -249,12 +249,14 @@
                             flex: 1 1 45%;
                         }
                         &.data{
-
                             flex: 1 1 40%;
                         }
                         &.default{
                             flex: 0 0 20%;
                             margin-right: 24px;
+                            @include res-sm{
+                              margin-right: 0;
+                            }
                         }
                         &.update_date{
                             flex: 0 0 35%;
@@ -305,7 +307,6 @@
                                 }
                             }
                             &.data{
-
                                 .input_title{
                                     margin-bottom: 8px;
                                 }
