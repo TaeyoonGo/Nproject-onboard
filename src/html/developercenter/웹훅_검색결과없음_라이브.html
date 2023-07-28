@@ -16,26 +16,37 @@
                     <p class="title">웹훅 목록</p>
                     <i class="icon ico_trashcan"></i>
                 </div>
-                <div class="response_table_area">
-                    <table>
+                <div class="scroll_table_container">
+                    <div class="scroll_table_box">
+                        <table>
+                            <colgroup>
+                                <col style="width: 40px">
+                                <col style="width: 100px">
+                                <col style="width: 238px">
+                                <col style="width: 400px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th class="check_table">
+                                    <label>
+                                        <input type="checkbox" disabled>
+                                        <i class="icon ico_checkBox">체크박스</i>
+                                    </label>
+                                </th>
+                                <th>이름</th>
+                                <th>URL</th>
+                                <th>수신 데이터</th>
+                            </tr>
+                            </thead>
+                            <tbody>
 
-                        <tbody>
-                        <tr>
-                            <th class="check_table">
-                                <label>
-                                    <input type="checkbox" disabled>
-                                    <i class="icon ico_checkBox">체크박스</i>
-                                </label>
-                            </th>
-                            <th>이름</th>
-                            <th>URL</th>
-                            <th>수신 데이터</th>
-                        </tr>
-                        <tr>
-                            <td class="empty_data" colspan="4">등록된 웹훅이 없습니다.</td>
-                        </tr>
+                            <tr>
+                                <td class="empty_data" colspan="4">등록된 웹훅이 없습니다.</td>
+                            </tr>
 
-                        </tbody></table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="developer_card">
