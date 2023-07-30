@@ -254,12 +254,21 @@
                         &.default{
                             flex: 0 0 20%;
                             margin-right: 24px;
-                            @include res-sm{
-                              margin-right: 0;
+                            @include res-lg{
+                              margin-right: 0;margin-bottom: 20px;
+                                .input_title{
+                                    margin-bottom: 8px;
+                                }
                             }
                         }
                         &.update_date{
                             flex: 0 0 35%;
+                            @include res-lg{
+                                margin-right: 0;
+                                .input_title{
+                                    margin-bottom: 8px;
+                                }
+                            }
                         }
                         .input_title{
                             font-size: 15px;
@@ -312,6 +321,7 @@
                                 }
                             }
 
+
                         }
                     }
                 }
@@ -356,6 +366,10 @@
                     border-radius: 15px;
                     overflow: hidden;
                     border: 1px solid #ced4da;
+                    .response_table{
+                        width: 100%;
+                        margin: 0 auto;
+                    }
                     .pagination_area{
                         padding: 40px 0;
                         display: flex;

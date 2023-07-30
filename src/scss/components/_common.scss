@@ -868,7 +868,7 @@ a {
         .options{
             display: block;
             overflow-y: auto;
-            height: 160px;
+
         }
         .icon{
             background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_up.png");
@@ -891,6 +891,9 @@ a {
         z-index: 1000;
         border-radius: 7px;
         overflow: hidden;
+        .h_160{
+            height: 160px;
+        }
         .option{
             padding: 12px 10px;
             font-size: 16px;
@@ -947,8 +950,8 @@ a {
 .response_table{
     color: #52525b;
     display: block;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 -24px;
+    width: calc(100% + 48px);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     table{

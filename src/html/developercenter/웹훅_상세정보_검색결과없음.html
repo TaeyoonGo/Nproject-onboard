@@ -71,33 +71,35 @@
                     <i class="icon ico_excel"></i>
                 </div>
                 <div class="border_line">
-                    <table>
-                        <colgroup>
-                            <col style="width: 5%">
-                            <col style="width: 24%">
-                            <col style="width: 10%">
-                            <col style="width: 7%">
-                            <col style="width: 7%">
-                            <col style="width: 20%">
-                            <col style="width: 15%">
-                        </colgroup>
-                        <tbody>
-                        <tr>
-                            <th>No</th>
-                            <th>업데이트 일시</th>
-                            <th>http 상태</th>
-                            <th>실행</th>
-                            <th>성공</th>
-                            <th>실패정보</th>
-                            <th>재발송 횟수</th>
-                        </tr>
-                        <tr>
-                           <td class="empty_data no_search" colspan="7">
-                               조회 결과가 없습니다.
-                           </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="response_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 50px">
+                                <col style="width: 200px">
+                                <col style="width: 80px">
+                                <col style="width: 50px">
+                                <col style="width: 50px">
+                                <col style="width: 100px">
+                                <col style="width: 100px">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>No</th>
+                                <th>업데이트 일시</th>
+                                <th>http 상태</th>
+                                <th>실행</th>
+                                <th>성공</th>
+                                <th>실패정보</th>
+                                <th>재발송 횟수</th>
+                            </tr>
+                            <tr>
+                                <td class="empty_data no_search" colspan="7">
+                                    조회 결과가 없습니다.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,13 +135,13 @@
         "buttonClasses": "data_range_btn",
         "applyButtonClasses": "apply_range_btn",
         "cancelButtonClasses": "cancel_range_btn",
-        "showCustomRangeLabelranges" : false,
+        "showCustomRangeLabelranges": false,
         "parentEl": parentElement,
     }, function (start, end, label) {
         console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
     });
 
-    $('#myDateRangePicker').on('hide.daterangepicker', function(ev, picker) {
+    $('#myDateRangePicker').on('hide.daterangepicker', function (ev, picker) {
         let modals = $('.modal')
         modals.removeClass('fade')
         setTimeout(function () {
