@@ -1,6 +1,8 @@
 .developer_container{
     display: flex;
-    height: 100%;
+    @include res-xl{
+        display: block;
+    }
     .live_account{
         font-size: 15px;
         color: #7852E8;
@@ -16,11 +18,9 @@
         }
     }
     .developer_content{
-        padding: 136px 24px 0;
+        padding: 136px 24px 60px;
         flex: 1 1 calc(100% - 300px);
-        @include res-xl{
-            flex: 1 1 calc(100% - 220px);
-        }
+
         .developer_section{
             max-width: 780px;
             //max-width: 1000px;
