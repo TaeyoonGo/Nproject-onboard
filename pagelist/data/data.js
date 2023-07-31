@@ -319,49 +319,49 @@ data.developercenter = {
             page: '웹훅_상세정보_검색결과있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: 'white_ip_검색결과없음',
             category: 'developercenter',
             page: 'white_ip_검색결과없음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: 'white_ip_검색결과없음_라이브',
             category: 'developercenter',
             page: 'white_ip_검색결과없음_라이브'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: 'white_ip_검색결과있음',
             category: 'developercenter',
             page: 'white_ip_검색결과있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: 'white_ip_검색결과있음_라이브',
             category: 'developercenter',
             page: 'white_ip_검색결과있음_라이브'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: 'white_ip_10개이상등록',
             category: 'developercenter',
             page: 'white_ip_10개이상등록'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '테스트결제내역_검색결과없음',
             category: 'developercenter',
             page: '테스트결제내역_검색결과없음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '테스트결제내역_조회결과_국내',
             category: 'developercenter',
             page: '테스트결제내역_조회결과_국내'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '테스트결제내역_조회결과_해외',
             category: 'developercenter',
             page: '테스트결제내역_조회결과_해외'

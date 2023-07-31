@@ -48,34 +48,31 @@
                     <p class="title test">조회결과 - 국내</p>
                 </div>
                 <div class="response_table">
-                    <div class="">
-                        <table class="scroll_table _scroll_table">
-                            <colgroup>
-                                <col style="width: 50px">
-                                <col style="width: 180px">
-                                <col style="width: 110px">
-                                <col style="width: 55px">
-                                <col style="width: 120px">
-                                <col style="width: 210px">
-                                <col style="width: 240px">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th class="text_center">No</th>
-                                <th>결제일시</th>
-                                <th>결제수단</th>
-                                <th class="text_center">상태</th>
-                                <th class="text_center">결제금액</th>
-                                <th>주문번호</th>
-                                <th>상품명</th>
-                            </tr>
-                            <tr>
-                               <td class="empty_data no_search" colspan="7">조회결과가 없습니다.</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
+                    <table>
+                        <colgroup>
+                            <col style="width: 50px">
+                            <col style="width: 180px">
+                            <col style="width: 110px">
+                            <col style="width: 55px">
+                            <col style="width: 120px">
+                            <col style="width: 210px">
+                            <col style="width: 240px">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th class="text_center">No</th>
+                            <th>결제일시</th>
+                            <th>결제수단</th>
+                            <th class="text_center">상태</th>
+                            <th class="text_center">결제금액</th>
+                            <th>주문번호</th>
+                            <th>상품명</th>
+                        </tr>
+                        <tr>
+                            <td class="empty_data no_search" colspan="7">조회결과가 없습니다.</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="developer_card">
@@ -83,34 +80,31 @@
                     <p class="title test">조회결과 - 해외</p>
                 </div>
                 <div class="response_table">
-                    <div class="">
-                        <table class="scroll_table _scroll_table">
-                            <colgroup>
-                                <col style="width: 50px">
-                                <col style="width: 180px">
-                                <col style="width: 110px">
-                                <col style="width: 55px">
-                                <col style="width: 120px">
-                                <col style="width: 210px">
-                                <col style="width: 240px">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th class="text_center">No</th>
-                                <th>결제일시</th>
-                                <th>결제수단</th>
-                                <th class="text_center">상태</th>
-                                <th class="text_center">결제금액</th>
-                                <th>주문번호</th>
-                                <th>상품명</th>
-                            </tr>
-                            <tr>
-                                <td class="empty_data no_search" colspan="7">조회결과가 없습니다.</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
+                    <table>
+                        <colgroup>
+                            <col style="width: 50px">
+                            <col style="width: 180px">
+                            <col style="width: 110px">
+                            <col style="width: 55px">
+                            <col style="width: 120px">
+                            <col style="width: 210px">
+                            <col style="width: 240px">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th class="text_center">No</th>
+                            <th>결제일시</th>
+                            <th>결제수단</th>
+                            <th class="text_center">상태</th>
+                            <th class="text_center">결제금액</th>
+                            <th>주문번호</th>
+                            <th>상품명</th>
+                        </tr>
+                        <tr>
+                            <td class="empty_data no_search" colspan="7">조회결과가 없습니다.</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
@@ -145,13 +139,13 @@
         "buttonClasses": "data_range_btn",
         "applyButtonClasses": "apply_range_btn",
         "cancelButtonClasses": "cancel_range_btn",
-        "showCustomRangeLabelranges" : false,
+        "showCustomRangeLabelranges": false,
         "parentEl": parentElement,
     }, function (start, end, label) {
         console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
     });
 
-    $('#myDateRangePicker').on('hide.daterangepicker', function(ev, picker) {
+    $('#myDateRangePicker').on('hide.daterangepicker', function (ev, picker) {
         let modals = $('.modal')
         modals.removeClass('fade')
         setTimeout(function () {

@@ -1,7 +1,7 @@
 .membership_section{
     padding: 80px 30px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1060px;
 
     .main_title{
         font-size: 30px;
@@ -20,7 +20,8 @@
         }
         &.detail{
             justify-content: flex-start;
-            margin-bottom: 62px;
+            max-width: 740px;
+            margin: 0 auto 62px;
             .title{
                 color: #1F1F1F;
                 font-weight: 500;
@@ -47,32 +48,32 @@
     }
     .membership_area{
         margin-bottom: 90px;
+        &.membership_area_w740{
+            max-width: 740px;
+            &.m_auto{
+                margin: 0 auto;
+            }
+
+        }
         &:nth-last-child(1){
             margin-bottom: 0;
         }
-        .title_area{
-            margin-bottom: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .title{
-                position: relative;
-                font-size: 30px;
-                font-weight: 700;
-                &.test{
-                    &:before{
-                        position: absolute;
-                        content: 'TEST';
-                        font-size: 15px;
-                        font-weight: bold;
-                        right: -42px;
-                        top: 0;
-                        color: #62BB00;
-                    }
+
+        .input_title{
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            &.essentials{
+                &:before{
+                    right: -10px;
+                    top: -2px;
+                    position: absolute;
+
+                    content: '*';
+                    display: inline-block;
+                    color: #FF3131;
                 }
-
             }
-
 
         }
         .title_area{
@@ -116,6 +117,10 @@
             border-radius: 15px;
             overflow: hidden;
             border: 1px solid #ced4da;
+            .response_table{
+                width: 100%;
+                margin: 0 auto;
+            }
             .pagination_area{
                 padding: 40px 0;
                 display: flex;
@@ -184,7 +189,7 @@
             padding: 24px;
             border-radius: 15px;
             border: 1px solid #ced4da;
-            box-shadow: 0 0 7px rgba(0,0,0,0.15);
+
             .authority_list{
                 li{
                     display: flex;
@@ -231,8 +236,12 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 margin-bottom:30px ;
+
                 .input__area{
                     flex: 0 0 calc(50% - 10px);
+                    @include res-sm{
+                        flex: 1 1 100%;
+                    }
                     .caption_area{
                         margin-top: 10px;
                         margin-left: 20px;
@@ -252,7 +261,7 @@
                                     left: -15px;
                                     top: 50%;
                                     transform: translateY(-50%);
-                                    background-image: url("https://image.payple.kr/onboard/icon/ico_alert_whitegray.png");
+                                    background-image: url("https://image.payple.kr/onboard/icon/ico_alert_white_gray.png");
                                     width: 13px;
                                     height: 13px;
                                     vertical-align: middle;
@@ -290,6 +299,9 @@
                         display: flex;
                         flex-wrap: wrap;
                         li{
+                            @include res-sm{
+                                flex: 1 1 100%;
+                            }
                          margin-right: 20px;
                             &.hub{
                                 margin-right: 42px;
