@@ -879,6 +879,7 @@ a {
         color:#BABAC2;
     }
     .options{
+        max-height: 162px;
         top: 48px;
         left: 0;
         display: none;
@@ -890,10 +891,7 @@ a {
         border: 1px solid #ccc;
         z-index: 1000;
         border-radius: 7px;
-        overflow: hidden;
-        .h_160{
-            height: 160px;
-        }
+        overflow: auto;
         .option{
             padding: 12px 10px;
             font-size: 16px;
