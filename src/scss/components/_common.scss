@@ -905,12 +905,12 @@ a {
 }
 
 .header .header__account_info li {
-    padding: 12px 0;
     font-size: 15px;
 }
 
 .header .header__account_info li:first-child {
     font-size: 12px;
+    padding: 12px 0;
     color: #85858F;
 }
 
@@ -925,11 +925,16 @@ a {
 
 .header .header__account_info a {
     text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    height: 100%;
 }
 
 .header .header__account_info span {
     vertical-align: middle;
     margin-left: 6px;
+
     color: #1f1f1f;
 }
 

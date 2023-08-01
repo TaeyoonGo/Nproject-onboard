@@ -42,13 +42,18 @@ function formatPhoneNumber() {
 
 // header 버튼
 function toggleAccountInfo() {
-    let accountInfo = $('._header__account_info')
-    let accountBtn = $('._ico_account_btn')
-
-    accountBtn.on('click', function () {
-        accountInfo.toggleClass('show')
-    })
-
+    let accountInfo = $('._header__account_info');
+    let accountBtn = $('._ico_account_btn');
+    accountBtn.on('click', function (e) {
+        e.stopPropagation();
+        accountInfo.toggleClass('show');
+    });
+    $(document).on('click', function (event) {
+        let target = $(event.target);
+        if (!target.is(accountInfo) && !target.is(accountBtn)) {
+            accountInfo.removeClass('show');
+        }
+    });
 }
 
 //selectbox 공통
@@ -57,11 +62,25 @@ function selectBox() {
     selectBox.on('click', function () {
         $(this).toggleClass('active');
     })
-    selectBox.find('.option').on('click', function () {
-        let text = $(this).text();
-        let value = $(this).val();
-        $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
+    selectBox.each(function(){
+        let selectBox = $(this);
+        selectBox.find('.option').on('click', function () {
+            let text = $(this).text();
+            let value = $(this).val();
+            $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
+        });
+    })
+
+    $(document).on('click', function (event) {
+        let target = $(event.target);
+        selectBox.each(function() {
+            if (!target.is(this) && !target.closest(this).length) {
+                $(this).removeClass('active');
+            }
+        });
     });
+
+
 }
 
 
