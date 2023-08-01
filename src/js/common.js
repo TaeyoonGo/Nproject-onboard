@@ -154,8 +154,11 @@ function asideButton(){
 
 //달력
 function modalCalender(){
-    const parentElement = document.querySelector('#datepicker-parent');
-    $('#myDateRangePicker').daterangepicker({
+    const parentElement = $('#datepickerParent');
+    let dateRangePicker = $('input[name=dateRangePicker]');
+    dateRangePicker.daterangepicker({
+        linkedCalendars: true,
+        autoApply : true,
         "locale": {
             "format": "YYYY-MM-DD",
             "separator": " ~ ",
@@ -164,7 +167,7 @@ function modalCalender(){
             "fromLabel": "From",
             "toLabel": "To",
             "customRangeLabel": "Custom",
-            "weekLabel": "W",
+            "weekLabel": "주",
             "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
             "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
         },
@@ -176,16 +179,26 @@ function modalCalender(){
         "showCustomRangeLabelranges": false,
         "parentEl": parentElement,
     }, function (start, end, label) {
-        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+        console.log('선택된 날짜: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
     });
-
-    $('#myDateRangePicker').on('hide.daterangepicker', function (ev, picker) {
+    dateRangePicker.on('hide.daterangepicker', function (ev, picker) {
         let modals = $('.modal')
         modals.removeClass('fade')
         setTimeout(function () {
             modals.removeClass('show')
         }, 200)
     });
+
+    dateRangePicker.on('showCalendar.daterangepicker', function (ev, picker) {
+        const trList = $('.daterangepicker').find("tr");
+        trList.each(function() {
+            var offEndsAvailableCount = $(this).find(".off.ends.available").length;
+            if (offEndsAvailableCount === 7) {
+                $(this).hide();
+            }
+        });
+    });
+
 }
 
 

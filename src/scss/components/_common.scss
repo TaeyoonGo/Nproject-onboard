@@ -21,25 +21,27 @@ html, body {
 }
 
 
-
 /*layout*/
-.pt-0{
+.pt-0 {
     padding-top: 0 !important;
 }
 
-.pt-5{
+.pt-5 {
     padding-top: 5px !important;
 }
 
-.pt-12{
+.pt-12 {
     padding-top: 12px;
 }
-.pb-24{
+
+.pb-24 {
     padding-bottom: 24px !important;
 }
-.mb-90{
+
+.mb-90 {
     margin-bottom: 90px !important;
 }
+
 .mb-0 {
     margin-bottom: 0 !important;
 }
@@ -51,16 +53,17 @@ html, body {
 .pb-20 {
     padding-bottom: 20px !important;;
 }
-.pt-48{
+
+.pt-48 {
     padding-top: 48px !important;
 }
 
 
-.pb-50{
+.pb-50 {
     padding-bottom: 50px !important;
 }
 
-.mb-170{
+.mb-170 {
     margin-bottom: 170px !important;
 }
 
@@ -85,8 +88,6 @@ html, body {
 .w-50 {
     width: 50%;
 }
-
-
 
 
 /*validation 관련 */
@@ -123,39 +124,43 @@ img {
 }
 
 /*input*/
-.form_label{
+.form_label {
     position: relative;
     cursor: pointer;
-    &.file_custom{
-        .form_control{
-            &::file-selector-button{
+
+    &.file_custom {
+        .form_control {
+            &::file-selector-button {
                 display: none;
             }
         }
-        .icon_area{
+
+        .icon_area {
             top: 50%;
             transform: translateY(-50%);
             right: 6px;
             position: absolute;
             display: inline-block;
-            background-color:#F0F0F0;
+            background-color: #F0F0F0;
             border-radius: 7px;
             width: 35px;
             height: 33px;
-            &:hover{
+
+            &:hover {
                 background-color: #DDDDE3;
             }
-            
-            .icon{
+
+            .icon {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
         }
 
     }
 }
+
 .form_control {
     display: block;
     width: 100%;
@@ -173,8 +178,8 @@ img {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     box-sizing: border-box;
 
-    &.mo_ellipsis{
-        @include res-sm{
+    &.mo_ellipsis {
+        @include res-sm {
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
@@ -202,7 +207,6 @@ img {
 .input__area {
     margin-bottom: 42px;
 }
-
 
 
 /*a태그*/
@@ -287,6 +291,7 @@ a {
 [type="checkbox"]:checked + .ico_checkBox {
     background-position: center -20px;
 }
+
 [type="checkbox"]:disabled + .ico_checkBox {
     background-position: center -40px;
 }
@@ -307,12 +312,15 @@ a {
     opacity: 0;
     display: none;
     transition: all 0.2s;
-    &.date_range{
+
+    &.filter_non {
         backdrop-filter: none;
     }
+
     &.fade {
         opacity: 1;
     }
+
     &.show {
         display: block;
     }
@@ -329,64 +337,75 @@ a {
 
     &.modal_xl {
         width: 900px;
+
         &.modal_checkbox {
             .modal_header {
                 margin-bottom: 0;
-                @include res-sm{
+                @include res-sm {
                     padding: 26px 12px;
                 }
-                .main_title{
-                    @include res-sm{
+
+                .main_title {
+                    @include res-sm {
                         font-size: 18px;
                     }
                 }
             }
-            .ico_close_btn{
-                @include res-sm{
+
+            .ico_close_btn {
+                @include res-sm {
                     top: 20px;
                     right: 15px;
                 }
             }
-            .modal_body{
-                @include res-sm{
+
+            .modal_body {
+                @include res-sm {
                     padding: 20px 12px;
                 }
             }
         }
+
         .modal_header {
             margin-bottom: 20px;
             position: relative;
         }
+
         .ico_close_btn {
             position: absolute;
             top: 22px;
             right: 20px;
         }
+
         .modal_title {
             font-size: 20px;
             font-weight: 700;
-            @include res-sm{
+            @include res-sm {
                 font-size: 18px;
             }
         }
+
         .modal_body {
             overflow-y: auto;
             max-height: calc(80vh - 140px);
             padding: 20px 30px 40px;
-            @include res-sm{
+            @include res-sm {
                 max-height: calc(80vh - 100px);
             }
         }
     }
-    &.modal_confirm{
+
+    &.modal_confirm {
         width: 480px;
-        @include res-sm{
+        @include res-sm {
             width: 90%;
         }
+
         .modal_header {
             text-align: right;
             padding: 15px 20px;
         }
+
         .modal_body {
             padding: 0;
 
@@ -395,15 +414,17 @@ a {
                 text-align: center;
                 line-height: 28px;
                 font-weight: 900;
-                @include res-sm{
+                @include res-sm {
                     font-size: 18px;
                     line-height: 24px;
                 }
             }
         }
+
         .modal_footer {
             text-align: center;
             padding: 40px 0 40px;
+
             .btn {
                 font-size: 18px;
                 font-weight: 400;
@@ -412,132 +433,158 @@ a {
             }
         }
     }
+
     &.modal_md {
         width: 680px;
+
         .modal_header {
             display: flex;
             justify-content: space-between;
         }
     }
+
     &.modal_confirmation {
         width: 680px;
-        @include res-sm{
+        @include res-sm {
             width: 90%;
         }
+
         .modal_header {
             display: flex;
             justify-content: space-between;
-            @include res-sm{
+            @include res-sm {
                 padding: 25px 25px 0 25px;
                 align-items: center;
             }
+
             .modal_title {
-                @include res-sm{
+                @include res-sm {
                     font-size: 18px;
                 }
             }
         }
-        .confirm_title{
-            @include res-sm{
+
+        .confirm_title {
+            @include res-sm {
                 margin-bottom: 10px;
             }
         }
-        .confirm_list{
+
+        .confirm_list {
             margin-bottom: 26px;
-            @include res-sm{
+            @include res-sm {
                 flex-direction: column;
                 margin-bottom: 32px;
             }
         }
-        .modal_body{
+
+        .modal_body {
             overflow-y: auto;
             padding: 20px 30px 40px;
             max-height: calc(80vh - 100px);
-            .confirm_desc{
-                .confirm_desc_title{
-                    @include res-sm{
+
+            .confirm_desc {
+                .confirm_desc_title {
+                    @include res-sm {
                         flex: 0 0 40%;
                     }
                 }
             }
         }
     }
+
     &.modal_sm {
         width: 410px;
-        @include res-sm{
+        @include res-sm {
             width: 90%;
         }
     }
-    &.modal_table{
+
+    &.modal_table {
         width: 90%;
+
         .modal_header {
             padding: 20px;
             position: relative;
             margin-bottom: 0;
         }
+
         .ico_close_btn {
             position: absolute;
             top: 14px;
             right: 20px;
         }
+
         .modal_title {
             font-size: 20px;
             font-weight: 700;
             margin-bottom: 10px;
         }
-        .modal_desc{
+
+        .modal_desc {
             font-size: 14px;
             color: #85858F;
             line-height: 1.3;
         }
+
         .modal_body {
             overflow-y: auto;
             max-height: calc(80vh - 140px);
             padding: 20px 20px 40px;
-            @include res-sm{
+            @include res-sm {
                 max-height: calc(80vh - 100px);
             }
         }
-        .modal_table_title{
+
+        .modal_table_title {
             font-size: 15px;
             color: #7852E8;
             font-weight: 700;
             margin-bottom: 14px;
         }
-        .modal_footer{
+
+        .modal_footer {
             text-align: right;
             padding: 20px;
-            .btn{
+
+            .btn {
                 padding: 10px 20px;
             }
         }
-        .table_layout{
+
+        .table_layout {
             width: 100%;
             margin-bottom: 50px;
-            .table_row{
+
+            .table_row {
                 display: flex;
                 border-bottom: 1px solid #D2D2D2;
-                &.line3{
-                    div{
-                        &:first-child{
+
+                &.line3 {
+                    div {
+                        &:first-child {
                             flex: 1 1 50%;
                         }
                     }
                 }
-                &.line3{
-                    div{
-                       flex: 1 1 50%;
+
+                &.line3 {
+                    div {
+                        flex: 1 1 50%;
                     }
                 }
-                &:first-child{
+
+                &:first-child {
                     border-top: 1px solid #7852E8;
                 }
-                div{
+
+                div {
                     padding: 10px 0;
                     font-size: 13px;
                     flex: 1 1 25%;
                     text-align: center;
-                    &:first-child{
+
+                    &:first-child {
                         font-weight: 700;
                         padding-left: 5px;
                         text-align: left;
@@ -547,69 +594,112 @@ a {
         }
     }
 
-    &.modal_date_range{
-        .modal_body{
-            padding: 0;
-            .daterangepicker{
-                margin: 0;
-                border: transparent;
-                position: static;
-                font-size: 16px;
+    &.modal_date_range {
+        width: max-content;
 
-                .drp-calendar{
-                    max-width: none;
-                    &.left{
-                        padding: 46px 0 46px 42px;
+        .daterangepicker {
+            margin: 0;
+            border: transparent;
+            position: static;
+            @include res-lg{
+                display: flex !important;
+                flex-direction: column;
+            }
 
+            .drp-calendar {
+                max-width: none;
+                min-height: 380px;
+                @include res-lg{
+                    min-height: 340px;
+                }
+                @include res-sm{
+                    min-height: 350px;
+                }
+                &.left {
+                    padding: 30px 15px 0 30px;
+                    @include res-lg{
+                        padding: 15px 30px 0;
                     }
-                    &.right{
-                        padding: 46px 42px 46px 36px;
+                    @include res-sm{
+                        padding: 0;
                     }
                 }
-                .calendar-table{
-                    padding: 0;
-                    thead{
-                        tr{
-                            &:nth-last-child(1){
-                               th{
-                                   &:first-child{
-                                       color: #FF3131;
-                                   }
+
+                &.right {
+                    padding: 30px 30px 0 15px;
+                    @include res-lg{
+                        padding: 0 30px 15px;
+                    }
+                    @include res-sm{
+                        padding: 0;
+                    }
+                }
+            }
+
+            .calendar-table {
+                padding: 0;
+            }
+
+            table {
+                thead {
+                    tr {
+                        .prev,.next{
+
+                           span{
+
+                               &:before{
+
                                }
+                           }
+                        }
+                        //요일
+                        &:nth-child(2) {
+                            th {
+                                font-weight: 400;
                             }
                         }
                     }
-                    td{
-                        color: #C7C7C7;
-                    }
-                    td,th{
-                        width: 50px;
-                        height: 43px;
-                        font-size: 16px;
+                }
 
-                        &.month{
-                            font-size: 20px;
-                        }
-                        &.start-date{
-                            border-radius: 6px 0 0 6px;
+                tr {
+                    //달력에 추가 되는곳
+                    .off {
+                        color: #BABAC2;
+                        visibility: hidden;
+                    }
+
+                    th, td {
+                        width: 50px;
+                        height: 40px;
+                        font-size: 16px;
+                        &.active{
                             color: #fff;
                             background-color: #7852E8;
+                            font-weight: 700;
                         }
-
                         &.in-range{
                             background-color: #F0EBFF;
-                        }
-                        &.end-date{
-                            border-radius: 0 6px 6px 0;
-                            background-color: #7852E8;
-                            color: #fff;
-                        }
+                            color: #52525B;
+                            &.start-date{
+                                color: #fff;
+                                background-color: #7852E8;
+                                font-weight: 700;
+                            }
+                            &.end-date{
+                                color: #fff;
+                                background-color: #7852E8;
+                                font-weight: 700;
+                            }
 
+                        }
                     }
 
-                }
-                .drp-buttons{
-                    display: none;
+                    th {
+                        &:nth-child(1) {
+                            color: #FF3131;
+                        }
+                    }
+
                 }
             }
 
@@ -671,57 +761,67 @@ a {
     }
 }
 
-.header{
-    &.developer_center{
+.header {
+    &.developer_center {
         position: fixed;
         top: 0;
         left: 0;
         background-color: #fff;
         z-index: 1000;
-        .header__container{
+
+        .header__container {
             padding: 0 20px;
             max-width: none;
-            .aside_button{
+
+            .aside_button {
                 cursor: pointer;
                 display: none;
-                &.active{
-                    div{
-                        &:first-child{
+
+                &.active {
+                    div {
+                        &:first-child {
                             transform: rotate(-45deg) translate(-6px, 5px);
                         }
-                        &:nth-child(2){
+
+                        &:nth-child(2) {
                             opacity: 0;
                         }
-                        &:last-child{
+
+                        &:last-child {
                             transform: rotate(45deg) translate(-8px, -7px);
                         }
                     }
 
                 }
-                div{
+
+                div {
                     border: 1px solid #BABAC2;
                     width: 22px;
                     height: 2px;
                     transition: all 0.3s;
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         margin-top: 7px;
                         margin-bottom: 7px;
                     }
 
                 }
-                @include res-xl{
+
+                @include res-xl {
                     display: block;
                 }
             }
 
         }
-        .header__navi{
-            .text{
+
+        .header__navi {
+            .text {
                 font-size: 16px;
                 font-weight: 700;
             }
         }
-        .header__logo{
+
+        .header__logo {
             margin-right: 10px;
         }
 
@@ -750,7 +850,7 @@ a {
     width: 70px;
     height: auto;
     font-size: 0;
-    line-height:0;
+    line-height: 0;
     margin-right: 70px;
 }
 
@@ -761,7 +861,7 @@ a {
 
 .header .header__navi__link {
     display: flex;
-    @include res-sm{
+    @include res-sm {
         display: none;
     }
 }
@@ -773,7 +873,8 @@ a {
 
 .header .header__navi__link a {
     color: #28282E;
-    &:hover{
+
+    &:hover {
         color: #28282e;
         text-decoration: none;
     }
@@ -797,7 +898,8 @@ a {
     z-index: 1005;
     background-color: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.19);
-    &.show{
+
+    &.show {
         display: block;
     }
 }
@@ -820,9 +922,11 @@ a {
     background-color: #F0F0F0;
     border-radius: 8px;
 }
-.header .header__account_info a{
+
+.header .header__account_info a {
     text-decoration: none;
 }
+
 .header .header__account_info span {
     vertical-align: middle;
     margin-left: 6px;
@@ -830,55 +934,60 @@ a {
 }
 
 /*progressbar*/
-.progress_value{
+.progress_value {
     width: 100%;
     appearance: none;
 }
+
 .progress_value::-webkit-progress-bar {
-    background:#f0f0f0;
-    border-radius:4px;
+    background: #f0f0f0;
+    border-radius: 4px;
     height: 4px;
     /*box-shadow: inset 3px 3px 10px #ccc;*/
 }
+
 .progress_value::-webkit-progress-value {
-    border-radius:4px;
+    border-radius: 4px;
     background: #1D976C;
     height: 4px;
-    background: linear-gradient(to right, rgba(154,217,253,100%), rgba(120,82,232,100%));
+    background: linear-gradient(to right, rgba(154, 217, 253, 100%), rgba(120, 82, 232, 100%));
 
 }
 
 
-
-
-.select_box{
+.select_box {
     position: relative;
     cursor: pointer;
     border-radius: 7px;
     padding: 15px 12px;
     background-color: #fff;
-    border:1px solid #ced4da;
-    .icon{
+    border: 1px solid #ced4da;
+
+    .icon {
         position: absolute;
         right: 5px;
         top: 50%;
         transform: translateY(-50%);
     }
-    &.active{
-        .options{
+
+    &.active {
+        .options {
             display: block;
             overflow-y: auto;
 
         }
-        .icon{
+
+        .icon {
             background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_up.png");
         }
     }
-    .select_value{
+
+    .select_value {
         background-color: #fff;
-        color:#BABAC2;
+        color: #BABAC2;
     }
-    .options{
+
+    .options {
         max-height: 162px;
         top: 48px;
         left: 0;
@@ -892,13 +1001,15 @@ a {
         z-index: 1000;
         border-radius: 7px;
         overflow: auto;
-        .option{
+
+        .option {
             padding: 12px 10px;
             font-size: 16px;
 
 
             background-color: #fff;
-            &:hover{
+
+            &:hover {
                 background-color: #f0f0f0;
             }
         }
@@ -921,41 +1032,42 @@ a {
 }
 
 
-
-.mo_show{
+.mo_show {
     display: none !important;
-    @include res-sm{
+    @include res-sm {
         display: block !important;
     }
 }
 
-.pc_show{
+.pc_show {
     display: block !important;
-    @include res-sm{
+    @include res-sm {
         display: none !important;
     }
 }
 
-.tablet_show{
+.tablet_show {
     display: block;
-    @include res-md{
+    @include res-md {
         display: none !important;
     }
 }
 
 
 /*테이블*/
-.response_table{
+.response_table {
     color: #52525b;
     display: block;
     margin: 0 -24px;
     width: calc(100% + 48px);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    table{
+
+    table {
         width: 100%;
         white-space: nowrap;
-        th{
+
+        th {
             padding: 11px 10px;
             background-color: #F6F6F6;
             text-align: left;
@@ -963,136 +1075,158 @@ a {
             font-weight: 500;
             font-size: 15px;
             white-space: nowrap;
-            &.check_table{
+
+            &.check_table {
                 text-align: center;
             }
         }
-        td{
+
+        td {
             font-size: 15px;
             border-bottom: 1px solid #F0F0F0;
             padding: 11px 10px;
             white-space: nowrap;
-            &.check_table{
+
+            &.check_table {
                 text-align: center;
             }
-            &.empty_data{
+
+            &.empty_data {
                 text-align: center;
                 padding: 55px 0;
                 border-bottom: none;
 
             }
-            &.name_data{
-                a{
+
+            &.name_data {
+                a {
                     text-decoration: underline;
                     color: #0086F1;
                 }
             }
         }
     }
-    @include res-md{
 
-        table{
+    @include res-md {
+
+        table {
 
         }
     }
 }
 
 //aside
-.aside{
-    background-color:#F6F6F6;
+.aside {
+    background-color: #F6F6F6;
     padding: 130px 20px 60px;
     flex: 1 1 300px;
     transition: all 0.3s;
     height: 100vh;
     z-index: 900;
-    @include res-xl{
+    @include res-xl {
         position: fixed;
         width: 300px;
         transform: translateX(-300px);
-        &.show{
+        &.show {
             transform: translateX(0px);
         }
     }
 
 
-
-    .sub_title{
+    .sub_title {
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 20px;
     }
-    .layout{
+
+    .layout {
         margin-bottom: 50px;
-        &:nth-last-child(1){
+
+        &:nth-last-child(1) {
             padding-top: 50px;
-            border-top:1px solid #DBDBDB;
+            border-top: 1px solid #DBDBDB;
         }
-        .link_lists{
-            .active{
+
+        .link_lists {
+            .active {
                 border-radius: 8px;
                 background-color: #F0F0F0;
-                .icon{
-                    &.ico_key{
+
+                .icon {
+                    &.ico_key {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_key_active.png");
                     }
-                    &.ico_paper_plane{
+
+                    &.ico_paper_plane {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_paper_plane_active.png");
                     }
-                    &.ico_shield_check{
+
+                    &.ico_shield_check {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_shield_check_active.png");
                     }
-                    &.ico_document_sign{
+
+                    &.ico_document_sign {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_document_sign_active.png");
                     }
 
-                    &.ico_book_alt{
+                    &.ico_book_alt {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_book_alt_active.png");
                     }
-                    &.ico_interrogation{
+
+                    &.ico_interrogation {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_interrogation_active.png");
                     }
-                    &.ico_github{
+
+                    &.ico_github {
                         background-image: url("https://image.payple.kr/onboard/icon/ico_github_active.png");
                     }
                 }
             }
 
 
-            .link{
-                .icon{
+            .link {
+                .icon {
                     margin-right: 10px;
                     padding-left: 10px;
                     margin-left: 10px;
                 }
-                &:hover{
+
+                &:hover {
                     border-radius: 8px;
                     background-color: #F0F0F0;
-                    .icon{
-                        &.ico_key{
+
+                    .icon {
+                        &.ico_key {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_key_active.png");
                         }
-                        &.ico_paper_plane{
+
+                        &.ico_paper_plane {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_paper_plane_active.png");
                         }
-                        &.ico_shield_check{
+
+                        &.ico_shield_check {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_shield_check_active.png");
                         }
-                        &.ico_document_sign{
+
+                        &.ico_document_sign {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_document_sign_active.png");
                         }
 
-                        &.ico_book_alt{
+                        &.ico_book_alt {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_book_alt_active.png");
                         }
-                        &.ico_interrogation{
+
+                        &.ico_interrogation {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_interrogation_active.png");
                         }
-                        &.ico_github{
+
+                        &.ico_github {
                             background-image: url("https://image.payple.kr/onboard/icon/ico_github_active.png");
                         }
                     }
                 }
-                a{
+
+                a {
                     padding: 16px 10px 16px 0px;
                     display: inline-block;
                     width: 100%;
@@ -1107,21 +1241,22 @@ a {
 
 }
 
-.input__date{
+.input__date {
     width: 30px;
     height: 30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 5px;
-    i{
+
+    i {
         cursor: pointer;
     }
 
 }
 
 //file custom
-.file_custom{
+.file_custom {
     display: block;
     width: 100%;
     font-weight: 400;
@@ -1136,11 +1271,12 @@ a {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     box-sizing: border-box;
-    .icon_area{
+
+    .icon_area {
         position: absolute;
-        right:10px;
+        right: 10px;
     }
 }
 
