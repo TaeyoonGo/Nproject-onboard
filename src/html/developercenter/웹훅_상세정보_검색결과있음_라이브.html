@@ -8,7 +8,7 @@
     <article class="developer_content">
         <section class="developer_section">
             <div class="title_area detail">
-                <p class="title test"><a href="#">웹훅</a></p>
+                <p class="title"><a href="#">웹훅</a></p>
                 <span><i class="icon ico_right_arrow_gary"></i>상세정보</span>
             </div>
             <div class="detail__area">
@@ -82,7 +82,6 @@
                                 <col style="width: 100px">
                                 <col style="width: 100px">
                             </colgroup>
-                            <tbody>
                             <tr>
                                 <th>No</th>
                                 <th>업데이트 일시</th>
@@ -93,11 +92,68 @@
                                 <th>재발송 횟수</th>
                             </tr>
                             <tr>
-                                <td class="empty_data no_search" colspan="7">
-                                    조회 결과가 없습니다.
-                                </td>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td></td>
+                                <td>0</td>
                             </tr>
-                            </tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_no"></i></td>
+                                <td>curl_error_msg</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_no"></i></td>
+                                <td>curl_error_msg</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_no"></i></td>
+                                <td>curl_error_msg</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_no"></i></td>
+                                <td>curl_error_msg</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_no"></i></td>
+                                <td>curl_error_msg</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2023-06-29 17:23:59</td>
+                                <td>200</td>
+                                <td><i class="icon ico_yes"></i></td>
+                                <td><i class="icon ico_no"></i></td>
+                                <td>curl_error_msg</td>
+                                <td>0</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -135,13 +191,13 @@
         "buttonClasses": "data_range_btn",
         "applyButtonClasses": "apply_range_btn",
         "cancelButtonClasses": "cancel_range_btn",
-        "showCustomRangeLabelranges": false,
+        "showCustomRangeLabelranges" : false,
         "parentEl": parentElement,
     }, function (start, end, label) {
         console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
     });
 
-    $('#myDateRangePicker').on('hide.daterangepicker', function (ev, picker) {
+    $('#myDateRangePicker').on('hide.daterangepicker', function(ev, picker) {
         let modals = $('.modal')
         modals.removeClass('fade')
         setTimeout(function () {

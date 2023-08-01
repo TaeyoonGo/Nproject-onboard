@@ -47,15 +47,16 @@
                         a{
                             color: inherit;
                         }
-                    }
-                    span{
-                        margin-left: 53px;
-                        font-size: 30px;
-                        font-weight: 700;
-                        @include res-sm{
-                            margin-left: 44px;
-                            font-size: 22px;
+                        + span{
+                            margin-left: 22px;
+                            @include res-sm{
+                                margin-left: 15px;
+                                font-size: 22px;
+                            }
                         }
+                    }
+                    span{  font-size: 30px;
+                        font-weight: 700;
                         i{
                             margin-right: 22px;
                             @include res-sm{
@@ -85,8 +86,16 @@
                             top: 0;
                             color: #62BB00;
                         }
+                        + span{
+                            margin-left: 53px;
+                            font-size: 30px;
+                            font-weight: 700;
+                            @include res-sm{
+                                margin-left: 44px;
+                                font-size: 22px;
+                            }
+                        }
                     }
-
                 }
                 .guide_link{
                     color: #0086F1;

@@ -17,7 +17,7 @@
                 </div>
                 <div class="input__area__list one_line">
                     <div class="input__area default">
-                        <p class="input_title">실행여부</p>
+                        <p class="input_title">구분</p>
                         <div class="select_box _select_box">
                             <div class="select_value">
                                 전체
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="input__area update_date">
-                        <p class="input_title">업데이트 일시</p>
+                        <p class="input_title">결제일자</p>
                         <div class="position_relative">
                             <input type="text" class="form_control" id="myDateRangePicker" name="demo">
                             <label for="myDateRangePicker" class="input__date" onclick="openModal('modal01')">
@@ -58,8 +58,8 @@
                             <col style="width: 210px">
                             <col style="width: 240px">
                         </colgroup>
-                        <tbody>
-                        <tr>
+                        <thead>
+                            <tr>
                             <th class="text_center">No</th>
                             <th>결제일시</th>
                             <th>결제수단</th>
@@ -68,6 +68,8 @@
                             <th>주문번호</th>
                             <th>상품명</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td class="empty_data no_search" colspan="7">조회결과가 없습니다.</td>
                         </tr>
@@ -86,25 +88,30 @@
                             <col style="width: 180px">
                             <col style="width: 110px">
                             <col style="width: 55px">
+                            <col style="width: 55px">
                             <col style="width: 120px">
                             <col style="width: 210px">
                             <col style="width: 240px">
                         </colgroup>
-                        <tbody>
-                        <tr>
+                        <thead>
+                            <tr>
                             <th class="text_center">No</th>
                             <th>결제일시</th>
                             <th>결제수단</th>
                             <th>상태</th>
+                            <th>통화</th>
                             <th class="text_center">결제금액</th>
                             <th>주문번호</th>
                             <th>상품명</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td class="text_center">10</td>
                             <td class="">2023-06-29 17:23:59</td>
                             <td>카드빌링</td>
                             <td>승인</td>
+                            <td>KRW</td>
                             <td class=" text_center">10,000,000</td>
                             <td class="">O2023-2728-5039-6573</td>
                             <td class="">이초아님의 처방전</td>
@@ -114,6 +121,7 @@
                             <td class="">2023-06-29 17:23:59</td>
                             <td>카드빌링</td>
                             <td>승인</td>
+                            <td>KRW</td>
                             <td class=" text_center">10,000,000</td>
                             <td class="">O2023-2728-5039-6573</td>
                             <td class="">이초아님의 처방전</td>
@@ -123,6 +131,7 @@
                             <td class="">2023-06-29 17:23:59</td>
                             <td>카드빌링</td>
                             <td>승인</td>
+                            <td>KRW</td>
                             <td class=" text_center">10,000,000</td>
                             <td class="">O2023-2728-5039-6573</td>
                             <td class="">이초아님의 처방전</td>
@@ -132,6 +141,7 @@
                             <td class="">2023-06-29 17:23:59</td>
                             <td>카드빌링</td>
                             <td>승인</td>
+                            <td>KRW</td>
                             <td class=" text_center">10,000,000</td>
                             <td class="">O2023-2728-5039-6573</td>
                             <td class="">이초아님의 처방전</td>
@@ -141,27 +151,12 @@
                             <td class="">2023-06-29 17:23:59</td>
                             <td>카드빌링</td>
                             <td>승인</td>
+                            <td>KRW</td>
                             <td class=" text_center">10,000,000</td>
                             <td class="">O2023-2728-5039-6573</td>
                             <td class="">이초아님의 처방전</td>
                         </tr>
-                        <tr>
-                            <td class="text_center">10</td>
-                            <td class="">2023-06-29 17:23:59</td>
-                            <td>카드빌링</td>
-                            <td>승인</td>
-                            <td class=" text_center">10,000,000</td>
-                            <td class="">O2023-2728-5039-6573</td>
-                            <td class="">이초아님의 처방전</td>
-                        </tr> <tr>
-                            <td class="text_center">10</td>
-                            <td class="">2023-06-29 17:23:59</td>
-                            <td>카드빌링</td>
-                            <td>승인</td>
-                            <td class=" text_center">10,000,000</td>
-                            <td class="">O2023-2728-5039-6573</td>
-                            <td class="">이초아님의 처방전</td>
-                        </tr>
+
 
                         </tbody>
                     </table>

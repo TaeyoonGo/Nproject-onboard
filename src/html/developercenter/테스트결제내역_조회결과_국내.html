@@ -17,7 +17,7 @@
                 </div>
                 <div class="input__area__list one_line">
                     <div class="input__area default">
-                        <p class="input_title">실행여부</p>
+                        <p class="input_title">구분</p>
                         <div class="select_box _select_box">
                             <div class="select_value">
                                 전체
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="input__area update_date">
-                        <p class="input_title">업데이트 일시</p>
+                        <p class="input_title">결제일자</p>
                         <div class="position_relative">
                             <input type="text" class="form_control" id="myDateRangePicker" name="demo">
                             <label for="myDateRangePicker" class="input__date" onclick="openModal('modal01')">
@@ -58,8 +58,8 @@
                             <col style="width: 210px">
                             <col style="width: 240px">
                         </colgroup>
-                        <tbody>
-                        <tr>
+                        <thead>
+                            <tr>
                             <th class="text_center">No</th>
                             <th>결제일시</th>
                             <th>결제수단</th>
@@ -68,6 +68,9 @@
                             <th>주문번호</th>
                             <th>상품명</th>
                         </tr>
+                        </thead>
+                        <tbody>
+
                         <tr>
                             <td class="text_center">10</td>
                             <td class="">2023-06-29 17:23:59</td>
@@ -163,7 +166,7 @@
                             <col style="width: 210px">
                             <col style="width: 240px">
                         </colgroup>
-                        <tbody>
+                        <thead>
                         <tr>
                             <th class="text_center">No</th>
                             <th>결제일시</th>
@@ -173,6 +176,8 @@
                             <th>주문번호</th>
                             <th>상품명</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td class="empty_data no_search" colspan="7">조회결과가 없습니다.</td>
                         </tr>
@@ -188,7 +193,6 @@
         <div class="modal_content">
             <div class="modal_body" id="datepicker-parent">
             </div>
-
         </div>
     </div>
 </div>
