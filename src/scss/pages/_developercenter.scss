@@ -1,5 +1,6 @@
 .developer_container{
     display: flex;
+    padding-top: 54px;
     @include res-xl{
         display: block;
     }
@@ -18,7 +19,7 @@
         }
     }
     .developer_content{
-        padding: 136px 24px 60px;
+        padding: 82px 24px 0;
         flex: 1 1 calc(100% - 300px);
 
         .developer_section{
