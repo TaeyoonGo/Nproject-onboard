@@ -139,13 +139,13 @@ data.join = {
             page: '결제수단선택_해외선택'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '국내결제서비스선택',
             category: 'join',
             page: '국내결제서비스선택'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'working',
             url: '해외결제서비스선택',
             category: 'join',
             page: '해외결제서비스선택'

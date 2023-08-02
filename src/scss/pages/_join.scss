@@ -6,13 +6,29 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0 40px;
+    &.payment{
+        max-width: 920px;
+        .service__select_wrap{
+            width: 100%;
+        }
+        .service__select_section{
+            .account__row{
+                width: 100%;
+            }
+            .account__select_table{
+                width: 100%;
+            }
+        }
+
+    }
 }
 
 .step_list {
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 720px;
+    margin: 10px auto 0;
     @include res-md {
         display: none;
     }
