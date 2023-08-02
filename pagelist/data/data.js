@@ -271,13 +271,13 @@ data.developercenter = {
     title: '개발자센터',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '메인',
             category: 'developercenter',
             page: '메인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '메인_라이브',
             category: 'developercenter',
             page: '메인_라이브'
@@ -331,31 +331,31 @@ data.developercenter = {
             page: '웹훅_상세정보_검색결과있음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: 'white_ip_검색결과없음',
             category: 'developercenter',
             page: 'white_ip_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: 'white_ip_검색결과없음_라이브',
             category: 'developercenter',
             page: 'white_ip_검색결과없음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: 'white_ip_검색결과있음',
             category: 'developercenter',
             page: 'white_ip_검색결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: 'white_ip_검색결과있음_라이브',
             category: 'developercenter',
             page: 'white_ip_검색결과있음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: 'white_ip_10개이상등록',
             category: 'developercenter',
             page: 'white_ip_10개이상등록'
@@ -402,7 +402,7 @@ data.membership = {
             page: '관리자초대_수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대수락완료',
             category: 'membership',
             page: '관리자초대_초대수락완료'

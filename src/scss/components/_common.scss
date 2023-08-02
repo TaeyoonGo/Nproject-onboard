@@ -976,6 +976,7 @@ a {
     }
 
     &.active {
+        border: 1px solid #7852E8;
         .options {
             display: block;
             overflow-y: auto;
@@ -989,7 +990,7 @@ a {
 
     .select_value {
         background-color: #fff;
-        color: #BABAC2;
+        color: rgb(31, 31, 31);
     }
 
     .options {
