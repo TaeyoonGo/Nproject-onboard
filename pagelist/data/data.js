@@ -325,7 +325,7 @@ data.developercenter = {
             page: '웹훅_상세정보_검색결과있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '웹훅_상세정보_검색결과있음_라이브',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과있음_라이브'
