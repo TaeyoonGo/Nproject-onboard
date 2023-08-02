@@ -1,6 +1,6 @@
 .developer_container{
     display: flex;
-    padding-top: 54px;
+    padding: 54px 0;
     @include res-xl{
         display: block;
     }
@@ -21,7 +21,10 @@
     .developer_content{
         padding: 82px 24px 0;
         flex: 1 1 calc(100% - 300px);
-
+        margin-left: 300px;
+        @include res-xl{
+            margin: 0 auto;
+        }
         .developer_section{
             max-width: 780px;
             //max-width: 1000px;

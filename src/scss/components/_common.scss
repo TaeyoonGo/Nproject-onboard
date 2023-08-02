@@ -1124,13 +1124,14 @@ a {
 .aside {
     background-color: #F6F6F6;
     padding: 84px 20px 60px;
-    flex: 1 1 300px;
+    width: 300px;
+    position: fixed;
+    top: 54px;
+    height: calc(100vh - 54px);
     transition: all 0.3s;
-    height: 100%;
+
     z-index: 900;
     @include res-xl {
-        position: fixed;
-        width: 300px;
         transform: translateX(-300px);
         &.show {
             transform: translateX(0px);
