@@ -25,13 +25,25 @@
             <div class="service__select_wrap">
                 <div class="service__select_section">
                     <div class="account__row">
-                        <div class="title color_primary font_weight_bold">카드</div>
-                        <div>
+                        <div class="title color_primary font_weight_bold"><span class="payment_table_title">카드</span></div>
+                        <div class="button_list_4">
                             <div class="label__design">
                                 <input name="payment" type="checkbox" id="check1">
                                 <label class="checked__label" for="check1">
                                     <div class="tablet_show">
                                         <span>앱카드</span>
+                                    </div>
+                                    <div class="label_text_tablet">
+                                        <span class="title_tablet">앱카드</span>
+                                        <span class="desc_tablet">가장 일반적인 카드사 앱카드로 결제 </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="label__design">
+                                <input name="payment" type="checkbox" id="keyin">
+                                <label class="checked__label" for="keyin">
+                                    <div class="tablet_show">
+                                        <span>키인결제</span>
                                     </div>
                                     <div class="label_text_tablet">
                                         <span class="title_tablet">앱카드</span>
@@ -73,6 +85,9 @@
                                     <p class="text_center">가장 일반적인 카드사<br>앱카드로 결제 </p>
                                 </div>
                                 <div class="desc_list">
+                                    <p class="text_center">카드정보<br>입력만으로 결제</p>
+                                </div>
+                                <div class="desc_list">
                                     <p class="text_center">원하는 때에 자동으로 결제,<br>반복결제 가능</p>
                                 </div>
                                 <div class="desc_list">
@@ -82,40 +97,45 @@
                         </div>
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">일반</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">일반</span></div>
                                 <div class="select_table_desc">
+                                    <div>2.60%</div>
                                     <div>2.60%</div>
                                     <div>2.90%</div>
                                     <div>2.90%</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">중소3</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">중소3</span></div>
                                 <div class="select_table_desc">
+                                    <div>2.00%</div>
                                     <div>2.00%</div>
                                     <div>2.70%</div>
                                     <div>2.70%</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">중소2</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">중소2</span></div>
                                 <div class="select_table_desc">
+                                    <div>1.75%</div>
                                     <div>1.75%</div>
                                     <div>2.45%</div>
                                     <div>2.45%</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">중소1</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">중소1</span></div>
                                 <div class="select_table_desc">
+                                    <div>1.60%</div>
                                     <div>1.60%</div>
                                     <div>2.30%</div>
                                     <div>2.30%</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">영세</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">영세</span></div>
                                 <div class="select_table_desc">
+                                    <div>1.00%</div>
                                     <div>1.00%</div>
                                     <div>1.70%</div>
                                     <div>1.70%</div>
@@ -127,7 +147,7 @@
                 </div>
                 <div class="service__select_section account">
                     <div class="account__row">
-                        <div class="title color_primary font_weight_bold">계좌</div>
+                        <div class="title color_primary font_weight_bold"><span class="payment_table_title">계좌</span></div>
                         <div>
                             <div class="label__design">
                                 <input name="account" type="checkbox" id="check4">
@@ -173,13 +193,13 @@
                         </div>
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">기본 수수료</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">기본 수수료</span></div>
                                 <div class="select_table_desc">
                                     <div>1.50%</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">환불 수수료</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">환불 수수료</span></div>
                                 <div class="select_table_desc">
                                     <div>건당 300원</div>
                                     <input name="account" class="_option1" type="checkbox" id="option1">
@@ -195,7 +215,7 @@
                 </div>
                 <div class="service__select_section hub">
                     <div class="account__row">
-                        <div class="title color_primary font_weight_bold">허브</div>
+                        <div class="title color_primary font_weight_bold"><span class="payment_table_title">허브</span></div>
                         <div>
                             <div class="label__design">
                                 <input name="hub" type="radio" id="check6">
@@ -243,14 +263,14 @@
                         </div>
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">100건 이하</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">100건 이하</span></div>
                                 <div class="select_table_desc">
                                     <div>20,000원</div>
                                     <div>7,000원</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">101건 이상</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">101건 이상</span></div>
                                 <div class="select_table_desc">
                                     <div>150원/건</div>
                                     <div>50원/건</div>
@@ -263,7 +283,7 @@
                 </div>
                 <div class="service__select_section simplepay">
                     <div class="account__row">
-                        <div class="title color_primary font_weight_bold">간편결제</div>
+                        <div class="title color_primary font_weight_bold"><span class="payment_table_title">간편결제</span></div>
                         <div>
                             <div class="label__design">
                                 <input name="simplepay" type="checkbox" id="check8">
@@ -290,7 +310,7 @@
                     <div class="tablet_show">
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">수수료</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">수수료</span></div>
                                 <div class="select_table_desc">
                                     <div>카드결제 수수료 + 0.1%</div>
                                 </div>
@@ -301,7 +321,7 @@
                 </div>
                 <div class="service__select_section etc">
                     <div class="account__row">
-                        <div class="title color_primary font_weight_bold">기타</div>
+                        <div class="title color_primary font_weight_bold"><span class="payment_table_title">기타</span></div>
                         <div>
                             <div class="label__design">
                                 <input name="etc" type="checkbox" id="check11">
@@ -317,13 +337,13 @@
                     <div class="tablet_show">
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">기본 수수료</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">기본 수수료</span></div>
                                 <div class="select_table_desc">
                                     <div>250원/건</div>
                                 </div>
                             </div>
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">환불 수수료</div>
+                                <div class="select_table_title font_weight_bold"><span class="payment_table_title">환불 수수료</span></div>
                                 <div class="select_table_desc">
                                     <div>건당 300원</div>
                                     <input name="account" type="checkbox" class="_option2" id="option2">
@@ -358,6 +378,7 @@
                         <div class="table_row">
                             <div></div>
                             <div class="font_weight_bold">앱카드</div>
+                            <div class="font_weight_bold">키인결제</div>
                             <div class="font_weight_bold">빌링<br>(정기결제)</div>
                             <div class="font_weight_bold">비밀번호<br>간편결제</div>
                         </div>
@@ -366,10 +387,12 @@
                             <div>2.60%</div>
                             <div>2.90%</div>
                             <div>2.90%</div>
+                            <div>2.90%</div>
                         </div>
                         <div class="table_row">
                             <div>중소3</div>
                             <div>2.00%</div>
+                            <div>2.70%</div>
                             <div>2.70%</div>
                             <div>2.70%</div>
                         </div>
@@ -378,16 +401,19 @@
                             <div>1.75%</div>
                             <div>2.45%</div>
                             <div>2.45%</div>
+                            <div>2.45%</div>
                         </div>
                         <div class="table_row">
                             <div>중소1</div>
                             <div>1.60%</div>
                             <div>2.30%</div>
                             <div>2.30%</div>
+                            <div>2.30%</div>
                         </div>
                         <div class="table_row">
                             <div>영세</div>
                             <div>1.00%</div>
+                            <div>1.70%</div>
                             <div>1.70%</div>
                             <div>1.70%</div>
                         </div>

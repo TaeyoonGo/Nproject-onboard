@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 0 40px;
     &.payment{
-        max-width: 920px;
+        max-width: 910px;
         .service__select_wrap{
             width: 100%;
         }
@@ -15,10 +15,195 @@
             .account__row{
                 width: 100%;
             }
+            &.card{
+                > div{
+                    flex: 1 1 15%;
+                }
+            }
+            &.account {
+                .account__row {
+                    > div {
+                        flex: 1 1 15%;
+                        &:last-child {
+                            flex: 1 1 85%;
+                            text-align: center;
+                            justify-content: center;
+                        }
+                    }
+                    .label__design + .label__design {
+                        margin-left: 69px;
+                        @include res-md{
+                            margin-left: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .text_area {
+                        justify-content: flex-start;
+
+                        .desc_list {
+                            margin-right: 76px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+
+                        }
+                    }
+
+                }
+                .table_row {
+                    .select_table_desc {
+                        justify-content: center;
+                    }
+                }
+            }
+            &.hub {
+                .account__row {
+                    > div {
+                        flex: 1 1 15%;
+
+                        &:last-child {
+                            flex: 1 1 85%;
+                            text-align: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    .label__design + .label__design {
+                        margin-left: 69px;
+                        @include res-md{
+                            margin-left: 0;
+                        }
+                    }
+
+                    .text_area {
+                        justify-content: flex-start;
+
+                        .desc_list {
+                            margin-right: 76px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+
+                        }
+                    }
+
+                }
+                .table_row {
+                    .select_table_title {
+                        flex: 1 1 15%;
+                    }
+                    .select_table_desc {
+                        flex: 1 1 85%;
+                       justify-content: center;
+
+                        > div {
+                            margin-right: 74px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &.simplepay {
+                .account__row {
+                    > div {
+                        flex: 1 1 15%;
+                        &:last-child {
+                            flex: 1 1 85%;
+                            text-align: center;
+                            @include res-md{
+                                display: flex;
+                                width: 100%;
+                                justify-content: flex-start;
+                            }
+                            @include res-sm{
+                                justify-content: space-between;
+                            }
+                        }
+                        .label__design {
+                            width: auto;
+                            @include res-md{
+                                margin-right: 20px;
+                            }
+                            @include res-sm{
+                                margin-right: 0;
+                            }
+                            > label {
+                                padding: 12px 22px;
+                                width: auto;
+                                @include res-sm{
+                                    padding: 12px;
+                                }
+
+                            }
+
+                        }
+
+
+                    }
+                }
+
+                .table_row {
+                    .select_table_title {
+                        flex: 1 1 20%;
+                    }
+
+                    .select_table_desc {
+                        flex: 1 1 80%;
+                        justify-content: center;
+
+                    }
+                }
+            }
+            &.etc {
+                .account__row {
+                    > div {
+                        &:last-child {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .account__select_table {
+                    .table_row {
+                        .select_table_desc {
+                            justify-content: center;
+                        }
+                    }
+                }
+
+            }
             .account__select_table{
                 width: 100%;
+                .table_row{
+                    .select_table_desc{
+                        margin-right: 0;
+                    }
+                }
             }
+
         }
+        .button_list_4{
+            display: flex;
+            justify-content: space-between;
+            @include res-md{
+                flex-direction: column;
+            }
+            .label__design{
+                margin-left: 0;
+            }
+
+        }
+        .payment_table_title{
+            margin-left: 20px;
+        }
+
+
 
     }
 }
@@ -374,7 +559,6 @@
 
                 .select_table_title {
                     flex: 1 1 15%;
-                    margin-left: 20px;
                 }
 
                 .select_table_desc {
@@ -441,45 +625,7 @@
             }
         }
 
-        &.account {
-            .account__row {
-                > div {
-                    flex: 1 1 30%;
 
-                    &:last-child {
-                        flex: 1 1 70%;
-                    }
-                }
-
-                .label__design + .label__design {
-                    margin-left: 69px;
-                    @include res-md{
-                        margin-left: 0;
-                        margin-bottom: 0;
-                    }
-                }
-
-                .text_area {
-                    justify-content: flex-start;
-
-                    .desc_list {
-                        margin-right: 76px;
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-
-                    }
-                }
-
-            }
-
-            .table_row {
-                .select_table_desc {
-                    justify-content: center;
-                }
-            }
-        }
 
         &.global_card {
             .account__row {
@@ -520,117 +666,7 @@
             }
         }
 
-        &.hub {
-            .account__row {
-                > div {
-                    flex: 1 1 30%;
 
-                    &:last-child {
-                        flex: 1 1 70%;
-                    }
-                }
-
-                .label__design + .label__design {
-                    margin-left: 69px;
-                    @include res-md{
-                        margin-left: 0;
-                    }
-                }
-
-                .text_area {
-                    justify-content: flex-start;
-
-                    .desc_list {
-                        margin-right: 76px;
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-
-                    }
-                }
-
-            }
-
-            .table_row {
-                .select_table_title {
-                    flex: 1 1 30%;
-                }
-
-                .select_table_desc {
-                    flex: 1 1 70%;
-                    justify-content: flex-start;
-
-                    > div {
-                        margin-right: 74px;
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                    }
-                }
-            }
-        }
-
-        &.simplepay {
-            .account__row {
-                > div {
-                    flex: 1 1 30%;
-                    &:last-child {
-                        flex: 1 1 70%;
-                        @include res-md{
-                            display: flex;
-                            width: 100%;
-                            justify-content: space-between;
-                        }
-                    }
-                    .label__design {
-                        width: auto;
-
-                        > label {
-                            padding: 12px 14px;
-                            width: auto;
-
-
-                        }
-
-                    }
-
-
-                }
-            }
-
-            .table_row {
-                .select_table_title {
-                    flex: 1 1 20%;
-                }
-
-                .select_table_desc {
-                    flex: 1 1 80%;
-                    justify-content: center;
-
-                }
-            }
-        }
-
-        &.etc {
-            .account__row {
-                > div {
-                    &:last-child {
-                        text-align: center;
-                    }
-                }
-            }
-
-            .account__select_table {
-                .table_row {
-                    .select_table_desc {
-                        justify-content: center;
-                    }
-                }
-            }
-
-        }
 
     }
 }
