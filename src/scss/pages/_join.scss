@@ -781,6 +781,9 @@
 
             .content_list_title {
                 margin-right: 20px;
+                @include res-sm{
+                    white-space: nowrap;
+                }
             }
 
 
@@ -796,6 +799,7 @@
                 }
                 .list_mo{
                     font-size: 15px;
+                    flex-wrap: wrap;
                     display: flex;
                 }
 

@@ -139,13 +139,13 @@ data.join = {
             page: '결제수단선택_해외선택'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '국내결제서비스선택',
             category: 'join',
             page: '국내결제서비스선택'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '해외결제서비스선택',
             category: 'join',
             page: '해외결제서비스선택'
@@ -283,49 +283,49 @@ data.developercenter = {
             page: '메인_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_검색결과없음',
             category: 'developercenter',
             page: '웹훅_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_검색결과없음_라이브',
             category: 'developercenter',
             page: '웹훅_검색결과없음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_검색결과있음',
             category: 'developercenter',
             page: '웹훅_검색결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_검색결과있음_라이브',
             category: 'developercenter',
             page: '웹훅_검색결과있음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_상세정보_검색결과없음',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_상세정보_검색결과없음_라이브',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과없음_라이브'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_상세정보_검색결과있음',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '웹훅_상세정보_검색결과있음_라이브',
             category: 'developercenter',
             page: '웹훅_상세정보_검색결과있음_라이브'
@@ -361,19 +361,19 @@ data.developercenter = {
             page: 'white_ip_10개이상등록'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '테스트결제내역_검색결과없음',
             category: 'developercenter',
             page: '테스트결제내역_검색결과없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '테스트결제내역_조회결과_국내',
             category: 'developercenter',
             page: '테스트결제내역_조회결과_국내'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '테스트결제내역_조회결과_해외',
             category: 'developercenter',
             page: '테스트결제내역_조회결과_해외'
@@ -384,19 +384,19 @@ data.membership = {
     title: '관리자 초대',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대관리자없음',
             category: 'membership',
             page: '관리자초대_초대관리자없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대관리자있음',
             category: 'membership',
             page: '관리자초대_초대관리자있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_수정',
             category: 'membership',
             page: '관리자초대_수정'
