@@ -1274,5 +1274,13 @@ a {
         position: absolute;
         right: 10px;
     }
+    .file_name{
+        text-align: left;
+        display: inline-block;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 

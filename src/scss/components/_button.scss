@@ -22,7 +22,7 @@ button{
 }
 
 .btn:disabled {
-    background-color: #BABAC2;
+    background-color: #BABAC2 !important;
     cursor: url("https://image.payple.kr/onboard/icon/ico_disabled_point.svg") 9 9, auto;
 }
 
@@ -42,7 +42,7 @@ button{
 }
 
 .btn.btn_primary:disabled {
-    background-color: #D4C6FF;
+    background-color: #D4C6FF !important;
 
 }
 
