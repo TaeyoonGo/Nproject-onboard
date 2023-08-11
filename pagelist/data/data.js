@@ -32,6 +32,18 @@ data.email = {
             category: 'email',
             page: '상태변경_심사_서비스신청후'
         },
+        {
+            stateClass: 'confirm',
+            url: '상태변경_심사_통과',
+            category: 'email',
+            page: '상태변경_심사_통과'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상태변경_심사_일부통과',
+            category: 'email',
+            page: '상태변경_심사_일부통과'
+        },
     ]
 }
 data.login = {
