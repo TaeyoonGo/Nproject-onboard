@@ -4,21 +4,33 @@ data.email = {
     list: [
         {
             stateClass: 'complete',
-            url: '가입완료',
+            url: '회원가입_인증',
             category: 'email',
-            page: '가입완료'
+            page: '회원가입_인증'
+        },
+        {
+            stateClass: 'confirm',
+            url: '회원가입_완료',
+            category: 'email',
+            page: '회원가입_완료'
         },
         {
             stateClass: 'complete',
-            url: '임시비밀번호',
+            url: '비밀번호_재설정',
             category: 'email',
-            page: '임시비밀번호'
+            page: '비밀번호_재설정'
         },
         {
             stateClass: 'complete',
-            url: '초대이메일',
+            url: '관리자_초대',
             category: 'email',
-            page: '초대이메일'
+            page: '관리자_초대'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상태변경_심사_서비스신청후',
+            category: 'email',
+            page: '상태변경_심사_서비스신청후'
         },
     ]
 }
