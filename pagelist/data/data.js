@@ -44,6 +44,12 @@ data.email = {
             category: 'email',
             page: '상태변경_심사_일부통과'
         },
+        {
+            stateClass: 'confirm',
+            url: '상태변경_심사_불가',
+            category: 'email',
+            page: '상태변경_심사_불가'
+        },
     ]
 }
 data.login = {
