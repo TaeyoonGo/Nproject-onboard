@@ -62,6 +62,48 @@ data.email = {
             category: 'email',
             page: '상태변경_계약완료'
         },
+        {
+            stateClass: 'confirm',
+            url: '이메일_민원',
+            category: 'email',
+            page: '이메일_민원'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_차지백',
+            category: 'email',
+            page: '이메일_차지백'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_공지',
+            category: 'email',
+            page: '이메일_공지'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_보증보험갱신_2주전',
+            category: 'email',
+            page: '이메일_보증보험갱신_2주전'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_보증보험갱신_3일전',
+            category: 'email',
+            page: '이메일_보증보험갱신_3일전'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_보증보험미갱신_서비스정지',
+            category: 'email',
+            page: '이메일_보증보험미갱신_서비스정지'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_보증보험미갱신_정산보류',
+            category: 'email',
+            page: '이메일_보증보험미갱신_정산보류'
+        },
     ]
 }
 data.login = {
