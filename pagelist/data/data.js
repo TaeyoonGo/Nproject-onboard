@@ -50,6 +50,18 @@ data.email = {
             category: 'email',
             page: '상태변경_심사_불가'
         },
+        {
+            stateClass: 'confirm',
+            url: '상태변경_계약서발송',
+            category: 'email',
+            page: '상태변경_계약서발송'
+        },
+        {
+            stateClass: 'confirm',
+            url: '상태변경_계약완료',
+            category: 'email',
+            page: '상태변경_계약완료'
+        },
     ]
 }
 data.login = {
