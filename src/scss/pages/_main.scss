@@ -160,10 +160,24 @@
                 span{
                     margin-right: 20px;
                     position: relative;
+                    line-height: 1.5;
+                    &:last-child{
+                        margin-right: 0;
+                    }
                     a{
-                        margin-left: 10px;
+                        margin-left: 20px;
                         color: inherit;
                         text-decoration: underline;
+                        position: relative;
+                        &:before{
+                            position: absolute;
+                            top: 0;
+                            left: -10px;
+                            height: 15px;
+                            width: 1px;
+                            background-color: #52525B;
+                            content: '';
+                        }
                     }
                     &:before{
                         position: absolute;
