@@ -66,8 +66,8 @@ function selectBox() {
         let selectBox = $(this);
         selectBox.find('.option').on('click', function () {
             let text = $(this).text();
-            let value = $(this).val();
-            $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
+            let value = $(this).attr("value");
+            $(this).closest('._select_box').find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
         });
     })
 
