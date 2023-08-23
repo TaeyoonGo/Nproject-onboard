@@ -130,8 +130,11 @@
     }
     &.ico_download{
         background-image: url("https://image.payple.kr/onboard/icon/ico_download.png");
-        width: 18px;
-        height: 20px;
+        width: 33px;
+        height: 33px;
+        &:hover{
+            background-image: url("https://image.payple.kr/onboard/icon/ico_download_hover.png");
+        }
     }
     &.ico_close_gray_sm{
         background-image: url("https://image.payple.kr/onboard/icon/ico_close_gray_sm.png");

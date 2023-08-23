@@ -146,8 +146,7 @@ function emptyTableData(){
 function inputFile(){
     $("._file_input").on('change',function(){
         var fileName = $(this).val().split('/').pop().split('\\').pop();
-        console.log(fileName);
-        $("._file_name").text(fileName);
+        $("._file_name").text(fileName).css({'color' : '#212529'});
     });
 }
 

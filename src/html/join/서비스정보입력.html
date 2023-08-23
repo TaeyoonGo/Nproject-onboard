@@ -30,7 +30,7 @@
                     <div class="input_box">
                         <p class="info_sub_title">사업자등록증 업로드</p>
                         <label class="file_custom" for="fileCustom">
-                            <span class="file_name _file_name" style="text-align: left">파일선택</span>
+                            <span class="file_name _file_name" style="text-align: left">파일을 업로드 해주세요.</span>
                             <span class="icon_area">
                             <i class="icon ico_download"></i>
                         </span>
@@ -51,13 +51,15 @@
                     <div class="input_box">
                         <p class="info_sub_title">결제를 도입할 홈페이지 주소</p>
                         <label class="form_label w-100">
-                            <input class="form_control" type="text">
+                            <input class="form_control" type="text" placeholder="홈페이지가 있어야 심사가 가능합니다.">
                         </label>
                     </div>
                     <div class="input_box">
                         <p class="info_sub_title">판매상품</p>
                         <div class="gray_box _result_checkbox">
-                            <div id="result"></div>
+                            <div id="result">
+                                <p class="result_placeholder">아래 버튼을 눌러 선택해 주세요.</p>
+                            </div>
                         </div>
                         <div class="text_right">
                             <div class="btn" onclick="openModal('modal0')">선택</div>
@@ -571,7 +573,8 @@
             var isChecked = $(this).is(":checked");
             if (isChecked) {
                 var result = "<span class='is_check_box'>" + checkedValue + "<i class='icon ico_close_gray_sm'></i></span>";
-                $("#result").append(result);
+                $("#result").prepend(result);
+
             } else {
                 $("#result").find(".is_check_box:contains('" + checkedValue + "')").remove();
             }

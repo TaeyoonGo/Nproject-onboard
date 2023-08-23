@@ -1276,6 +1276,7 @@ a {
     .icon_area {
         position: absolute;
         right: 10px;
+        top: 5px;
     }
     .file_name{
         text-align: left;
@@ -1284,6 +1285,8 @@ a {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        color: #BABAC2;
+        vertical-align: middle;
     }
 }
 
