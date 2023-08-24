@@ -568,7 +568,11 @@
 </body>
 <script>
     $(document).ready(function() {
+
+
+
         $("._checkbox_list").change(function() {
+            console.log(($('#result').find('.is_check_box').length));
             var checkedValue = $(this).next(".check_label").text().trim();
             var isChecked = $(this).is(":checked");
             if (isChecked) {
