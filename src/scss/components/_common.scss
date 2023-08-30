@@ -657,7 +657,9 @@ a {
                     //달력에 추가 되는곳
                     .off {
                         color: #BABAC2;
-                        visibility: hidden;
+                        &.ends{
+                            visibility: hidden;
+                        }
                     }
 
                     th, td {
@@ -1291,3 +1293,50 @@ a {
     }
 }
 
+
+
+.alert_popup{
+    position: fixed;
+    top: 80px;
+    left: calc(50% + 150px);
+    transform: translateX(-50%);
+    width: 360px;
+    padding: 10px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    visibility: hidden;
+    p{
+        font-size: 14px;
+        text-align: center;
+        .text{
+            vertical-align: middle;
+        }
+    }
+    i{
+        width: 14px;
+        height: 14px;
+        margin-right:5px;
+    }
+
+    &.primary{
+        visibility: visible;
+        background-color:#F0EDFF;
+        color: #7852E8;
+        i{
+            background-image: url('https://image.payple.kr/onboard/icon/ico_check_purple.png');
+        }
+    }
+    &.danger{
+        visibility: visible;
+        background-color: #FFF1F1;
+        color: #FF3131;
+        i{
+            background-image: url('https://image.payple.kr/onboard/icon/ico_alert_red.png');
+        }
+    }
+    @include res-xl{
+        position: fixed;
+        left: 50%;
+        top: 80px;
+    }
+}

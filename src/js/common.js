@@ -79,8 +79,6 @@ function selectBox() {
             }
         });
     });
-
-
 }
 
 
@@ -191,6 +189,8 @@ function modalCalender(){
         },
         "startDate": new Date(),
         "endDate": new Date(),
+        // "minDate": new Date(new Date().getFullYear(), new Date().getMonth(), 1),
+        "maxDate": new Date(),
         "buttonClasses": "data_range_btn",
         "applyButtonClasses": "apply_range_btn",
         "cancelButtonClasses": "cancel_range_btn",
@@ -202,11 +202,7 @@ function modalCalender(){
     dateRangePicker.on('hide.daterangepicker', function (ev, picker) {
         let modals = $('.modal')
         modals.removeClass('fade')
-        setTimeout(function () {
-            modals.removeClass('show')
-        }, 200)
     });
-
     dateRangePicker.on('showCalendar.daterangepicker', function (ev, picker) {
         const trList = $('.daterangepicker').find("tr");
         trList.each(function() {
@@ -215,8 +211,8 @@ function modalCalender(){
                 $(this).hide();
             }
         });
-    });
 
+    });
 }
 
 
