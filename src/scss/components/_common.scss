@@ -491,7 +491,8 @@ a {
                 }
             }
         }
-        .modify_text{
+
+        .modify_text {
             padding: 20px 30px 0;
         }
     }
@@ -505,6 +506,7 @@ a {
 
     &.modal_table {
         width: 90%;
+
         .modal_header {
             padding: 20px;
             position: relative;
@@ -528,6 +530,7 @@ a {
             color: #85858F;
             line-height: 1.3;
         }
+
         .modal_body {
             overflow-y: auto;
             max-height: calc(80vh - 140px);
@@ -560,6 +563,7 @@ a {
             .table_row {
                 display: flex;
                 border-bottom: 1px solid #D2D2D2;
+
                 &.line3 {
                     div {
                         flex: 1 1 50%;
@@ -588,12 +592,11 @@ a {
 
     &.modal_date_range {
         width: max-content;
-
         .daterangepicker {
             margin: 0;
             border: transparent;
             position: static;
-            @include res-lg{
+            @include res-lg {
                 display: flex !important;
                 flex-direction: column;
             }
@@ -601,28 +604,29 @@ a {
             .drp-calendar {
                 max-width: none;
                 min-height: 380px;
-                @include res-lg{
+                @include res-lg {
                     min-height: 340px;
                 }
-                @include res-sm{
+                @include res-sm {
                     min-height: 350px;
                 }
+
                 &.left {
                     padding: 30px 15px 0 30px;
-                    @include res-lg{
+                    @include res-lg {
                         padding: 15px 30px 0;
                     }
-                    @include res-sm{
+                    @include res-sm {
                         padding: 0;
                     }
                 }
 
                 &.right {
                     padding: 30px 30px 0 15px;
-                    @include res-lg{
+                    @include res-lg {
                         padding: 0 30px 15px;
                     }
-                    @include res-sm{
+                    @include res-sm {
                         padding: 0;
                     }
                 }
@@ -635,15 +639,16 @@ a {
             table {
                 thead {
                     tr {
-                        .prev,.next{
+                        .prev, .next {
 
-                           span{
+                            span {
 
-                               &:before{
+                                &:before {
 
-                               }
-                           }
+                                }
+                            }
                         }
+
                         //요일
                         &:nth-child(2) {
                             th {
@@ -657,7 +662,8 @@ a {
                     //달력에 추가 되는곳
                     .off {
                         color: #BABAC2;
-                        &.ends{
+
+                        &.ends {
                             visibility: hidden;
                         }
                     }
@@ -666,20 +672,24 @@ a {
                         width: 50px;
                         height: 40px;
                         font-size: 16px;
-                        &.active{
+
+                        &.active {
                             color: #fff;
                             background-color: #7852E8;
                             font-weight: 700;
                         }
-                        &.in-range{
+
+                        &.in-range {
                             background-color: #F0EBFF;
                             color: #52525B;
-                            &.start-date{
+
+                            &.start-date {
                                 color: #fff;
                                 background-color: #7852E8;
                                 font-weight: 700;
                             }
-                            &.end-date{
+
+                            &.end-date {
                                 color: #fff;
                                 background-color: #7852E8;
                                 font-weight: 700;
@@ -698,7 +708,150 @@ a {
             }
 
         }
+
+        &.one_calender {
+            .daterangepicker {
+                margin: 0;
+                border: transparent;
+                position: static;
+                @include res-lg {
+                    display: flex !important;
+                    flex-direction: column;
+                }
+
+                .drp-calendar {
+                    max-width: none;
+                    min-height: 0;
+                    @include res-lg {
+                        min-height: 0;
+                    }
+                    @include res-sm {
+                        min-height: 0;
+                    }
+
+                    &.left {
+                       position: absolute;
+                        padding: 0;
+                        thead {
+                            .month{
+                                display: none;
+                            }
+                            .prev{
+                                width: 50px;
+                                height: 40px;
+                                position: absolute;
+                                top: 32px;
+                                left: 30px;
+                                text-align: center;
+                                line-height: 35px;
+                                vertical-align: middle;
+                                @include res-lg{
+                                    top: 38px;
+                                }
+                                @include res-sm{
+                                    top: 10px;
+                                    left: 0;
+                                }
+                            }
+                            tr {
+                                &:nth-child(1){
+                                    th{
+                                        &:last-child{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                //요일
+                                &:nth-child(2) {
+                                    display: none;
+                                    th {
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                        tbody{
+                            display: none;
+                        }
+                        @include res-lg {
+                            padding: 0;
+                        }
+                        @include res-sm {
+                            padding: 0;
+                        }
+                    }
+
+                    &.right {
+                        padding: 30px;
+                        @include res-lg {
+                            padding: 30px;
+                        }
+                        @include res-sm {
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .calendar-table {
+                    padding: 0;
+                }
+
+                table {
+
+
+                    tr {
+                        //달력에 추가 되는곳
+                        .off {
+                            color: #BABAC2;
+
+                            &.ends {
+                                visibility: hidden;
+                            }
+                        }
+
+                        th, td {
+                            width: 50px;
+                            height: 40px;
+                            font-size: 16px;
+
+                            &.active {
+                                color: #fff;
+                                background-color: #7852E8;
+                                font-weight: 700;
+                            }
+
+                            &.in-range {
+                                background-color: #F0EBFF;
+                                color: #52525B;
+
+                                &.start-date {
+                                    color: #fff;
+                                    background-color: #7852E8;
+                                    font-weight: 700;
+                                }
+
+                                &.end-date {
+                                    color: #fff;
+                                    background-color: #7852E8;
+                                    font-weight: 700;
+                                }
+
+                            }
+                        }
+
+                        th {
+                            &:nth-child(1) {
+                                color: #FF3131;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
     }
+
 }
 
 .modal_header {
@@ -971,6 +1124,7 @@ a {
 
     &.active {
         border: 1px solid #7852E8;
+
         .options {
             display: block;
             overflow-y: auto;
@@ -1279,9 +1433,10 @@ a {
         position: absolute;
         right: 10px;
         top: 5px;
-        cursor:pointer;
+        cursor: pointer;
     }
-    .file_name{
+
+    .file_name {
         text-align: left;
         display: inline-block;
         width: 80%;
@@ -1294,8 +1449,7 @@ a {
 }
 
 
-
-.alert_popup{
+.alert_popup {
     position: fixed;
     top: 80px;
     left: calc(50% + 150px);
@@ -1305,36 +1459,43 @@ a {
     border-radius: 7px;
     transition: all 0.3s;
     visibility: hidden;
-    p{
+
+    p {
         font-size: 14px;
         text-align: center;
-        .text{
+
+        .text {
             vertical-align: middle;
         }
     }
-    i{
+
+    i {
         width: 14px;
         height: 14px;
-        margin-right:5px;
+        margin-right: 5px;
     }
 
-    &.primary{
+    &.primary {
         visibility: visible;
-        background-color:#F0EDFF;
+        background-color: #F0EDFF;
         color: #7852E8;
-        i{
+
+        i {
             background-image: url('https://image.payple.kr/onboard/icon/ico_check_purple.png');
         }
     }
-    &.danger{
+
+    &.danger {
         visibility: visible;
         background-color: #FFF1F1;
         color: #FF3131;
-        i{
+
+        i {
             background-image: url('https://image.payple.kr/onboard/icon/ico_alert_red.png');
         }
     }
-    @include res-xl{
+
+    @include res-xl {
         position: fixed;
         left: 50%;
         top: 80px;
