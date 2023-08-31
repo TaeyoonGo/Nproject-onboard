@@ -262,8 +262,7 @@ function modalCalender(){
     });
     OneCalender.on('showCalendar.daterangepicker', function (ev, picker) {
         if (picker.endDate.month() > picker.startDate.month()) {
-            // call send
-            alert('선택한 범위가 여러 달에 걸쳐 있습니다.');
+            alert('한 달 단위로 선택 가능하십니다.');
             picker.startDate = moment();
             picker.endDate = moment();
         }
