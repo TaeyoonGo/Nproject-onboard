@@ -1459,13 +1459,12 @@ a {
     border-radius: 7px;
     transition: all 0.3s;
     visibility: hidden;
-
     p {
         font-size: 14px;
         text-align: center;
-
         .text {
             vertical-align: middle;
+            visibility: hidden;
         }
     }
 
@@ -1479,7 +1478,9 @@ a {
         visibility: visible;
         background-color: #F0EDFF;
         color: #7852E8;
-
+        .text{
+            visibility: visible;
+        }
         i {
             background-image: url('https://image.payple.kr/onboard/icon/ico_check_purple.png');
         }
@@ -1489,7 +1490,9 @@ a {
         visibility: visible;
         background-color: #FFF1F1;
         color: #FF3131;
-
+        .text{
+            visibility: visible;
+        }
         i {
             background-image: url('https://image.payple.kr/onboard/icon/ico_alert_red.png');
         }
