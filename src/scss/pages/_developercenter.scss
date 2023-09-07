@@ -276,19 +276,19 @@
                     }
                     .input__area{
                         margin-bottom: 0;
-                        &.name{
-                            margin-right: 24px;
-                            flex: 1 1 15%;
-                        }
                         &.url{
-                            margin-right: 24px;
-                            flex: 1 1 45%;
+                            flex: 1 1 60%;
                             .validation_area{
                                 margin-top: 5px;
                             }
                         }
                         &.data{
                             flex: 1 1 40%;
+                            margin-right: 24px;
+                            @include res-md{
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                            }
                         }
                         &.default{
                             flex: 0 0 20%;
