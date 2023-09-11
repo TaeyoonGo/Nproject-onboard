@@ -181,7 +181,7 @@ function modalCalender(){
         autoApply : true,
         "locale": {
             "format": "YYYY-MM-DD",
-            "separator": " ~ ",
+            "separator": "~",
             "applyLabel": "확인",
             "cancelLabel": "취소",
             "fromLabel": "From",
