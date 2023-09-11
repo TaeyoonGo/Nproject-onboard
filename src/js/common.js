@@ -225,7 +225,7 @@ function modalCalender(){
         autoApply : true,
         "locale": {
             "format": "YYYY-MM-DD",
-            "separator": "~",
+            "separator":"~",
             "applyLabel": "확인",
             "cancelLabel": "취소",
             "fromLabel": "From",
@@ -237,7 +237,6 @@ function modalCalender(){
         },
         "startDate": new Date(),
         "endDate": new Date(),
-        // "minDate": new Date(new Date().getFullYear(), new Date().getMonth(), 1),
         "maxDate": new Date(),
         "buttonClasses": "data_range_btn",
         "applyButtonClasses": "apply_range_btn",
@@ -245,7 +244,7 @@ function modalCalender(){
         "showCustomRangeLabelranges": false,
         "parentEl": parentElement,
     }, function (start, end, label) {
-        console.log('선택된 날짜: ' + start.format('YYYY-MM-DD') + 'to' + end.format('YYYY-MM-DD'));
+        // console.log('선택된 날짜: ' + start.format('YYYY-MM-DD') + 'to' + end.format('YYYY-MM-DD'));
     });
     OneCalender.on('hide.daterangepicker', function (ev, picker) {
         let modals = $('.modal')
