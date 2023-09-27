@@ -59,17 +59,27 @@ function toggleAccountInfo() {
 //selectBox 공통
 function selectBox() {
     let selectBox = $('._select_box')
+
     selectBox.on('click', function () {
         $(this).toggleClass('active');
     })
-    selectBox.each(function(){
-        let selectBox = $(this);
-        selectBox.find('.option').on('click', function () {
-            let text = $(this).text();
-            let value = $(this).attr("value");
-            $(this).closest('._select_box').find('.select_value').text(text).css({'color': '#1F1F1F'}).attr('value', value);
-        });
-    })
+
+    selectBox.each(function() {
+        const selectBox = $(this);
+        const innerInputElement = selectBox.find('input.select_value');
+
+        if (innerInputElement.val() !== '') {
+            const selectedValue = selectBox.find('.option[value="' + innerInputElement.val() + '"]');
+
+            if (selectedValue.length === 1) {
+                const selectedText = selectedValue.text();
+                console.log(selectedText);
+                innerInputElement.closest('._select_box').find('.select_value').text(selectedText);
+            }
+        }
+
+
+    });
 
     $(document).on('click', function (event) {
         let target = $(event.target);
@@ -78,8 +88,14 @@ function selectBox() {
                 $(this).removeClass('active');
             }
         });
+        selectBox.find('.option').on('click', function() {
+            const text = $(this).text();
+            const value = $(this).attr("value");
+            $(this).closest('._select_box').find('.select_value').text(text).css('color', '#1F1F1F').attr('value', value);
+        });
     });
 }
+
 
 
 //입점불가 텍스트
@@ -115,9 +131,6 @@ function HoverStopService(){
 
 function checkAll() {
     $('._check_all').on('click',function(){
-
-        // if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
-        // else $("input[name=chk]").prop("checked", false);
         if($("._check_all").is(":checked")){
             $("input[name=chk]").prop("checked", true);
         }else{
@@ -129,7 +142,7 @@ function checkAll() {
         let total = $("input[name=chk]").length;
         let checked = $("input[name=chk]:checked").length;
 
-        if(total != checked) $("#cbx_chkAll").prop("checked", false);
+        if(total != checked) $("._check_all").prop("checked", false);
         else $("._check_all").prop("checked", true);
     });
 }
