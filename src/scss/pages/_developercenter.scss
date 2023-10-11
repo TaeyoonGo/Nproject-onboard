@@ -284,6 +284,18 @@
                         &.data{
                             flex: 1 1 40%;
                             margin-right: 24px;
+                            .caption_text{
+                                margin-top: 5px;
+                                font-size: 13px;
+                                margin-left: 14px;
+                                &:before{
+                                    text-indent: inherit;
+                                    left: -10px;
+                                    content: '*';
+                                    top: 1px;
+                                    background-image: none;
+                                }
+                            }
                             @include res-md{
                                 margin-right: 0;
                                 margin-bottom: 20px;
