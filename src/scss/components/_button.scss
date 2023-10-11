@@ -19,7 +19,22 @@ button{
     cursor: pointer;
     line-height: 1.2;
     font-weight: 700;
+    &.btn_secession{
+        font-size: 13px;
+        background-color: #FFE4DB;
+        color: #FF3131;
+        font-weight: 500;
+        padding: 3px 8px;
+        text-align: center;
+        border-radius: 4px;
+        &:disabled{
+            background-color: #ECECEC !important;
+            color: #52525B !important;
+        }
+    }
+   
 }
+
 
 .btn:disabled {
     background-color: #BABAC2 !important;

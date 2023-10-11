@@ -48,13 +48,6 @@
     }
     .membership_area{
         margin-bottom: 90px;
-        &.membership_area_w740{
-            max-width: 740px;
-            &.m_auto{
-                margin: 0 auto;
-            }
-
-        }
         &:nth-last-child(1){
             margin-bottom: 0;
         }
@@ -284,7 +277,7 @@
                 }
             }
             .check__area__list{
-                margin-bottom: 60px;
+
                 .check__list_title{
                     font-size: 16px;
                     font-weight: 700;

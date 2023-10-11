@@ -1217,7 +1217,6 @@ a {
     width: calc(100% + 48px);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-
     table {
         width: 100%;
         white-space: nowrap;
@@ -1262,12 +1261,6 @@ a {
         }
     }
 
-    @include res-md {
-
-        table {
-
-        }
-    }
 }
 
 //aside
