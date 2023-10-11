@@ -113,6 +113,16 @@
             .response_table{
                 width: 100%;
                 margin: 0 auto;
+                &.table_space_normal{
+                    table{
+                        white-space: normal;
+                        word-break: break-all;
+                        td,th{
+                            white-space: normal;
+                            word-break: break-all;
+                        }
+                    }
+                }
             }
             .pagination_area{
                 padding: 40px 0;
