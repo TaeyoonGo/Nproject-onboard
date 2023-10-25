@@ -6,7 +6,7 @@
     .main_title{
         font-size: 30px;
         font-weight: 700;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .title_area{
         margin-bottom: 30px;
@@ -48,6 +48,24 @@
     }
     .membership_area{
         margin-bottom: 90px;
+
+        .badge{
+                color: #7852E8;
+                background-color: #F0EDFF;
+                border-radius: 22px;
+                padding: 5px 10px;
+                display: inline-block;
+                margin-bottom: 15px;
+                vertical-align: middle;
+                font-size: 16px;
+                font-weight: 600;
+                .icon{
+                    margin-right: 4px;
+                    vertical-align: baseline;
+                }
+            }
+
+
         &:nth-last-child(1){
             margin-bottom: 0;
         }
@@ -72,13 +90,53 @@
 
         }
         .title_area{
+            position: relative;
             margin-bottom: 30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .speech_bubble{
+                top: -26px;
+                display: none;
+                left: 98px;
+                font-size: 12px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 7px rgba(0,0,0,.15);
+                padding: 10px 15px;
+                &:after{
+                    border-top: 10px solid transparent;
+                    border-left: 0 solid transparent;
+                    border-right: 10px solid #fff;
+                    border-bottom: 10px solid transparent;
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -10px;
+                }
+                .title{
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                .desc{
+                    margin-bottom: 5px;
+                    &:nth-last-child(1){
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
             .title{
                 font-size: 22px;
                 font-weight: 700;
+                .ico_interrogation_fill_gray{
+                    vertical-align: top;
+                    cursor: pointer;
+                    margin-left: 5px;
+                }
             }
             &.detail{
                 justify-content: flex-start;
@@ -196,10 +254,17 @@
             border: 1px solid #ced4da;
 
             .authority_list{
+                .badge-purple{
+
+                }
                 li{
                     display: flex;
                     font-size: 16px;
                     margin-bottom: 10px;
+                    @include res-sm{
+                        flex-direction: column;
+                        margin-bottom: 30px;
+                    }
                     &:nth-last-child(1){
                         margin-bottom: 0;
                     }
@@ -207,10 +272,18 @@
                         font-weight: 700;
                         margin-right: 28px;
                         flex: 0 0 80px;
+                        @include res-sm{
+                            flex: 1 1 auto;
+                            margin-bottom: 20px;
+                            margin-right: 0;
+                        }
                     }
                     .menu{
                         position: relative;
                         margin-right: 10px;
+                        @include res-sm{
+                            margin-bottom: 10px;
+                        }
                         &:after{
                             position: absolute;
                             display: inline-block;
@@ -218,6 +291,9 @@
                             top: 50%;
                             transform: translateY(-50%);
                             right: -8px;
+                            @include res-sm{
+                                display: none;
+                            }
                         }
                         &:last-child{
                             &:after{

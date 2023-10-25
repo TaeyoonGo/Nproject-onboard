@@ -468,35 +468,72 @@ data.membership = {
     title: '관리자 초대',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대관리자없음',
             category: 'membership',
             page: '관리자초대_초대관리자없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대관리자있음',
             category: 'membership',
             page: '관리자초대_초대관리자있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_수정',
             category: 'membership',
             page: '관리자초대_수정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대수락완료',
             category: 'membership',
             page: '관리자초대_초대수락완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_권한삭제',
             category: 'membership',
             page: '관리자초대_권한삭제'
         },
+        {
+            stateClass: 'confirm',
+            url: '통합관리자_초대완료_관리자없음',
+            category: 'membership',
+            page: '통합관리자_초대완료_관리자없음'
+        },
+        {
+            stateClass: 'confirm',
+            url: '통합관리자_초대완료_관리자있음',
+            category: 'membership',
+            page: '통합관리자_초대완료_관리자있음'
+        },
+        {
+            stateClass: 'working',
+            url: '통합관리자_초대완료_상세보기',
+            category: 'membership',
+            page: '통합관리자_초대완료_상세보기'
+        },
+        {
+            stateClass: 'working',
+            url: '상점관리자_초대완료_최초',
+            category: 'membership',
+            page: '상점관리자_초대완료_최초'
+        },
+        {
+            stateClass: 'working',
+            url: '상점관리자_초대완료_리스트',
+            category: 'membership',
+            page: '상점관리자_초대완료_리스트'
+        },
+        {
+            stateClass: 'working',
+            url: '상점관리자_초대완료_수정',
+            category: 'membership',
+            page: '상점관리자_초대완료_수정'
+        }
+
     ]}
 
 
