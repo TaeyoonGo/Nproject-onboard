@@ -1446,7 +1446,7 @@ a {
 .alert_popup {
     position: fixed;
     top: 80px;
-    left: calc(50% + 150px);
+    left: 50%;
     transform: translateX(-50%);
     width: 360px;
     padding: 10px;
