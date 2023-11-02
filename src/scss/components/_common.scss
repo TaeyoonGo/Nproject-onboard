@@ -592,6 +592,7 @@ a {
 
     &.modal_date_range {
         width: max-content;
+
         .daterangepicker {
             margin: 0;
             border: transparent;
@@ -730,13 +731,15 @@ a {
                     }
 
                     &.left {
-                       position: absolute;
+                        position: absolute;
                         padding: 0;
+
                         thead {
-                            .month{
+                            .month {
                                 display: none;
                             }
-                            .prev{
+
+                            .prev {
                                 width: 50px;
                                 height: 40px;
                                 position: absolute;
@@ -745,34 +748,39 @@ a {
                                 text-align: center;
                                 line-height: 35px;
                                 vertical-align: middle;
-                                @include res-lg{
+                                @include res-lg {
                                     top: 38px;
                                 }
-                                @include res-sm{
+                                @include res-sm {
                                     top: 10px;
                                     left: 0;
                                 }
                             }
+
                             tr {
-                                &:nth-child(1){
-                                    th{
-                                        &:last-child{
+                                &:nth-child(1) {
+                                    th {
+                                        &:last-child {
                                             display: none;
                                         }
                                     }
                                 }
+
                                 //요일
                                 &:nth-child(2) {
                                     display: none;
+
                                     th {
                                         font-weight: 400;
                                     }
                                 }
                             }
                         }
-                        tbody{
+
+                        tbody {
                             display: none;
                         }
+
                         @include res-lg {
                             padding: 0;
                         }
@@ -1037,7 +1045,7 @@ a {
 }
 
 .header .header__account_info {
-    width: fit-content;
+    min-width: 140px;
     display: none;
     right: 0;
     top: 50px;
@@ -1062,6 +1070,10 @@ a {
     color: #85858F;
 }
 
+.header .header__account_info li:first-child span{
+    margin: 0;
+}
+
 .header .header__account_info li:first-child:hover {
     background-color: #fff;
 }
@@ -1082,7 +1094,6 @@ a {
 .header .header__account_info span {
     vertical-align: middle;
     margin-left: 6px;
-
     color: #1f1f1f;
 }
 
@@ -1217,6 +1228,7 @@ a {
     width: calc(100% + 48px);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+
     table {
         width: 100%;
         white-space: nowrap;
@@ -1453,9 +1465,11 @@ a {
     border-radius: 7px;
     transition: all 0.3s;
     visibility: hidden;
+
     p {
         font-size: 14px;
         text-align: center;
+
         .text {
             vertical-align: middle;
             visibility: hidden;
@@ -1472,9 +1486,11 @@ a {
         visibility: visible;
         background-color: #F0EDFF;
         color: #7852E8;
-        .text{
+
+        .text {
             visibility: visible;
         }
+
         i {
             background-image: url('https://image.payple.kr/onboard/icon/ico_check_purple.png');
         }
@@ -1484,9 +1500,11 @@ a {
         visibility: visible;
         background-color: #FFF1F1;
         color: #FF3131;
-        .text{
+
+        .text {
             visibility: visible;
         }
+
         i {
             background-image: url('https://image.payple.kr/onboard/icon/ico_alert_red.png');
         }
