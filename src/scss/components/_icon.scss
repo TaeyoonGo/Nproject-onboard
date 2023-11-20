@@ -10,92 +10,92 @@
     /*공통*/
     &.ico_account_btn {
         cursor: pointer;
-        background-image: url("https://image.payple.kr/onboard/icon/ico_account_btn.png");
+        background-image: url("../img/icon/ico_account_btn.png");
         width: 32px;
         height: 32px;
     }
     &.ico_logout {
         cursor: pointer;
-        background-image: url("https://image.payple.kr/onboard/icon/ico_logout.png");
+        background-image: url("../img/icon/ico_logout.png");
         width: 20px;
         height: 20px;
     }
     &.ico_alert_gray {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_alert_gray.png");
+        background-image: url("../img/icon/ico_alert_gray.png");
         width: 16px;
         height: 15px;
     }
     &.ico_alert_red {
         cursor: pointer;
-        background-image: url("https://image.payple.kr/onboard/icon/ico_alert_red.png");
+        background-image: url("../img/icon/ico_alert_red.png");
         width: 20px;
         height: 20px;
     }
     &.ico_setting {
         cursor: pointer;
-        background-image: url("https://image.payple.kr/onboard/icon/ico_setting.png");
+        background-image: url("../img/icon/ico_setting.png");
         width: 20px;
         height: 20px;
     }
     &.ico_select_arrow_down {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_down.png");
+        background-image: url("../img/icon/ico_select_arrow_down.png");
 
         width: 35px;
         height: 33px;
     }
     &.ico_select_arrow_up {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_select_arrow_up.png");
+        background-image: url("../img/icon/ico_select_arrow_up.png");
         width: 35px;
         height: 33px;
     }
     &.ico_alert_white_gray {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_alert_white_gray.png");
+        background-image: url("../img/icon/ico_alert_white_gray.png");
         width: 13px;
         height: 13px;
     }
     &.ico_pagination_left_arrow {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_left_arrow.png");
+        background-image: url("../img/icon/ico_pagination_left_arrow.png");
         //background-image: url("../img/icon/ico_pagination_left_arrow.png");
         width: 24px;
         height: 24px;
         cursor: pointer;
     }
     &.ico_pagination_right_arrow {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_right_arrow.png");
+        background-image: url("../img/icon/ico_pagination_right_arrow.png");
         //background-image: url("../img/icon/ico_pagination_right_arrow.png");
         width: 24px;
         height: 24px;
         cursor: pointer;
     }
     &.ico_pagination_left_arrow_first {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_left_arrow_first.png");
+        background-image: url("../img/icon/ico_pagination_left_arrow_first.png");
         width: 24px;
         height: 24px;
     }
     &.ico_pagination_right_arrow_last {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_pagination_right_arrow_last.png");
+        background-image: url("../img/icon/ico_pagination_right_arrow_last.png");
         width: 24px;
         height: 24px;
     }
     &.ico_right_arrow_gary {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_gary.png");
+        background-image: url("../img/icon/ico_right_arrow_gary.png");
         width: 10px;
         height: 25px;
     }
     &.ico_calender {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_calender.png");
+        background-image: url("../img/icon/ico_calender.png");
         //background-image: url("../img/icon/ico_calender.png");
         width: 30px;
         height: 30px;
     }
     &.ico_member_join {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_member_join.png");
+        background-image: url("../img/icon/ico_member_join.png");
         //background-image: url("../img/icon/ico_member_join.png");
         width: 20px;
         height: 20px;
     }
     &.ico_checkBox {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox.svg");
+        background-image: url("../img/icon/ico_checkbox.svg");
         width: 20px;
         height: 20px;
         background-size: 20px 80px;
@@ -104,7 +104,7 @@
     /*온보딩*/
     &.ico_close_btn {
         cursor: pointer;
-        background-image: url("https://image.payple.kr/onboard/icon/ico_closeBtn.png");
+        background-image: url("../img/icon/ico_closeBtn.png");
         width: 30px;
         height: 30px;
         @include res-sm {
@@ -113,54 +113,54 @@
         }
     }
     &.ico_radioBox {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_radiobox.svg");
+        background-image: url("../img/icon/ico_radiobox.svg");
         width: 20px;
         height: 20px;
         background-size: 20px 60px;
     }
     &.ico_left_white {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_left_white.png");
+        background-image: url("../img/icon/ico_left_white.png");
         width: 8px;
         height: 15px;
     }
     &.ico_right_white {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_right_white.png");
+        background-image: url("../img/icon/ico_right_white.png");
         width: 8px;
         height: 15px;
     }
     &.ico_naverpay {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_naverpay.png");
+        background-image: url("../img/icon/ico_naverpay.png");
         width: 53px;
         height: 21px;
     }
     &.ico_applepay {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_applepay.png");
+        background-image: url("../img/icon/ico_applepay.png");
         width: 48px;
         height: 20px;
     }
     &.ico_kakaopay {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_kakaopay.png");
+        background-image: url("../img/icon/ico_kakaopay.png");
         width: 94px;
         height: 22px;
     }
     &.ico_upload {
         //background-image: url("../img/icon/ico_upload.png");
-        background-image: url("https://image.payple.kr/onboard/icon/ico_upload.png");
+        background-image: url("../img/icon/ico_upload.png");
         width: 33px;
         height: 33px;
 
         &:hover {
-            background-image: url("https://image.payple.kr/onboard/icon/ico_upload_hover.png");
+            background-image: url("../img/icon/ico_upload_hover.png");
             //background-image: url("../img/icon/ico_upload_hover.png");
         }
     }
     &.ico_close_gray_sm {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_close_gray_sm.png");
+        background-image: url("../img/icon/ico_close_gray_sm.png");
         width: 15px;
         height: 15px;
     }
     &.ico_document {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_document.png");
+        background-image: url("../img/icon/ico_document.png");
         width: 20px;
         height: 25px;
         @include res-sm {
@@ -169,7 +169,7 @@
         }
     }
     &.ico_setting_blue {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_setting_blue.png");
+        background-image: url("../img/icon/ico_setting_blue.png");
         width: 22px;
         height: 22px;
         @include res-sm {
@@ -178,7 +178,7 @@
         }
     }
     &.ico_checkbox_blue {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox_blue.png");
+        background-image: url("../img/icon/ico_checkbox_blue.png");
         width: 22px;
         height: 22px;
         @include res-sm {
@@ -187,72 +187,77 @@
         }
     }
     &.ico_checkbox_blue_square {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox_blue_square.png");
+        background-image: url("../img/icon/ico_checkbox_blue_square.png");
         width: 22px;
         height: 22px;
     }
     &.ico_store_gray {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_store_gray.png");
+        background-image: url("../img/icon/ico_store_gray.png");
         width: 20px;
         height: 20px;
     }
     &.ico_store_white {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_store_white.png");
+        background-image: url("../img/icon/ico_store_white.png");
         width: 20px;
         height: 20px;
     }
     &.ico_store_purple {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_store_purple.png");
+        background-image: url("../img/icon/ico_store_purple.png");
         width: 20px;
         height: 20px;
     }
     &.ico_alert_white {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_alert_white.png");
+        background-image: url("../img/icon/ico_alert_white.png");
         width: 19px;
         height: 19px;
     }
     &.ico_store {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_store.png");
+        background-image: url("../img/icon/ico_store.png");
         width: 20px;
         height: 20px;
     }
     &.ico_card_service {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_card_service.png");
+        background-image: url("../img/icon/ico_card_service.png");
         width: 30px;
         height: 26px;
     }
     &.ico_airplane {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_airplane.png");
+        background-image: url("../img/icon/ico_airplane.png");
         width: 30px;
         height: 26px;
     }
     &.ico_right_arrow_function_blue {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_function_blue.png");
+        background-image: url("../img/icon/ico_right_arrow_function_blue.png");
         width: 7px;
         height: 11px;
     }
     &.ico_interrogation_fill_gray {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_interrogation_fill_gray.png");
+        background-image: url("../img/icon/ico_interrogation_fill_gray.png");
         //background-image: url("../img/icon/ico_interrogation_fill_gray.png");
         width: 13px;
         height: 13px;
     }
     &.ico_member_purple {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_member_purple.png");
+        background-image: url("../img/icon/ico_member_purple.png");
         width: 18px;
         height: 13px;
     }
     &.ico_crown_purple {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_crown_purple.png");
+        background-image: url("../img/icon/ico_crown_purple.png");
         //background-image: url("../img/icon/ico_crown_purple.png");
         width: 18px;
         height: 12px;
     }
     &.ico_restart {
-        background-image: url("https://image.payple.kr/onboard/icon/ico_restart.png");
+        background-image: url("../img/icon/ico_restart.png");
         //background-image: url("../img/icon/ico_restart.png");
         width: 26px;
         height: 26px;
         cursor: pointer;
+    }
+    &.ico_home_white {
+        background-image: url("../img/icon/ico_home_white.png");
+        width: 18px;
+        height: 17px;
     }
 }

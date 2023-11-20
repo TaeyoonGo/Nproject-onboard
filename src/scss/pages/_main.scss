@@ -217,7 +217,7 @@
         }
 
         &.arrow {
-            background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_purple.png");
+            background-image: url("../img/icon/ico_right_arrow_purple.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 30px) 50%;
             @include res-sm{
@@ -225,7 +225,7 @@
             }
         }
         &.arrow_gray{
-            background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_gray.png");
+            background-image: url("../img/icon/ico_right_arrow_gray.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 30px) 50%;
             @include res-sm{
@@ -233,7 +233,7 @@
             }
         }
         &.arrow_dark{
-            background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_dark.png");
+            background-image: url("../img/icon/ico_right_arrow_dark.png");
             background-repeat: no-repeat;
             background-position: calc(100% - 30px) 50%;
             @include res-sm{
@@ -315,7 +315,7 @@
                 }
                 &.yellow{
                     &:before{
-                        background-image: url(https://image.payple.kr/onboard/icon/ico_alert_yellow.png);
+                        background-image: url(../img/icon/ico_alert_yellow.png);
                     }
                     .caption_title{
                         color: #52525B;
@@ -323,7 +323,7 @@
                 }
                 &.orange{
                     &:before{
-                        background-image: url(https://image.payple.kr/onboard/icon/ico_alert_orange.png);
+                        background-image: url(../img/icon/ico_alert_orange.png);
                     }
                     .caption_title{
                         color: #FF6433;
@@ -333,7 +333,7 @@
                     position: absolute;
                     top: 1px;
                     left: -20px;
-                    background-image: url(https://image.payple.kr/onboard/icon/ico_alert_red.png);
+                    background-image: url(../img/icon/ico_alert_red.png);
                     content: "";
                     width: 13px;
                     height: 13px;
@@ -472,7 +472,7 @@
                         color: #52525B;
                     }
                     &:hover{
-                        background-image: url("https://image.payple.kr/onboard/icon/ico_right_arrow_purple.png");
+                        background-image: url("../img/icon/ico_right_arrow_purple.png");
                         .text{
                             color:#7852e8;
                         }
