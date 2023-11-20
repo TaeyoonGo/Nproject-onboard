@@ -94,6 +94,12 @@
         width: 20px;
         height: 20px;
     }
+    &.ico_checkBox {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_checkbox.svg");
+        width: 20px;
+        height: 20px;
+        background-size: 20px 80px;
+    }
 
     /*온보딩*/
     &.ico_close_btn {
@@ -230,5 +236,23 @@
         //background-image: url("../img/icon/ico_interrogation_fill_gray.png");
         width: 13px;
         height: 13px;
+    }
+    &.ico_member_purple {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_member_purple.png");
+        width: 18px;
+        height: 13px;
+    }
+    &.ico_crown_purple {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_crown_purple.png");
+        //background-image: url("../img/icon/ico_crown_purple.png");
+        width: 18px;
+        height: 12px;
+    }
+    &.ico_restart {
+        background-image: url("https://image.payple.kr/onboard/icon/ico_restart.png");
+        //background-image: url("../img/icon/ico_restart.png");
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
     }
 }
