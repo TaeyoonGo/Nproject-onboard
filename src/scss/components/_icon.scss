@@ -6,8 +6,6 @@
     text-indent: -999em;
     overflow: hidden;
     background-size: cover;
-
-    /*공통*/
     &.ico_account_btn {
         cursor: pointer;
         background-image: url("../img/icon/ico_account_btn.png");
@@ -100,8 +98,6 @@
         height: 20px;
         background-size: 20px 80px;
     }
-
-    /*온보딩*/
     &.ico_close_btn {
         cursor: pointer;
         background-image: url("../img/icon/ico_closeBtn.png");
