@@ -204,35 +204,12 @@ data.join = {
             category: 'join',
             page: '서비스정보입력-추가신청'
         },
+
         {
-            stateClass: 'complete',
-            url: '결제수단선택',
+            stateClass: 'confirm',
+            url: '통합결제서비스선택',
             category: 'join',
-            page: '결제수단선택'
-        },
-        {
-            stateClass: 'complete',
-            url: '결제수단선택_국내선택',
-            category: 'join',
-            page: '결제수단선택_국내선택'
-        },
-        {
-            stateClass: 'complete',
-            url: '결제수단선택_해외선택',
-            category: 'join',
-            page: '결제수단선택_해외선택'
-        },
-        {
-            stateClass: 'complete',
-            url: '국내결제서비스선택',
-            category: 'join',
-            page: '국내결제서비스선택'
-        },
-        {
-            stateClass: 'complete',
-            url: '해외결제서비스선택',
-            category: 'join',
-            page: '해외결제서비스선택'
+            page: '통합결제서비스선택'
         },
         {
             stateClass: 'complete',
@@ -241,22 +218,16 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '최종확인',
             category: 'join',
             page: '최종확인'
         },
         {
-            stateClass: 'complete',
-            url: '국내완료',
+            stateClass: 'confirm',
+            url: '서비스신청완료',
             category: 'join',
-            page: '국내완료'
-        },
-        {
-            stateClass: 'complete',
-            url: '해외완료',
-            category: 'join',
-            page: '해외완료'
+            page: '서비스신청완료'
         },
 
     ]
