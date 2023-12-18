@@ -351,185 +351,53 @@ data.main = {
 
     ]
 }
-data.developercenter = {
-    title: '개발자센터',
-    list: [
-        {
-            stateClass: 'complete',
-            url: '메인',
-            category: 'developercenter',
-            page: '메인'
-        },
-        {
-            stateClass: 'complete',
-            url: '메인_라이브',
-            category: 'developercenter',
-            page: '메인_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_검색결과없음',
-            category: 'developercenter',
-            page: '웹훅_검색결과없음'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_검색결과없음_라이브',
-            category: 'developercenter',
-            page: '웹훅_검색결과없음_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_검색결과있음',
-            category: 'developercenter',
-            page: '웹훅_검색결과있음'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_검색결과있음_라이브',
-            category: 'developercenter',
-            page: '웹훅_검색결과있음_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_상세정보_검색결과없음',
-            category: 'developercenter',
-            page: '웹훅_상세정보_검색결과없음'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_상세정보_검색결과없음_라이브',
-            category: 'developercenter',
-            page: '웹훅_상세정보_검색결과없음_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_상세정보_검색결과있음',
-            category: 'developercenter',
-            page: '웹훅_상세정보_검색결과있음'
-        },
-        {
-            stateClass: 'complete',
-            url: '웹훅_상세정보_검색결과있음_라이브',
-            category: 'developercenter',
-            page: '웹훅_상세정보_검색결과있음_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: 'white_ip_검색결과없음',
-            category: 'developercenter',
-            page: 'white_ip_검색결과없음'
-        },
-        {
-            stateClass: 'complete',
-            url: 'white_ip_검색결과없음_라이브',
-            category: 'developercenter',
-            page: 'white_ip_검색결과없음_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: 'white_ip_검색결과있음',
-            category: 'developercenter',
-            page: 'white_ip_검색결과있음'
-        },
-        {
-            stateClass: 'complete',
-            url: 'white_ip_검색결과있음_라이브',
-            category: 'developercenter',
-            page: 'white_ip_검색결과있음_라이브'
-        },
-        {
-            stateClass: 'complete',
-            url: 'white_ip_10개이상등록',
-            category: 'developercenter',
-            page: 'white_ip_10개이상등록'
-        },
-        {
-            stateClass: 'complete',
-            url: '테스트결제내역_검색결과없음',
-            category: 'developercenter',
-            page: '테스트결제내역_검색결과없음'
-        },
-        {
-            stateClass: 'complete',
-            url: '테스트결제내역_조회결과_국내',
-            category: 'developercenter',
-            page: '테스트결제내역_조회결과_국내'
-        },
-        {
-            stateClass: 'complete',
-            url: '테스트결제내역_조회결과_해외',
-            category: 'developercenter',
-            page: '테스트결제내역_조회결과_해외'
-        },
-    ]
-}
 data.membership = {
     title: '관리자 초대',
     list: [
-        // {
-        //     stateClass: 'complete',
-        //     url: '관리자초대_초대관리자없음',
-        //     category: 'membership',
-        //     page: '관리자초대_초대관리자없음'
-        // },
-        // {
-        //     stateClass: 'complete',
-        //     url: '관리자초대_초대관리자있음',
-        //     category: 'membership',
-        //     page: '관리자초대_초대관리자있음'
-        // },
-        // {
-        //     stateClass: 'complete',
-        //     url: '관리자초대_수정',
-        //     category: 'membership',
-        //     page: '관리자초대_수정'
-        // },
-
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '통합관리자_초대완료_관리자없음',
             category: 'membership',
             page: '통합관리자_초대완료_관리자없음'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '통합관리자_초대완료_관리자있음',
             category: 'membership',
             page: '통합관리자_초대완료_관리자있음'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '통합관리자_초대완료_상세보기',
             category: 'membership',
             page: '통합관리자_초대완료_상세보기'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '상점관리자_초대완료_관리자없음',
             category: 'membership',
             page: '상점관리자_초대완료_관리자없음'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '상점관리자_초대완료_관리자있음',
             category: 'membership',
             page: '상점관리자_초대완료_관리자있음'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '상점관리자_초대완료_상세보기',
             category: 'membership',
             page: '상점관리자_초대완료_상세보기'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '관리자초대_권한삭제',
             category: 'membership',
             page: '관리자초대_권한삭제'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '관리자초대_초대수락완료',
             category: 'membership',
             page: '관리자초대_초대수락완료'
