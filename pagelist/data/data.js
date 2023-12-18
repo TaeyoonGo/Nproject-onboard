@@ -283,67 +283,67 @@ data.main = {
             page: '최초신청_작성중_삭제'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '최초신청후_심사중',
             category: 'main',
             page: '최초신청_심사중'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '최초신청후_심사중_계약중',
             category: 'main',
             page: '최초신청_심사중_계약중'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '최초신청후_입점불가',
             category: 'main',
             page: '최초신청후_입점불가'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '최초신청후_1건이라도_계약_완료',
             category: 'main',
             page: '최초신청후_1건이라도_계약_완료'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '오픈후_추가신청',
             category: 'main',
             page: '오픈후_추가신청'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '오픈후_서비스신청작성중',
             category: 'main',
             page: '오픈후_서비스신청작성중'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '오픈후_신청_작성중_삭제',
             category: 'main',
             page: '오픈후_신청_작성중_삭제'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '오픈후_일부서비스정지',
             category: 'main',
             page: '오픈후_일부서비스정지'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '오픈후_사업자전체정지',
             category: 'main',
             page: '오픈후_사업자전체정지'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '국내해외이용중_사업자1개',
             category: 'main',
             page: '국내해외이용중_사업자1개'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '국내해외이용중_사용자2개이상',
             category: 'main',
             page: '국내해외이용중_사용자2개이상'
