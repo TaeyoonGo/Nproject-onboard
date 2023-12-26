@@ -218,13 +218,13 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최종확인',
             category: 'join',
             page: '최종확인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '서비스신청완료',
             category: 'join',
             page: '서비스신청완료'
@@ -254,61 +254,61 @@ data.main = {
             page: '최초신청_작성중_삭제'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_심사중',
             category: 'main',
             page: '최초신청_심사중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_심사중_계약중',
             category: 'main',
             page: '최초신청_심사중_계약중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_입점불가',
             category: 'main',
             page: '최초신청후_입점불가'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_1건이라도_계약_완료',
             category: 'main',
             page: '최초신청후_1건이라도_계약_완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_추가신청',
             category: 'main',
             page: '오픈후_추가신청'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_서비스신청작성중',
             category: 'main',
             page: '오픈후_서비스신청작성중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_신청_작성중_삭제',
             category: 'main',
             page: '오픈후_신청_작성중_삭제'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_일부서비스정지',
             category: 'main',
             page: '오픈후_일부서비스정지'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_사업자전체정지',
             category: 'main',
             page: '오픈후_사업자전체정지'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '국내해외이용중_사업자1개',
             category: 'main',
             page: '국내해외이용중_사업자1개'
@@ -326,49 +326,49 @@ data.membership = {
     title: '관리자 초대',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '통합관리자_초대완료_관리자없음',
             category: 'membership',
             page: '통합관리자_초대완료_관리자없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '통합관리자_초대완료_관리자있음',
             category: 'membership',
             page: '통합관리자_초대완료_관리자있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '통합관리자_초대완료_상세보기',
             category: 'membership',
             page: '통합관리자_초대완료_상세보기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상점관리자_초대완료_관리자없음',
             category: 'membership',
             page: '상점관리자_초대완료_관리자없음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상점관리자_초대완료_관리자있음',
             category: 'membership',
             page: '상점관리자_초대완료_관리자있음'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '상점관리자_초대완료_상세보기',
             category: 'membership',
             page: '상점관리자_초대완료_상세보기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_권한삭제',
             category: 'membership',
             page: '관리자초대_권한삭제'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '관리자초대_초대수락완료',
             category: 'membership',
             page: '관리자초대_초대수락완료'
