@@ -10,7 +10,7 @@
         padding-top: 10px;
     }
     .payment_table_title{
-
+        margin-left: 10px;
     }
     &.payment{
         max-width: 910px;
@@ -100,6 +100,7 @@
                 .table_row {
                     .select_table_title {
                         flex: 1 1 15%;
+                        margin-left: 10px;
                     }
                     .select_table_desc {
                         flex: 1 1 85%;
@@ -157,6 +158,7 @@
                 .table_row {
                     .select_table_title {
                         flex: 1 1 20%;
+                        margin-left: 10px;
                     }
 
                     .select_table_desc {
@@ -565,6 +567,7 @@
 
                 .select_table_title {
                     flex: 1 1 15%;
+                    margin-left: 10px;
                 }
 
                 .select_table_desc {
@@ -623,7 +626,7 @@
 
         .caption {
             padding-top: 14px;
-            margin-left: 20px;
+            margin-left: 10px;
             color: #85858F;
             font-size: 15px;
             +.caption{
